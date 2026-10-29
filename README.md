@@ -96,6 +96,10 @@ A locally built portable application includes Python and Qt, so its users do not
 
 ## Quick start from source
 
+For a ready-to-run Windows download, open [GitHub Releases](https://github.com/supremobv/PVZ-LawnLab-Trainer/releases) and choose the **Classic** or **GOTY** ZIP. Extract the entire folder and read `START-HERE.md`. Each package includes the same dual-edition portable app, its edition-specific CT/catalog, guides, MIT license and dependency notices. No Python installation is needed. The game is not included.
+
+The release page also provides `SHA256SUMS.txt`. To check a download in PowerShell, run `Get-FileHash .\LawnLab-5.14-Classic-Windows-x64.zip -Algorithm SHA256` (substitute the GOTY filename if needed) and compare the hash.
+
 Open PowerShell in the directory where you want the project:
 
 ```powershell
