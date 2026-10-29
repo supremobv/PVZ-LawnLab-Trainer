@@ -15,7 +15,7 @@ SOURCES=('verified_engine.py','verified_patches.py','patch_manager.py','studio_e
 def inventory():
     items=[];hashes={}
     for name in SOURCES:
-        data=(ROOT/name).read_bytes();hashes[name]=hashlib.sha256(data).hexdigest();source=data.decode('utf-8-sig');lines=source.splitlines()
+        data=(ROOT/name).read_bytes().replace(b'\r\n',b'\n');hashes[name]=hashlib.sha256(data).hexdigest();source=data.decode('utf-8-sig');lines=source.splitlines()
         for node in ast.walk(ast.parse(source)):
             if isinstance(node,ast.Constant)and type(node.value)is int:
                 literal=ast.get_source_segment(source,node)or''
@@ -148,7 +148,7 @@ def classic_inventory():
     names=['classic_'+n for n in ('verified_engine.py','verified_patches.py','studio_engine.py','studio_native.py','game_layout.py','profile_tools.py')]+['trainer_backend.py','runtime_image.py','patch_manager.py','edition_saves.py','startup_options.py','seed_pages.py','seed_overlay.py','resource_mods.py','studio_storage.py','studio_models.py','extra_controls.py','pak_resources.py','note_editor.py']
     literals=[];hashes={}
     for name in names:
-        source=(ROOT/name).read_text(encoding='utf-8');hashes[name]=hashlib.sha256((ROOT/name).read_bytes()).hexdigest();lines=source.splitlines()
+        source=(ROOT/name).read_text(encoding='utf-8');hashes[name]=hashlib.sha256((ROOT/name).read_bytes().replace(b'\r\n',b'\n')).hexdigest();lines=source.splitlines()
         for node in ast.walk(ast.parse(source)):
             if isinstance(node,ast.Constant)and type(node.value)is int:
                 literals.append(dict(source=name,line=node.lineno,value=node.value,hex=hex(node.value),context=lines[node.lineno-1].strip()))

@@ -7457,7 +7457,7 @@ showMessage("{\n  \"FRAME_DURATION\": 1108,\n  \"SEED_RECHARGE\": [\n    553622,
               <CheatEntries>
                 <CheatEntry>
                   <ID>95</ID>
-                  <Description>"classic_game_layout.py — a25c3d8be366427032f9c9db3df4fabb029d701fc156e86cb78a437ad13a8476"</Description>
+                  <Description>"classic_game_layout.py — 504968f6a3e266cb3b3716711f666f7efac729f389823a682befc68d7ca9c25b"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7469,7 +7469,7 @@ showMessage("L4: 0x454 (1108) FRAME_DURATION=0x454\nL7: 0x559c (21916) WAVE_COUN
                 </CheatEntry>
                 <CheatEntry>
                   <ID>96</ID>
-                  <Description>"classic_profile_tools.py — 7b4754ae9442551da13ed669a1474221a252105374712cb418ec0e144c34826e"</Description>
+                  <Description>"classic_profile_tools.py — 6f6f31563cd18d6cdea57826e28d3e24b54e3c43782aa8eb433c6d335b130a08"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7481,7 +7481,7 @@ showMessage("L7: 0x0 (0) GARDEN_CELLS = {0: [(x, y) for y in range(4) for x in r
                 </CheatEntry>
                 <CheatEntry>
                   <ID>97</ID>
-                  <Description>"classic_studio_engine.py — 40ed0ec9ec87e2585bb321a54cae1f0d6479f5fa7e527c5123e770cb4b880783"</Description>
+                  <Description>"classic_studio_engine.py — 930a966d9e003792bc97afcabcb25bcd0af4ff9bb1d3d68001911b05a8cae123"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7493,7 +7493,7 @@ showMessage("L15: 0xd120 (53536) SIGNATURES = {53536: '5153558b6c24105657', 1722
                 </CheatEntry>
                 <CheatEntry>
                   <ID>98</ID>
-                  <Description>"classic_studio_native.py — f7d83a758b0e5ccbfc47cb72c0dd5b7ab4ff38dd137935113b7101e9d26970b4"</Description>
+                  <Description>"classic_studio_native.py — b8321b77162a3045a4caa9044f02a3fa9d6e7069ee469b49d9747eb32fa25e1e"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7505,7 +7505,7 @@ showMessage("L32: 0x0 (0) self.depth = 0\nL145: 0x1 (1) self.depth = 1\nL182: 0x
                 </CheatEntry>
                 <CheatEntry>
                   <ID>99</ID>
-                  <Description>"classic_verified_engine.py — 815b114f577513453130ae85c77df84bc9081db3609144fafbee28231c2b009c"</Description>
+                  <Description>"classic_verified_engine.py — 4e4d343339569e447ff086fc6f4d43508c5a5130a68fda002811bd78bb7411d7"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7517,7 +7517,7 @@ showMessage("L18: 0x1b960 (112992) HOOKS = {'collect_1000_sun': (112992, 6), 'pl
                 </CheatEntry>
                 <CheatEntry>
                   <ID>100</ID>
-                  <Description>"classic_verified_patches.py — a370c2c6e642a6fd2a42eb69c1d8ff8d4e46fa90e405665d80fdfddd4e50f5ed"</Description>
+                  <Description>"classic_verified_patches.py — a8cb092dedbc2a27bff876322a0ea9364667f6b582ba48d960226837f6bc6b64"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7529,7 +7529,7 @@ showMessage("L2: 0x12fcf1 (1244401) PATCHES={'_plant_immune_eat': [(1244401, '46
                 </CheatEntry>
                 <CheatEntry>
                   <ID>101</ID>
-                  <Description>"edition_saves.py — ab7195f95e12510d0ece7660c34713b45f80a2d92057f57e380b15efa4fcf3a3"</Description>
+                  <Description>"edition_saves.py — b70314e14b1b6fc4cdfc0fb3e152ca907dc1aa5a69383dbb6fa4f6368157c5ba"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7541,7 +7541,7 @@ showMessage("L143: 0x5a (90) def launch(kind,path=None,timeout=90):\nL146: 0x5a 
                 </CheatEntry>
                 <CheatEntry>
                   <ID>102</ID>
-                  <Description>"extra_controls.py — bebc71f17aa8726568089ab36025366a571d7a4c5af16f9549d9eabc9dced9f7"</Description>
+                  <Description>"extra_controls.py — 7f9a9e60c9e73f5f1a73a61cff403ccebb6a020f767607dacda28b010dda9148"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7601,7 +7601,7 @@ showMessage("L6: 0x1e84800 (32000000) MAX_FILE=32_000_000;MAX_PACK=200_000_000\n
                 </CheatEntry>
                 <CheatEntry>
                   <ID>107</ID>
-                  <Description>"runtime_image.py — e65785ee99585f71f5e54c7b98f0581e2ba38bfc40a2f81f805890e4b252d29b"</Description>
+                  <Description>"runtime_image.py — a2e9882907c6766578dc58d84e3fec96ba2f95ab498970e0d449d14e54ad3580"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7613,7 +7613,7 @@ showMessage("L21: 0x394000 (3751936) if not module or module.SizeOfImage!=0x3940
                 </CheatEntry>
                 <CheatEntry>
                   <ID>108</ID>
-                  <Description>"seed_overlay.py — d86bda3eaad5945ad31ce4b64983c5413e87167c672c5fb3a9b3b22332f7c056"</Description>
+                  <Description>"seed_overlay.py — 37926da83b5c85e2a9f3b297b72797541881f7931a45763da649ee2f6e51d15a"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7625,7 +7625,7 @@ showMessage("L40: 0x1 (1) self.preferences=preferences if preferences is not Non
                 </CheatEntry>
                 <CheatEntry>
                   <ID>109</ID>
-                  <Description>"seed_pages.py — c9d182ae54651e51424152a10bf986174b455e47cdd2a3235417bacb03180724"</Description>
+                  <Description>"seed_pages.py — cabfa4722ee03b0c00e148e89ef32b0f4638db36e6c8c88311755e7b60737c22"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
@@ -7649,7 +7649,7 @@ showMessage("L6: 0x30c80 (199808) LIMBO={'goty':(0x30C80,bytes.fromhex('885864')
                 </CheatEntry>
                 <CheatEntry>
                   <ID>111</ID>
-                  <Description>"studio_models.py — cd4e9f7db71c168b2fc514917128e39e9c47d99a60a3fa08a8aaeab6c28672f4"</Description>
+                  <Description>"studio_models.py — f6388b1db9371bf18a0ac07cc656f978b1edc980d896b28a3d71530fdc276d24"</Description>
                   <VariableType>Auto Assembler Script</VariableType>
                   <AssemblerScript>[ENABLE]
 {$lua}
