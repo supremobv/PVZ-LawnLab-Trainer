@@ -1,0 +1,4931 @@
+{
+  "version": "5.14",
+  "executable_sha256": "1ff5a2dcf009b453b8866783a68e8d04bd0d066abda3f8196d75a677366b2dff",
+  "image_size": "0x415000",
+  "source_sha256": {
+    "verified_engine.py": "07d2f595c0da27e576d4d23ac7c85c58a0a370b0a38fe75b8e16da2b03a848e0",
+    "verified_patches.py": "8a50b9f343a765ef9a78cf2e31b76723548fa03ae890d5d61cd7f85180bd8161",
+    "patch_manager.py": "602376638f3bb4af2fb6036fed3b6ac71951dae6738b199fe1cf7c102afcf6bb",
+    "studio_engine.py": "1fe984b73cfed1b76d2bb10477f8fc6e8eed1be4a28b812a3a7e71be5f7fdaab",
+    "studio_native.py": "6e8fdaa13541676b72c74e888d40988001c84fd5080ff9e6bb8bc30f021257e5",
+    "game_layout.py": "9b8959ce5359b35c985b033314878f48151f4387360c162171b32ce87b0b2eb6",
+    "profile_tools.py": "66de83bdf691d30b0897d1b044b419ba41a7670919df31e7a88e5d3e4bfdf199",
+    "trainer_backend.py": "5560b2633971ab3b6c8fe2d3c48fa51d45e83eeb6166b8f865eeaae4832a8240",
+    "runtime_image.py": "e65785ee99585f71f5e54c7b98f0581e2ba38bfc40a2f81f805890e4b252d29b",
+    "edition_saves.py": "ab7195f95e12510d0ece7660c34713b45f80a2d92057f57e380b15efa4fcf3a3",
+    "startup_options.py": "82486ab6ab3d52152e8ba7d3492a9d2c33bc5f45cabb8e89e78a004a8757e20f",
+    "seed_pages.py": "c9d182ae54651e51424152a10bf986174b455e47cdd2a3235417bacb03180724",
+    "seed_overlay.py": "d86bda3eaad5945ad31ce4b64983c5413e87167c672c5fb3a9b3b22332f7c056",
+    "resource_mods.py": "3c8a8758197442a0625d0cd26d41f0888eb55390463719b6d1a4159a3c62d9ad",
+    "studio_storage.py": "0ed5f2dd89058f744cd8920a74a4db64a83b0d07a5865008784172008928f3d9",
+    "studio_models.py": "cd4e9f7db71c168b2fc514917128e39e9c47d99a60a3fa08a8aaeab6c28672f4",
+    "extra_controls.py": "bebc71f17aa8726568089ab36025366a571d7a4c5af16f9549d9eabc9dced9f7",
+    "pak_resources.py": "f57c4f0feee56e78481a555f7ab5c74e4557761ab85be1fcb5937fc2c8bdf2c8",
+    "note_editor.py": "00ffc90006f1e3b135605eaf492f22d07d1daeff47bf7936917e76faf4fcc9f1"
+  },
+  "note": "Hex literals include offsets, RVAs, instruction bytes and Windows flags. Context distinguishes their meaning; do not treat all literals as addresses.",
+  "hex_literals": [
+    {
+      "source": "edition_saves.py",
+      "line": 13,
+      "literal": "0x6D530",
+      "value": 447792,
+      "context": "'goty':dict(product='PlantsVsZomGOTY',root=0x3DB0C0,getter=0x1FF440,signature='558bec83ec2cc745fc0000000068c0b07d00',load=0x6D530,load_signature='558bec6aff6886596c00'),"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 13,
+      "literal": "0x1FF440",
+      "value": 2094144,
+      "context": "'goty':dict(product='PlantsVsZomGOTY',root=0x3DB0C0,getter=0x1FF440,signature='558bec83ec2cc745fc0000000068c0b07d00',load=0x6D530,load_signature='558bec6aff6886596c00'),"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 13,
+      "literal": "0x3DB0C0",
+      "value": 4042944,
+      "context": "'goty':dict(product='PlantsVsZomGOTY',root=0x3DB0C0,getter=0x1FF440,signature='558bec83ec2cc745fc0000000068c0b07d00',load=0x6D530,load_signature='558bec6aff6886596c00'),"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 14,
+      "literal": "0x69400",
+      "value": 431104,
+      "context": "'classic':dict(product='PlantsVsZomCLSC',root=0x2A533C,getter=0x1AF590,signature='5133c06aff50c746180f000000894614683c536a00',load=0x69400,load_signature='558bec6aff68a6986400'),"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 14,
+      "literal": "0x1AF590",
+      "value": 1766800,
+      "context": "'classic':dict(product='PlantsVsZomCLSC',root=0x2A533C,getter=0x1AF590,signature='5133c06aff50c746180f000000894614683c536a00',load=0x69400,load_signature='558bec6aff68a6986400'),"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 14,
+      "literal": "0x2A533C",
+      "value": 2773820,
+      "context": "'classic':dict(product='PlantsVsZomCLSC',root=0x2A533C,getter=0x1AF590,signature='5133c06aff50c746180f000000894614683c536a00',load=0x69400,load_signature='558bec6aff68a6986400'),"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 28,
+      "literal": "0x14",
+      "value": 20,
+      "context": "length=g.read(address+0x14,'uint');capacity=g.read(address+0x18,'uint')"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 28,
+      "literal": "0x18",
+      "value": 24,
+      "context": "length=g.read(address+0x14,'uint');capacity=g.read(address+0x18,'uint')"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 54,
+      "literal": "0x7FC",
+      "value": 2044,
+      "context": "ui=g.read(g.app()+(0x7FC if kind=='classic'else 0x91C))"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 54,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "ui=g.read(g.app()+(0x7FC if kind=='classic'else 0x91C))"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 55,
+      "literal": "0x82C",
+      "value": 2092,
+      "context": "if preload and current and ui==0 and g.read(g.app()+(0x82C if kind=='classic'else 0x94C),'uint')==0:"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 55,
+      "literal": "0x94C",
+      "value": 2380,
+      "context": "if preload and current and ui==0 and g.read(g.app()+(0x82C if kind=='classic'else 0x94C),'uint')==0:"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 66,
+      "literal": "0x20",
+      "value": 32,
+      "context": "engine.reset_all();u=g.user();identity=g.read(u+0x20,'uint')"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 74,
+      "literal": "0x20",
+      "value": 32,
+      "context": "if g.user()!=u or g.read(u+0x20,'uint')!=identity:raise RuntimeError('Active player changed during profile reload.')"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 132,
+      "literal": "0x20",
+      "value": 32,
+      "context": "g=engine.runtime.game;_,root=root_info(engine);path=Path(root)/'userdata'/f'user{g.read(g.user()+0x20,\"uint\")}.dat'"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 136,
+      "literal": "0x58",
+      "value": 88,
+      "context": "count=struct.unpack_from('<i',data,816)[0];offset=820+count*0x58"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 214,
+      "literal": "0x7FC",
+      "value": 2044,
+      "context": "ui=g.read(g.app()+(0x7FC if kind=='classic'else 0x91C))"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 214,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "ui=g.read(g.app()+(0x7FC if kind=='classic'else 0x91C))"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 215,
+      "literal": "0x82C",
+      "value": 2092,
+      "context": "if ui==0 and g.read(g.app()+(0x82C if kind=='classic'else 0x94C),'uint')==0:"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 215,
+      "literal": "0x94C",
+      "value": 2380,
+      "context": "if ui==0 and g.read(g.app()+(0x82C if kind=='classic'else 0x94C),'uint')==0:"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 239,
+      "literal": "0x20",
+      "value": 32,
+      "context": "g=engine.runtime.game;result.update(active_root=root_info(engine)[1],active_stage=g.read(g.user()+0x4C if edition(engine)=='goty'else g.user()+0x24),profile_id=g.read(g.user()+0x20,'uint'),edition=edition(engine))"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 239,
+      "literal": "0x24",
+      "value": 36,
+      "context": "g=engine.runtime.game;result.update(active_root=root_info(engine)[1],active_stage=g.read(g.user()+0x4C if edition(engine)=='goty'else g.user()+0x24),profile_id=g.read(g.user()+0x20,'uint'),edition=edition(engine))"
+    },
+    {
+      "source": "edition_saves.py",
+      "line": 239,
+      "literal": "0x4C",
+      "value": 76,
+      "context": "g=engine.runtime.game;result.update(active_root=root_info(engine)[1],active_stage=g.read(g.user()+0x4C if edition(engine)=='goty'else g.user()+0x24),profile_id=g.read(g.user()+0x20,'uint'),edition=edition(engine))"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 10,
+      "literal": "0x10E1F",
+      "value": 69151,
+      "context": "'cattail_land':[(0x10E1F,'7511','eb11')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 11,
+      "literal": "0x61C66",
+      "value": 400486,
+      "context": "'instant_mines':[(0x61C66,'741f','eb1f')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 12,
+      "literal": "0x10BDD",
+      "value": 68573,
+      "context": "'no_support':[(0x10BDD,'7527','eb27'),(0x10C3E,'7416','eb16')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 12,
+      "literal": "0x10C3E",
+      "value": 68670,
+      "context": "'no_support':[(0x10BDD,'7527','eb27'),(0x10C3E,'7416','eb16')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 13,
+      "literal": "0xFF0E",
+      "value": 65294,
+      "context": "'direct_upgrades':[(0x10DDF,'751a','eb1a'),(0xFF0E,'7511','eb11'),(0x205A0,'515357','b001c3')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 13,
+      "literal": "0x10DDF",
+      "value": 69087,
+      "context": "'direct_upgrades':[(0x10DDF,'751a','eb1a'),(0xFF0E,'7511','eb11'),(0x205A0,'515357','b001c3')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 13,
+      "literal": "0x205A0",
+      "value": 132512,
+      "context": "'direct_upgrades':[(0x10DDF,'751a','eb1a'),(0xFF0E,'7511','eb11'),(0x205A0,'515357','b001c3')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 14,
+      "literal": "0x343E",
+      "value": 13374,
+      "context": "'almanac_reveal':[(0x343E,'84c0','0c01'),(0x4BC2,'84c0','0c01'),"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 14,
+      "literal": "0x4BC2",
+      "value": 19394,
+      "context": "'almanac_reveal':[(0x343E,'84c0','0c01'),(0x4BC2,'84c0','0c01'),"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 15,
+      "literal": "0x4C50",
+      "value": 19536,
+      "context": "(0x4C50,'51538bd8','b001c390'),(0x4D50,'8b8084010000','b001c3909090'),"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 15,
+      "literal": "0x4D50",
+      "value": 19792,
+      "context": "(0x4C50,'51538bd8','b001c390'),(0x4D50,'8b8084010000','b001c3909090'),"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 16,
+      "literal": "0x42DE",
+      "value": 17118,
+      "context": "(0x42DE,'8b842440010000','e9600000009090'),(0x44C1,'753e','eb3e'),(0x46B0,'754b','eb4b')]},"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 16,
+      "literal": "0x44C1",
+      "value": 17601,
+      "context": "(0x42DE,'8b842440010000','e9600000009090'),(0x44C1,'753e','eb3e'),(0x46B0,'754b','eb4b')]},"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 16,
+      "literal": "0x46B0",
+      "value": 18096,
+      "context": "(0x42DE,'8b842440010000','e9600000009090'),(0x44C1,'753e','eb3e'),(0x46B0,'754b','eb4b')]},"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 18,
+      "literal": "0xE4AC",
+      "value": 58540,
+      "context": "'cattail_land':[(0xE4AC,'7511','eb11')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 19,
+      "literal": "0x5E338",
+      "value": 385848,
+      "context": "'instant_mines':[(0x5E338,'741f','eb1f')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 20,
+      "literal": "0xE26A",
+      "value": 57962,
+      "context": "'no_support':[(0xE26A,'7527','eb27'),(0xE2CB,'7416','eb16')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 20,
+      "literal": "0xE2CB",
+      "value": 58059,
+      "context": "'no_support':[(0xE26A,'7527','eb27'),(0xE2CB,'7416','eb16')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 21,
+      "literal": "0xD51E",
+      "value": 54558,
+      "context": "'direct_upgrades':[(0xE46C,'751a','eb1a'),(0xD51E,'7511','eb11'),(0x1D7D0,'5183f828','b001c390')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 21,
+      "literal": "0xE46C",
+      "value": 58476,
+      "context": "'direct_upgrades':[(0xE46C,'751a','eb1a'),(0xD51E,'7511','eb11'),(0x1D7D0,'5183f828','b001c390')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 21,
+      "literal": "0x1D7D0",
+      "value": 120784,
+      "context": "'direct_upgrades':[(0xE46C,'751a','eb1a'),(0xD51E,'7511','eb11'),(0x1D7D0,'5183f828','b001c390')],"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 22,
+      "literal": "0x2224",
+      "value": 8740,
+      "context": "'almanac_reveal':[(0x2224,'84c0','0c01'),(0x3983,'84c0','0c01'),"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 22,
+      "literal": "0x3983",
+      "value": 14723,
+      "context": "'almanac_reveal':[(0x2224,'84c0','0c01'),(0x3983,'84c0','0c01'),"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 23,
+      "literal": "0x3A10",
+      "value": 14864,
+      "context": "(0x3A10,'51558b6c240c','b001c2040090'),(0x3B30,'8b806c010000','b001c3909090'),"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 23,
+      "literal": "0x3B30",
+      "value": 15152,
+      "context": "(0x3A10,'51558b6c240c','b001c2040090'),(0x3B30,'8b806c010000','b001c3909090'),"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 24,
+      "literal": "0x30E7",
+      "value": 12519,
+      "context": "(0x30E7,'8b8c2430010000','e95f0000009090'),(0x32A7,'7540','eb40'),(0x348C,'754a','eb4a')]}}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 24,
+      "literal": "0x32A7",
+      "value": 12967,
+      "context": "(0x30E7,'8b8c2430010000','e95f0000009090'),(0x32A7,'7540','eb40'),(0x348C,'754a','eb4a')]}}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 24,
+      "literal": "0x348C",
+      "value": 13452,
+      "context": "(0x30E7,'8b8c2430010000','e95f0000009090'),(0x32A7,'7540','eb40'),(0x348C,'754a','eb4a')]}}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 25,
+      "literal": "0x63E22",
+      "value": 409122,
+      "context": "PLANT_HOOK={'goty':0x6786A,'classic':0x63E22}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 25,
+      "literal": "0x6786A",
+      "value": 424042,
+      "context": "PLANT_HOOK={'goty':0x6786A,'classic':0x63E22}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 27,
+      "literal": "0x11C",
+      "value": 284,
+      "context": "ZOMBIE_SCALE=0x11C"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 28,
+      "literal": "0x66D50",
+      "value": 421200,
+      "context": "COB_FIRE={'goty':(0x6A810,'51d90598db6f0053'),'classic':(0x66D50,'51d9058893670053')}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 28,
+      "literal": "0x6A810",
+      "value": 436240,
+      "context": "COB_FIRE={'goty':(0x6A810,'51d90598db6f0053'),'classic':(0x66D50,'51d9058893670053')}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 29,
+      "literal": "0x3C",
+      "value": 60,
+      "context": "COB_STATE=0x3C"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 30,
+      "literal": "0x54",
+      "value": 84,
+      "context": "COB_RELOAD=0x54"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 33,
+      "literal": "0x11C",
+      "value": 284,
+      "context": "GRID_ITEMS={'goty':(0x134,0x502B0,'8b0e8b4634c64620'),'classic':(0x11C,0x4D000,'8b0e8b463485c0c6')}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 33,
+      "literal": "0x134",
+      "value": 308,
+      "context": "GRID_ITEMS={'goty':(0x134,0x502B0,'8b0e8b4634c64620'),'classic':(0x11C,0x4D000,'8b0e8b463485c0c6')}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 33,
+      "literal": "0x4D000",
+      "value": 315392,
+      "context": "GRID_ITEMS={'goty':(0x134,0x502B0,'8b0e8b4634c64620'),'classic':(0x11C,0x4D000,'8b0e8b463485c0c6')}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 33,
+      "literal": "0x502B0",
+      "value": 328368,
+      "context": "GRID_ITEMS={'goty':(0x134,0x502B0,'8b0e8b4634c64620'),'classic':(0x11C,0x4D000,'8b0e8b463485c0c6')}"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 42,
+      "literal": "0xEC",
+      "value": 236,
+      "context": "data=g.pointer(board+offset);blob=g.engine.pm.read_bytes(data,count*0xEC);addresses=[]"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 44,
+      "literal": "0xEC",
+      "value": 236,
+      "context": "cell=blob[i*0xEC:(i+1)*0xEC]"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 44,
+      "literal": "0xEC",
+      "value": 236,
+      "context": "cell=blob[i*0xEC:(i+1)*0xEC]"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 45,
+      "literal": "0xE8",
+      "value": 232,
+      "context": "ident=struct.unpack_from('<I',cell,0xE8)[0]"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 46,
+      "literal": "0x20",
+      "value": 32,
+      "context": "if cell[0x20]or not ident>>16 or struct.unpack_from('<i',cell,8)[0]!=1:continue"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 48,
+      "literal": "0x10",
+      "value": 16,
+      "context": "col,row=struct.unpack_from('<ii',cell,0x10)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 50,
+      "literal": "0xEC",
+      "value": 236,
+      "context": "addresses.append(data+i*0xEC)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 60,
+      "literal": "0xB8",
+      "value": 184,
+      "context": "and not read(z['address']+0xB8,'byte')]"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 71,
+      "literal": "0xD8",
+      "value": 216,
+      "context": "app=g.app();ui,mode,board,paused,count=(0x7FC,0x7F8,0x768,0x164,0xD8)if kind=='classic'else(0x91C,0x918,0x868,0x17C,0xF0)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 71,
+      "literal": "0xF0",
+      "value": 240,
+      "context": "app=g.app();ui,mode,board,paused,count=(0x7FC,0x7F8,0x768,0x164,0xD8)if kind=='classic'else(0x91C,0x918,0x868,0x17C,0xF0)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 71,
+      "literal": "0x164",
+      "value": 356,
+      "context": "app=g.app();ui,mode,board,paused,count=(0x7FC,0x7F8,0x768,0x164,0xD8)if kind=='classic'else(0x91C,0x918,0x868,0x17C,0xF0)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 71,
+      "literal": "0x17C",
+      "value": 380,
+      "context": "app=g.app();ui,mode,board,paused,count=(0x7FC,0x7F8,0x768,0x164,0xD8)if kind=='classic'else(0x91C,0x918,0x868,0x17C,0xF0)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 71,
+      "literal": "0x768",
+      "value": 1896,
+      "context": "app=g.app();ui,mode,board,paused,count=(0x7FC,0x7F8,0x768,0x164,0xD8)if kind=='classic'else(0x91C,0x918,0x868,0x17C,0xF0)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 71,
+      "literal": "0x7F8",
+      "value": 2040,
+      "context": "app=g.app();ui,mode,board,paused,count=(0x7FC,0x7F8,0x768,0x164,0xD8)if kind=='classic'else(0x91C,0x918,0x868,0x17C,0xF0)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 71,
+      "literal": "0x7FC",
+      "value": 2044,
+      "context": "app=g.app();ui,mode,board,paused,count=(0x7FC,0x7F8,0x768,0x164,0xD8)if kind=='classic'else(0x91C,0x918,0x868,0x17C,0xF0)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 71,
+      "literal": "0x868",
+      "value": 2152,
+      "context": "app=g.app();ui,mode,board,paused,count=(0x7FC,0x7F8,0x768,0x164,0xD8)if kind=='classic'else(0x91C,0x918,0x868,0x17C,0xF0)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 71,
+      "literal": "0x918",
+      "value": 2328,
+      "context": "app=g.app();ui,mode,board,paused,count=(0x7FC,0x7F8,0x768,0x164,0xD8)if kind=='classic'else(0x91C,0x918,0x868,0x17C,0xF0)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 71,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "app=g.app();ui,mode,board,paused,count=(0x7FC,0x7F8,0x768,0x164,0xD8)if kind=='classic'else(0x91C,0x918,0x868,0x17C,0xF0)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 76,
+      "literal": "0x134",
+      "value": 308,
+      "context": "and not g.read(p['address']+0x134)and not g.read(p['address']+0x143,'byte')]"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 76,
+      "literal": "0x143",
+      "value": 323,
+      "context": "and not g.read(p['address']+0x134)and not g.read(p['address']+0x143,'byte')]"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 114,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "p=lambda x:struct.pack('<I',x&0xffffffff)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 115,
+      "literal": "0x768",
+      "value": 1896,
+      "context": "ui,mode,board=(0x7FC,0x7F8,0x768)if kind=='classic'else(0x91C,0x918,0x868)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 115,
+      "literal": "0x7F8",
+      "value": 2040,
+      "context": "ui,mode,board=(0x7FC,0x7F8,0x768)if kind=='classic'else(0x91C,0x918,0x868)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 115,
+      "literal": "0x7FC",
+      "value": 2044,
+      "context": "ui,mode,board=(0x7FC,0x7F8,0x768)if kind=='classic'else(0x91C,0x918,0x868)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 115,
+      "literal": "0x868",
+      "value": 2152,
+      "context": "ui,mode,board=(0x7FC,0x7F8,0x768)if kind=='classic'else(0x91C,0x918,0x868)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 115,
+      "literal": "0x918",
+      "value": 2328,
+      "context": "ui,mode,board=(0x7FC,0x7F8,0x768)if kind=='classic'else(0x91C,0x918,0x868)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 115,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "ui,mode,board=(0x7FC,0x7F8,0x768)if kind=='classic'else(0x91C,0x918,0x868)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 137,
+      "literal": "0x40",
+      "value": 64,
+      "context": "address=runtime.native.k.VirtualAllocEx(runtime.native.handle,None,4096,0x3000,0x40)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 137,
+      "literal": "0x3000",
+      "value": 12288,
+      "context": "address=runtime.native.k.VirtualAllocEx(runtime.native.handle,None,4096,0x3000,0x40)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 138,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "if not address or address>0xffffffff:raise RuntimeError('Could not allocate the plant scale hook.')"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 140,
+      "literal": "0x300",
+      "value": 768,
+      "context": "address=runtime.caves[key];parameter=address+0x300"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 145,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "return [(runtime.base+rva,PLANT_ORIGINAL,b'\\xe9'+struct.pack('<I',(address-runtime.base-rva-5)&0xffffffff)+b'\\x90'*(len(PLANT_ORIGINAL)-5))]"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 178,
+      "literal": "0x7F8",
+      "value": 2040,
+      "context": "app=g.app();ui,mode=(0x7FC,0x7F8)if edition(g.engine)=='classic'else(0x91C,0x918)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 178,
+      "literal": "0x7FC",
+      "value": 2044,
+      "context": "app=g.app();ui,mode=(0x7FC,0x7F8)if edition(g.engine)=='classic'else(0x91C,0x918)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 178,
+      "literal": "0x918",
+      "value": 2328,
+      "context": "app=g.app();ui,mode=(0x7FC,0x7F8)if edition(g.engine)=='classic'else(0x91C,0x918)"
+    },
+    {
+      "source": "extra_controls.py",
+      "line": 178,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "app=g.app();ui,mode=(0x7FC,0x7F8)if edition(g.engine)=='classic'else(0x91C,0x918)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 2,
+      "literal": "0x4B4",
+      "value": 1204,
+      "context": "FRAME_DURATION=0x4B4"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 3,
+      "literal": "0x91E55",
+      "value": 597589,
+      "context": "SEED_RECHARGE=(0x91E55,'7e14','9090')"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 4,
+      "literal": "0x1E842",
+      "value": 124994,
+      "context": "FREE_PLANTING=((0x1E842,'7f0c','9090'),(0x1E844,'2bf3','9090'),(0x1E88F,'0f9ec0','b00190'))"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 4,
+      "literal": "0x1E844",
+      "value": 124996,
+      "context": "FREE_PLANTING=((0x1E842,'7f0c','9090'),(0x1E844,'2bf3','9090'),(0x1E88F,'0f9ec0','b00190'))"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 4,
+      "literal": "0x1E88F",
+      "value": 125071,
+      "context": "FREE_PLANTING=((0x1E842,'7f0c','9090'),(0x1E844,'2bf3','9090'),(0x1E88F,'0f9ec0','b00190'))"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 5,
+      "literal": "0x55B4",
+      "value": 21940,
+      "context": "WAVE_COUNTDOWN=0x55B4"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 6,
+      "literal": "0x55BC",
+      "value": 21948,
+      "context": "HUGE_WAVE_COUNTDOWN=0x55BC"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 7,
+      "literal": "0x17C",
+      "value": 380,
+      "context": "PAUSED=0x17C"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 8,
+      "literal": "0x5F0",
+      "value": 1520,
+      "context": "ROW_TYPES=0x5F0"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 9,
+      "literal": "0x6320B",
+      "value": 406027,
+      "context": "SHOOT_GUARD=(0x6320B,'ff4e588b4658')"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 10,
+      "literal": "0x38",
+      "value": 56,
+      "context": "COIN_ARRAY=(0xFC,0xD8,0x38,0xD0)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 10,
+      "literal": "0xD0",
+      "value": 208,
+      "context": "COIN_ARRAY=(0xFC,0xD8,0x38,0xD0)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 10,
+      "literal": "0xD8",
+      "value": 216,
+      "context": "COIN_ARRAY=(0xFC,0xD8,0x38,0xD0)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 10,
+      "literal": "0xFC",
+      "value": 252,
+      "context": "COIN_ARRAY=(0xFC,0xD8,0x38,0xD0)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 11,
+      "literal": "0x34DC0",
+      "value": 216512,
+      "context": "COIN_COLLECT=0x34DC0"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 17,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "p=lambda n:struct.pack('<I',n&0xffffffff)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 18,
+      "literal": "0x1421C1",
+      "value": 1319361,
+      "context": "base=target-0x1421C1"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 21,
+      "literal": "0x141CA0",
+      "value": 1318048,
+      "context": "code+=b'\\xe8'+p(base+0x141CA0-(origin+len(code)+5))"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 22,
+      "literal": "0x142238",
+      "value": 1319480,
+      "context": "code+=b'\\xe9'+p(base+0x142238-(origin+len(code)+5))"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 29,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "p=lambda n:struct.pack('<I',n&0xffffffff)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 30,
+      "literal": "0x6286F",
+      "value": 403567,
+      "context": "base=target-0x6286F"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 33,
+      "literal": "0x6285D",
+      "value": 403549,
+      "context": "code+=b'\\x0f\\x83'+p(base+0x6285D-(origin+len(code)+6))"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 34,
+      "literal": "0x62BCB",
+      "value": 404427,
+      "context": "return code+b'\\xe9'+p(base+0x62BCB-(origin+len(code)+5))"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 39,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "pack=lambda n:struct.pack('<I',n&0xffffffff)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 53,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "pack=lambda n:struct.pack('<I',n&0xffffffff)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 82,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "p=lambda n:struct.pack('<I',n&0xffffffff)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 83,
+      "literal": "0xF406",
+      "value": 62470,
+      "context": "base=target-0xF406;code=bytearray();labels={};fixups=[]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 87,
+      "literal": "0x634B8",
+      "value": 406712,
+      "context": "for ret in (0x634B8,0x634F5,0x6351C):"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 87,
+      "literal": "0x634F5",
+      "value": 406773,
+      "context": "for ret in (0x634B8,0x634F5,0x6351C):"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 87,
+      "literal": "0x6351C",
+      "value": 406812,
+      "context": "for ret in (0x634B8,0x634F5,0x6351C):"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 101,
+      "literal": "0x9567E",
+      "value": 611966,
+      "context": "SHOP_STOCK_EXTRA=(0x9567E,'0f94c0','30c090')"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 105,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "p=lambda n:struct.pack('<I',n&0xffffffff);code=bytearray();labels={};fixups=[]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 120,
+      "literal": "0x976DC",
+      "value": 620252,
+      "context": "SHOP_CAP_HOOKS={'shop_seed_cap':(0x976DC,6),'shop_mower_cap':(0x97826,6),'shop_tree_preserve':(0x978EE,6)}"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 120,
+      "literal": "0x97826",
+      "value": 620582,
+      "context": "SHOP_CAP_HOOKS={'shop_seed_cap':(0x976DC,6),'shop_mower_cap':(0x97826,6),'shop_tree_preserve':(0x978EE,6)}"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 120,
+      "literal": "0x978EE",
+      "value": 620782,
+      "context": "SHOP_CAP_HOOKS={'shop_seed_cap':(0x976DC,6),'shop_mower_cap':(0x97826,6),'shop_tree_preserve':(0x978EE,6)}"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 124,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "p=lambda n:struct.pack('<I',n&0xffffffff)"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 125,
+      "literal": "0x11C",
+      "value": 284,
+      "context": "off,cap,mod,condition=(0x23C,4,b'\\xb8',b'\\x8d')if name=='shop_seed_cap'else(0x20C,2,b'\\xb8',b'\\x8d')if name=='shop_mower_cap'else(0x11C,0,b'\\xba',b'\\x8f')"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 125,
+      "literal": "0x20C",
+      "value": 524,
+      "context": "off,cap,mod,condition=(0x23C,4,b'\\xb8',b'\\x8d')if name=='shop_seed_cap'else(0x20C,2,b'\\xb8',b'\\x8d')if name=='shop_mower_cap'else(0x11C,0,b'\\xba',b'\\x8f')"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 125,
+      "literal": "0x23C",
+      "value": 572,
+      "context": "off,cap,mod,condition=(0x23C,4,b'\\xb8',b'\\x8d')if name=='shop_seed_cap'else(0x20C,2,b'\\xb8',b'\\x8d')if name=='shop_mower_cap'else(0x11C,0,b'\\xba',b'\\x8f')"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x33767",
+      "value": 210791,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x33770",
+      "value": 210800,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x3FF44",
+      "value": 261956,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x3FF4D",
+      "value": 261965,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x403AC",
+      "value": 263084,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x403B5",
+      "value": 263093,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x4093A",
+      "value": 264506,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x40943",
+      "value": 264515,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x4EF45",
+      "value": 323397,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x4EF4E",
+      "value": 323406,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x4FC13",
+      "value": 326675,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x4FC26",
+      "value": 326694,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x6617D",
+      "value": 418173,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x66186",
+      "value": 418182,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x976B1",
+      "value": 620209,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x976BA",
+      "value": 620218,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x97E22",
+      "value": 622114,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x128692",
+      "value": 1214098,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 131,
+      "literal": "0x12869B",
+      "value": 1214107,
+      "context": "BANK_PATCHES=[(rva,'9f860100',BANK_CAP.to_bytes(4,'little').hex())for rva in(0x33767,0x33770,0x3FF44,0x3FF4D,0x403AC,0x403B5,0x4093A,0x40943,0x4EF45,0x4EF4E,0x4FC13,0x4FC26,0x6617D,0x66186,0x976B1,0x976BA,0x97E22,0x128692,0x12869B)]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 132,
+      "literal": "0x12CA10",
+      "value": 1231376,
+      "context": "SNAIL_PATCHES=[(0x12CA10,'6a00e8ebdc1600','b001c204009090'),(0x12CA40,'6a00e8bbdc1600','b001c390909090')]"
+    },
+    {
+      "source": "game_layout.py",
+      "line": 132,
+      "literal": "0x12CA40",
+      "value": 1231424,
+      "context": "SNAIL_PATCHES=[(0x12CA10,'6a00e8ebdc1600','b001c204009090'),(0x12CA40,'6a00e8bbdc1600','b001c390909090')]"
+    },
+    {
+      "source": "pak_resources.py",
+      "line": 6,
+      "literal": "0xF7",
+      "value": 247,
+      "context": "data=bytes(x^0xF7 for x in raw)"
+    },
+    {
+      "source": "pak_resources.py",
+      "line": 12,
+      "literal": "0x80",
+      "value": 128,
+      "context": "if flag==0x80:break"
+    },
+    {
+      "source": "pak_resources.py",
+      "line": 33,
+      "literal": "0xF7",
+      "value": 247,
+      "context": "return bytes(x^0xF7 for x in raw)"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 8,
+      "literal": "0x50",
+      "value": 80,
+      "context": "'coins':('Coin units (one unit = $10)',0x50,0,99999999,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 9,
+      "literal": "0x4C",
+      "value": 76,
+      "context": "'adventure':('Next Adventure stage (1\u201350)',0x4C,1,50,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 10,
+      "literal": "0x54",
+      "value": 84,
+      "context": "'completed':('Completed Adventure runs',0x54,0,9999,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 11,
+      "literal": "0x23C",
+      "value": 572,
+      "context": "'seed_slots':('Seed slots for future battles',0x23C,6,10,1,-6),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 12,
+      "literal": "0x11C",
+      "value": 284,
+      "context": "'tree_height':('Tree of Wisdom height (feet)',0x11C,0,2000000000,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 13,
+      "literal": "0x144",
+      "value": 324,
+      "context": "'best_vasebreaker':('Longest streak \u2014 Vasebreaker Endless',0x144,0,1000000,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 14,
+      "literal": "0x16C",
+      "value": 364,
+      "context": "'best_izombie':('Longest streak \u2014 I, Zombie Endless',0x16C,0,1000000,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 15,
+      "literal": "0x80",
+      "value": 128,
+      "context": "'best_survival_day':('Best flags \u2014 Survival Endless Day',0x80,0,1000000,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 16,
+      "literal": "0x84",
+      "value": 132,
+      "context": "'best_survival_night':('Best flags \u2014 Survival Endless Night',0x84,0,1000000,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 17,
+      "literal": "0x88",
+      "value": 136,
+      "context": "'best_survival_pool':('Best flags \u2014 Survival Endless Pool',0x88,0,1000000,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 18,
+      "literal": "0x8C",
+      "value": 140,
+      "context": "'best_survival_fog':('Best flags \u2014 Survival Endless Fog',0x8C,0,1000000,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 19,
+      "literal": "0x90",
+      "value": 144,
+      "context": "'best_survival_roof':('Best flags \u2014 Survival Endless Roof',0x90,0,1000000,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 20,
+      "literal": "0x348",
+      "value": 840,
+      "context": "'minigames':('Minigames unlocked',0x348,0,1,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 21,
+      "literal": "0x34C",
+      "value": 844,
+      "context": "'puzzle':('Puzzle mode unlocked',0x34C,0,1,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 22,
+      "literal": "0x360",
+      "value": 864,
+      "context": "'survival':('Survival mode unlocked',0x360,0,1,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 23,
+      "literal": "0x230",
+      "value": 560,
+      "context": "'mushroom_garden':('Mushroom garden owned',0x230,0,1,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 24,
+      "literal": "0x24C",
+      "value": 588,
+      "context": "'aquarium_garden':('Aquarium garden owned',0x24C,0,1,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 25,
+      "literal": "0x234",
+      "value": 564,
+      "context": "'wheelbarrow':('Wheelbarrow owned',0x234,0,1,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 26,
+      "literal": "0x254",
+      "value": 596,
+      "context": "'tree_owned':('Tree of Wisdom owned',0x254,0,1,1,0),"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 34,
+      "literal": "0x20",
+      "value": 32,
+      "context": "def owner(self):return(self.g.user(),self.g.read(self.g.user()+0x20,'uint'),getattr(self.g.engine.pm,'process_id',0))"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 38,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "if self.g.read(self.g.app()+0x91C)!=1:raise RuntimeError('Return to PVZ Main Menu before adding or moving saved garden plants. Then re-enter the garden to display them.')"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 57,
+      "literal": "0x24",
+      "value": 36,
+      "context": "earned=g.engine.pm.read_bytes(u+0x24,20)if self.HAS_ACHIEVEMENTS else bytes(20);shown=g.engine.pm.read_bytes(u+0x38,20)if self.HAS_ACHIEVEMENTS else bytes(20)"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 57,
+      "literal": "0x38",
+      "value": 56,
+      "context": "earned=g.engine.pm.read_bytes(u+0x24,20)if self.HAS_ACHIEVEMENTS else bytes(20);shown=g.engine.pm.read_bytes(u+0x38,20)if self.HAS_ACHIEVEMENTS else bytes(20)"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 59,
+      "literal": "0x14",
+      "value": 20,
+      "context": "length=g.read(u+0x14,'uint');capacity=g.read(u+0x18,'uint');name='Local player'"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 59,
+      "literal": "0x18",
+      "value": 24,
+      "context": "length=g.read(u+0x14,'uint');capacity=g.read(u+0x18,'uint');name='Local player'"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 93,
+      "literal": "0x24",
+      "value": 36,
+      "context": "writes.extend([(u+0x24+key,bytes([value])),(u+0x38+key,bytes([value]))])"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 93,
+      "literal": "0x38",
+      "value": 56,
+      "context": "writes.extend([(u+0x24+key,bytes([value])),(u+0x38+key,bytes([value]))])"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 105,
+      "literal": "0x58",
+      "value": 88,
+      "context": "a=u+0x380+plant['index']*0x58"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 105,
+      "literal": "0x380",
+      "value": 896,
+      "context": "a=u+0x380+plant['index']*0x58"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 109,
+      "literal": "0x18",
+      "value": 24,
+      "context": "writes.extend([self._field(a+0x18,now,'time'),self._field(a+0x28,min(max(1,plant['feedings']),plant['fed']+1))])"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 109,
+      "literal": "0x28",
+      "value": 40,
+      "context": "writes.extend([self._field(a+0x18,now,'time'),self._field(a+0x28,min(max(1,plant['feedings']),plant['fed']+1))])"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 112,
+      "literal": "0x24",
+      "value": 36,
+      "context": "writes.extend([self._field(a+0x24,value),self._field(a+0x28,0),self._field(a+0x30,0),self._field(a+0x40,now,'time')])"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 112,
+      "literal": "0x28",
+      "value": 40,
+      "context": "writes.extend([self._field(a+0x24,value),self._field(a+0x28,0),self._field(a+0x30,0),self._field(a+0x40,now,'time')])"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 112,
+      "literal": "0x30",
+      "value": 48,
+      "context": "writes.extend([self._field(a+0x24,value),self._field(a+0x28,0),self._field(a+0x30,0),self._field(a+0x40,now,'time')])"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 112,
+      "literal": "0x40",
+      "value": 64,
+      "context": "writes.extend([self._field(a+0x24,value),self._field(a+0x28,0),self._field(a+0x30,0),self._field(a+0x40,now,'time')])"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 113,
+      "literal": "0x30",
+      "value": 48,
+      "context": "elif action=='needs':writes.extend([self._field(a+0x30,0),self._field(a+0x38,now,'time')])"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 113,
+      "literal": "0x38",
+      "value": 56,
+      "context": "elif action=='needs':writes.extend([self._field(a+0x30,0),self._field(a+0x38,now,'time')])"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 114,
+      "literal": "0x48",
+      "value": 72,
+      "context": "elif action=='chocolate':writes.append(self._field(a+0x48,now,'time'))"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 124,
+      "literal": "0x1E8",
+      "value": 488,
+      "context": "if slot is not None and not self.g.read(self.g.user()+0x1E8+slot*4):raise ValueError('Buy or unlock the destination garden/wheelbarrow first.')"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 133,
+      "literal": "0x58",
+      "value": 88,
+      "context": "raw=bytearray(0x58)"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 134,
+      "literal": "0x24",
+      "value": 36,
+      "context": "for off,v in [(0,kind),(4,garden),(8,x),(12,y),(0x24,age),(0x2C,3)]:struct.pack_into('<i',raw,off,v)"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 134,
+      "literal": "0x2C",
+      "value": 44,
+      "context": "for off,v in [(0,kind),(4,garden),(8,x),(12,y),(0x24,age),(0x2C,3)]:struct.pack_into('<i',raw,off,v)"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 135,
+      "literal": "0x58",
+      "value": 88,
+      "context": "writes.append((u+0x380+(len(records)+i)*0x58,bytes(raw)))"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 135,
+      "literal": "0x380",
+      "value": 896,
+      "context": "writes.append((u+0x380+(len(records)+i)*0x58,bytes(raw)))"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 136,
+      "literal": "0x378",
+      "value": 888,
+      "context": "writes.append(self._field(u+0x378,len(records)+quantity));self._commit(writes)"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 148,
+      "literal": "0x58",
+      "value": 88,
+      "context": "a=g.user()+0x380+index*0x58;x,y=free[0]"
+    },
+    {
+      "source": "profile_tools.py",
+      "line": 148,
+      "literal": "0x380",
+      "value": 896,
+      "context": "a=g.user()+0x380+index*0x58;x,y=free[0]"
+    },
+    {
+      "source": "resource_mods.py",
+      "line": 67,
+      "literal": "0xA000",
+      "value": 40960,
+      "context": "if entry.flag_bits&1 or(entry.external_attr>>16)&0xF000==0xA000:raise ValueError('Encrypted or linked archive entries are refused.')"
+    },
+    {
+      "source": "resource_mods.py",
+      "line": 67,
+      "literal": "0xF000",
+      "value": 61440,
+      "context": "if entry.flag_bits&1 or(entry.external_attr>>16)&0xF000==0xA000:raise ValueError('Encrypted or linked archive entries are refused.')"
+    },
+    {
+      "source": "runtime_image.py",
+      "line": 21,
+      "literal": "0x394000",
+      "value": 3751936,
+      "context": "if not module or module.SizeOfImage!=0x394000:raise RuntimeError('Unsupported Classic image size.')"
+    },
+    {
+      "source": "seed_overlay.py",
+      "line": 67,
+      "literal": "0x20A",
+      "value": 522,
+      "context": "if code>=0 and message in(0x20A,0x20E):"
+    },
+    {
+      "source": "seed_overlay.py",
+      "line": 67,
+      "literal": "0x20E",
+      "value": 526,
+      "context": "if code>=0 and message in(0x20A,0x20E):"
+    },
+    {
+      "source": "seed_overlay.py",
+      "line": 76,
+      "literal": "0x20A",
+      "value": 522,
+      "context": "if message not in(0x20A,0x20E)or not delta or not self.bounds or not self.deck or not self.deck.active or foreground!=self.hwnd:return 0"
+    },
+    {
+      "source": "seed_overlay.py",
+      "line": 76,
+      "literal": "0x20E",
+      "value": 526,
+      "context": "if message not in(0x20A,0x20E)or not delta or not self.bounds or not self.deck or not self.deck.active or foreground!=self.hwnd:return 0"
+    },
+    {
+      "source": "seed_overlay.py",
+      "line": 79,
+      "literal": "0x20E",
+      "value": 526,
+      "context": "return (1 if delta>0 else-1)if message==0x20E else(-1 if delta>0 else 1)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 9,
+      "literal": "0x138",
+      "value": 312,
+      "context": "return dict(bank=0x144 if classic else 0x15C,clock=0x5568 if classic else 0x5580,cursor=0x138 if classic else 0x150,mode=0x7F8 if classic else 0x918,level=0x5550 if classic else 0x5568)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 9,
+      "literal": "0x144",
+      "value": 324,
+      "context": "return dict(bank=0x144 if classic else 0x15C,clock=0x5568 if classic else 0x5580,cursor=0x138 if classic else 0x150,mode=0x7F8 if classic else 0x918,level=0x5550 if classic else 0x5568)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 9,
+      "literal": "0x150",
+      "value": 336,
+      "context": "return dict(bank=0x144 if classic else 0x15C,clock=0x5568 if classic else 0x5580,cursor=0x138 if classic else 0x150,mode=0x7F8 if classic else 0x918,level=0x5550 if classic else 0x5568)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 9,
+      "literal": "0x15C",
+      "value": 348,
+      "context": "return dict(bank=0x144 if classic else 0x15C,clock=0x5568 if classic else 0x5580,cursor=0x138 if classic else 0x150,mode=0x7F8 if classic else 0x918,level=0x5550 if classic else 0x5568)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 9,
+      "literal": "0x7F8",
+      "value": 2040,
+      "context": "return dict(bank=0x144 if classic else 0x15C,clock=0x5568 if classic else 0x5580,cursor=0x138 if classic else 0x150,mode=0x7F8 if classic else 0x918,level=0x5550 if classic else 0x5568)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 9,
+      "literal": "0x918",
+      "value": 2328,
+      "context": "return dict(bank=0x144 if classic else 0x15C,clock=0x5568 if classic else 0x5580,cursor=0x138 if classic else 0x150,mode=0x7F8 if classic else 0x918,level=0x5550 if classic else 0x5568)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 9,
+      "literal": "0x5550",
+      "value": 21840,
+      "context": "return dict(bank=0x144 if classic else 0x15C,clock=0x5568 if classic else 0x5580,cursor=0x138 if classic else 0x150,mode=0x7F8 if classic else 0x918,level=0x5550 if classic else 0x5568)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 9,
+      "literal": "0x5568",
+      "value": 21864,
+      "context": "return dict(bank=0x144 if classic else 0x15C,clock=0x5568 if classic else 0x5580,cursor=0x138 if classic else 0x150,mode=0x7F8 if classic else 0x918,level=0x5550 if classic else 0x5568)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 9,
+      "literal": "0x5568",
+      "value": 21864,
+      "context": "return dict(bank=0x144 if classic else 0x15C,clock=0x5568 if classic else 0x5580,cursor=0x138 if classic else 0x150,mode=0x7F8 if classic else 0x918,level=0x5550 if classic else 0x5568)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 9,
+      "literal": "0x5580",
+      "value": 21888,
+      "context": "return dict(bank=0x144 if classic else 0x15C,clock=0x5568 if classic else 0x5580,cursor=0x138 if classic else 0x150,mode=0x7F8 if classic else 0x918,level=0x5550 if classic else 0x5568)"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 11,
+      "literal": "0x28",
+      "value": 40,
+      "context": "def packet(self,index):return self.bank+0x28+index*0x50"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 11,
+      "literal": "0x50",
+      "value": 80,
+      "context": "def packet(self,index):return self.bank+0x28+index*0x50"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 14,
+      "literal": "0x24",
+      "value": 36,
+      "context": "return dict(type=g.read(a+0x34),imitater=g.read(a+0x38),elapsed=g.read(a+0x24),total=g.read(a+0x28),active=g.read(a+0x48,'byte'),refreshing=g.read(a+0x49,'byte'),used=g.read(a+0x4C),clock=self.clock())"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 14,
+      "literal": "0x28",
+      "value": 40,
+      "context": "return dict(type=g.read(a+0x34),imitater=g.read(a+0x38),elapsed=g.read(a+0x24),total=g.read(a+0x28),active=g.read(a+0x48,'byte'),refreshing=g.read(a+0x49,'byte'),used=g.read(a+0x4C),clock=self.clock())"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 14,
+      "literal": "0x34",
+      "value": 52,
+      "context": "return dict(type=g.read(a+0x34),imitater=g.read(a+0x38),elapsed=g.read(a+0x24),total=g.read(a+0x28),active=g.read(a+0x48,'byte'),refreshing=g.read(a+0x49,'byte'),used=g.read(a+0x4C),clock=self.clock())"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 14,
+      "literal": "0x38",
+      "value": 56,
+      "context": "return dict(type=g.read(a+0x34),imitater=g.read(a+0x38),elapsed=g.read(a+0x24),total=g.read(a+0x28),active=g.read(a+0x48,'byte'),refreshing=g.read(a+0x49,'byte'),used=g.read(a+0x4C),clock=self.clock())"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 14,
+      "literal": "0x48",
+      "value": 72,
+      "context": "return dict(type=g.read(a+0x34),imitater=g.read(a+0x38),elapsed=g.read(a+0x24),total=g.read(a+0x28),active=g.read(a+0x48,'byte'),refreshing=g.read(a+0x49,'byte'),used=g.read(a+0x4C),clock=self.clock())"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 14,
+      "literal": "0x49",
+      "value": 73,
+      "context": "return dict(type=g.read(a+0x34),imitater=g.read(a+0x38),elapsed=g.read(a+0x24),total=g.read(a+0x28),active=g.read(a+0x48,'byte'),refreshing=g.read(a+0x49,'byte'),used=g.read(a+0x4C),clock=self.clock())"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 14,
+      "literal": "0x4C",
+      "value": 76,
+      "context": "return dict(type=g.read(a+0x34),imitater=g.read(a+0x38),elapsed=g.read(a+0x24),total=g.read(a+0x28),active=g.read(a+0x48,'byte'),refreshing=g.read(a+0x49,'byte'),used=g.read(a+0x4C),clock=self.clock())"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 17,
+      "literal": "0x24",
+      "value": 36,
+      "context": "for key,off in [('type',0x34),('imitater',0x38),('elapsed',0x24),('total',0x28),('used',0x4C)]:g.write(a+off,state[key])"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 17,
+      "literal": "0x28",
+      "value": 40,
+      "context": "for key,off in [('type',0x34),('imitater',0x38),('elapsed',0x24),('total',0x28),('used',0x4C)]:g.write(a+off,state[key])"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 17,
+      "literal": "0x34",
+      "value": 52,
+      "context": "for key,off in [('type',0x34),('imitater',0x38),('elapsed',0x24),('total',0x28),('used',0x4C)]:g.write(a+off,state[key])"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 17,
+      "literal": "0x38",
+      "value": 56,
+      "context": "for key,off in [('type',0x34),('imitater',0x38),('elapsed',0x24),('total',0x28),('used',0x4C)]:g.write(a+off,state[key])"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 17,
+      "literal": "0x4C",
+      "value": 76,
+      "context": "for key,off in [('type',0x34),('imitater',0x38),('elapsed',0x24),('total',0x28),('used',0x4C)]:g.write(a+off,state[key])"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 18,
+      "literal": "0x48",
+      "value": 72,
+      "context": "for key,off in [('active',0x48),('refreshing',0x49)]:g.write(a+off,state[key],'byte')"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 18,
+      "literal": "0x49",
+      "value": 73,
+      "context": "for key,off in [('active',0x48),('refreshing',0x49)]:g.write(a+off,state[key],'byte')"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 21,
+      "literal": "0x24",
+      "value": 36,
+      "context": "if token!=self.owner or g.pointer(g.board()+self.layout()['bank'])!=self.bank or g.read(self.bank+0x24)!=self.capacity:raise RuntimeError('The lawn or seed bank changed. Restart the scrolling deck on this lawn.')"
+    },
+    {
+      "source": "seed_pages.py",
+      "line": 22,
+      "literal": "0x30",
+      "value": 48,
+      "context": "if held and g.read(g.pointer(g.board()+self.layout()['cursor'])+0x30)!=0:raise RuntimeError('Place or cancel the plant held by the cursor before changing pages.')"
+    },
+    {
+      "source": "startup_options.py",
+      "line": 6,
+      "literal": "0x30C80",
+      "value": 199808,
+      "context": "LIMBO={'goty':(0x30C80,bytes.fromhex('885864'),bytes.fromhex('385864')),"
+    },
+    {
+      "source": "startup_options.py",
+      "line": 7,
+      "literal": "0x2DF5D",
+      "value": 188253,
+      "context": "'classic':(0x2DF5D,bytes.fromhex('885954'),bytes.fromhex('385954'))}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0x50",
+      "value": 80,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0x90",
+      "value": 144,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0x94",
+      "value": 148,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0xA8",
+      "value": 168,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0xC4",
+      "value": 196,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0xE0",
+      "value": 224,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0xEC",
+      "value": 236,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0x141",
+      "value": 321,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0x148",
+      "value": 328,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0x14C",
+      "value": 332,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0x164",
+      "value": 356,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 12,
+      "literal": "0x168",
+      "value": 360,
+      "context": "ARRAYS={'plant':(0xC4,0x14C,0x141,0x148),'zombie':(0xA8,0x168,0xEC,0x164),'projectile':(0xE0,0x94,0x50,0x90)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 13,
+      "literal": "0x40",
+      "value": 64,
+      "context": "PLANT_FIELDS={'health':(0x40,'int',1,1000000),'max_health':(0x44,'int',1,1000000),'attack_timer':(0x58,'int',0,60000),'attack_interval':(0x5C,'int',1,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 13,
+      "literal": "0x44",
+      "value": 68,
+      "context": "PLANT_FIELDS={'health':(0x40,'int',1,1000000),'max_health':(0x44,'int',1,1000000),'attack_timer':(0x58,'int',0,60000),'attack_interval':(0x5C,'int',1,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 13,
+      "literal": "0x58",
+      "value": 88,
+      "context": "PLANT_FIELDS={'health':(0x40,'int',1,1000000),'max_health':(0x44,'int',1,1000000),'attack_timer':(0x58,'int',0,60000),'attack_interval':(0x5C,'int',1,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 13,
+      "literal": "0x5C",
+      "value": 92,
+      "context": "PLANT_FIELDS={'health':(0x40,'int',1,1000000),'max_health':(0x44,'int',1,1000000),'attack_timer':(0x58,'int',0,60000),'attack_interval':(0x5C,'int',1,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 14,
+      "literal": "0x34",
+      "value": 52,
+      "context": "ZOMBIE_FIELDS={'health':(0xC8,'int',1,1000000),'max_health':(0xCC,'int',1,1000000),'armour':(0xD0,'int',0,1000000),'max_armour':(0xD4,'int',0,1000000),'shield':(0xDC,'int',0,1000000),'max_shield':(0xE0,'int',0,1000000),'speed':(0x34,'float',0,5),'chilled':(0xAC,'int',0,60000),'buttered':(0xB0,'int',0,60000),'frozen':(0xB4,'int',0,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 14,
+      "literal": "0xAC",
+      "value": 172,
+      "context": "ZOMBIE_FIELDS={'health':(0xC8,'int',1,1000000),'max_health':(0xCC,'int',1,1000000),'armour':(0xD0,'int',0,1000000),'max_armour':(0xD4,'int',0,1000000),'shield':(0xDC,'int',0,1000000),'max_shield':(0xE0,'int',0,1000000),'speed':(0x34,'float',0,5),'chilled':(0xAC,'int',0,60000),'buttered':(0xB0,'int',0,60000),'frozen':(0xB4,'int',0,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 14,
+      "literal": "0xB0",
+      "value": 176,
+      "context": "ZOMBIE_FIELDS={'health':(0xC8,'int',1,1000000),'max_health':(0xCC,'int',1,1000000),'armour':(0xD0,'int',0,1000000),'max_armour':(0xD4,'int',0,1000000),'shield':(0xDC,'int',0,1000000),'max_shield':(0xE0,'int',0,1000000),'speed':(0x34,'float',0,5),'chilled':(0xAC,'int',0,60000),'buttered':(0xB0,'int',0,60000),'frozen':(0xB4,'int',0,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 14,
+      "literal": "0xB4",
+      "value": 180,
+      "context": "ZOMBIE_FIELDS={'health':(0xC8,'int',1,1000000),'max_health':(0xCC,'int',1,1000000),'armour':(0xD0,'int',0,1000000),'max_armour':(0xD4,'int',0,1000000),'shield':(0xDC,'int',0,1000000),'max_shield':(0xE0,'int',0,1000000),'speed':(0x34,'float',0,5),'chilled':(0xAC,'int',0,60000),'buttered':(0xB0,'int',0,60000),'frozen':(0xB4,'int',0,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 14,
+      "literal": "0xC8",
+      "value": 200,
+      "context": "ZOMBIE_FIELDS={'health':(0xC8,'int',1,1000000),'max_health':(0xCC,'int',1,1000000),'armour':(0xD0,'int',0,1000000),'max_armour':(0xD4,'int',0,1000000),'shield':(0xDC,'int',0,1000000),'max_shield':(0xE0,'int',0,1000000),'speed':(0x34,'float',0,5),'chilled':(0xAC,'int',0,60000),'buttered':(0xB0,'int',0,60000),'frozen':(0xB4,'int',0,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 14,
+      "literal": "0xCC",
+      "value": 204,
+      "context": "ZOMBIE_FIELDS={'health':(0xC8,'int',1,1000000),'max_health':(0xCC,'int',1,1000000),'armour':(0xD0,'int',0,1000000),'max_armour':(0xD4,'int',0,1000000),'shield':(0xDC,'int',0,1000000),'max_shield':(0xE0,'int',0,1000000),'speed':(0x34,'float',0,5),'chilled':(0xAC,'int',0,60000),'buttered':(0xB0,'int',0,60000),'frozen':(0xB4,'int',0,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 14,
+      "literal": "0xD0",
+      "value": 208,
+      "context": "ZOMBIE_FIELDS={'health':(0xC8,'int',1,1000000),'max_health':(0xCC,'int',1,1000000),'armour':(0xD0,'int',0,1000000),'max_armour':(0xD4,'int',0,1000000),'shield':(0xDC,'int',0,1000000),'max_shield':(0xE0,'int',0,1000000),'speed':(0x34,'float',0,5),'chilled':(0xAC,'int',0,60000),'buttered':(0xB0,'int',0,60000),'frozen':(0xB4,'int',0,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 14,
+      "literal": "0xD4",
+      "value": 212,
+      "context": "ZOMBIE_FIELDS={'health':(0xC8,'int',1,1000000),'max_health':(0xCC,'int',1,1000000),'armour':(0xD0,'int',0,1000000),'max_armour':(0xD4,'int',0,1000000),'shield':(0xDC,'int',0,1000000),'max_shield':(0xE0,'int',0,1000000),'speed':(0x34,'float',0,5),'chilled':(0xAC,'int',0,60000),'buttered':(0xB0,'int',0,60000),'frozen':(0xB4,'int',0,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 14,
+      "literal": "0xDC",
+      "value": 220,
+      "context": "ZOMBIE_FIELDS={'health':(0xC8,'int',1,1000000),'max_health':(0xCC,'int',1,1000000),'armour':(0xD0,'int',0,1000000),'max_armour':(0xD4,'int',0,1000000),'shield':(0xDC,'int',0,1000000),'max_shield':(0xE0,'int',0,1000000),'speed':(0x34,'float',0,5),'chilled':(0xAC,'int',0,60000),'buttered':(0xB0,'int',0,60000),'frozen':(0xB4,'int',0,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 14,
+      "literal": "0xE0",
+      "value": 224,
+      "context": "ZOMBIE_FIELDS={'health':(0xC8,'int',1,1000000),'max_health':(0xCC,'int',1,1000000),'armour':(0xD0,'int',0,1000000),'max_armour':(0xD4,'int',0,1000000),'shield':(0xDC,'int',0,1000000),'max_shield':(0xE0,'int',0,1000000),'speed':(0x34,'float',0,5),'chilled':(0xAC,'int',0,60000),'buttered':(0xB0,'int',0,60000),'frozen':(0xB4,'int',0,60000)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 15,
+      "literal": "0xFA10",
+      "value": 64016,
+      "context": "SIGNATURES={0xFA10:'5153558b6c24105657',0x2CC90:'53558b6c240c5657',0x6B470:'83ec1053558b6c241c',0x52820:'64a1000000006aff',0x52640:'8b87740800005685c0',0x52C70:'8b867008000085c0',0x52800:'518b804c090000',0x1E8A0:'535533db33c05783',0x142240:'51568bf08b466c83'}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 15,
+      "literal": "0x1E8A0",
+      "value": 125088,
+      "context": "SIGNATURES={0xFA10:'5153558b6c24105657',0x2CC90:'53558b6c240c5657',0x6B470:'83ec1053558b6c241c',0x52820:'64a1000000006aff',0x52640:'8b87740800005685c0',0x52C70:'8b867008000085c0',0x52800:'518b804c090000',0x1E8A0:'535533db33c05783',0x142240:'51568bf08b466c83'}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 15,
+      "literal": "0x2CC90",
+      "value": 183440,
+      "context": "SIGNATURES={0xFA10:'5153558b6c24105657',0x2CC90:'53558b6c240c5657',0x6B470:'83ec1053558b6c241c',0x52820:'64a1000000006aff',0x52640:'8b87740800005685c0',0x52C70:'8b867008000085c0',0x52800:'518b804c090000',0x1E8A0:'535533db33c05783',0x142240:'51568bf08b466c83'}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 15,
+      "literal": "0x52640",
+      "value": 337472,
+      "context": "SIGNATURES={0xFA10:'5153558b6c24105657',0x2CC90:'53558b6c240c5657',0x6B470:'83ec1053558b6c241c',0x52820:'64a1000000006aff',0x52640:'8b87740800005685c0',0x52C70:'8b867008000085c0',0x52800:'518b804c090000',0x1E8A0:'535533db33c05783',0x142240:'51568bf08b466c83'}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 15,
+      "literal": "0x52800",
+      "value": 337920,
+      "context": "SIGNATURES={0xFA10:'5153558b6c24105657',0x2CC90:'53558b6c240c5657',0x6B470:'83ec1053558b6c241c',0x52820:'64a1000000006aff',0x52640:'8b87740800005685c0',0x52C70:'8b867008000085c0',0x52800:'518b804c090000',0x1E8A0:'535533db33c05783',0x142240:'51568bf08b466c83'}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 15,
+      "literal": "0x52820",
+      "value": 337952,
+      "context": "SIGNATURES={0xFA10:'5153558b6c24105657',0x2CC90:'53558b6c240c5657',0x6B470:'83ec1053558b6c241c',0x52820:'64a1000000006aff',0x52640:'8b87740800005685c0',0x52C70:'8b867008000085c0',0x52800:'518b804c090000',0x1E8A0:'535533db33c05783',0x142240:'51568bf08b466c83'}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 15,
+      "literal": "0x52C70",
+      "value": 339056,
+      "context": "SIGNATURES={0xFA10:'5153558b6c24105657',0x2CC90:'53558b6c240c5657',0x6B470:'83ec1053558b6c241c',0x52820:'64a1000000006aff',0x52640:'8b87740800005685c0',0x52C70:'8b867008000085c0',0x52800:'518b804c090000',0x1E8A0:'535533db33c05783',0x142240:'51568bf08b466c83'}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 15,
+      "literal": "0x6B470",
+      "value": 439408,
+      "context": "SIGNATURES={0xFA10:'5153558b6c24105657',0x2CC90:'53558b6c240c5657',0x6B470:'83ec1053558b6c241c',0x52820:'64a1000000006aff',0x52640:'8b87740800005685c0',0x52C70:'8b867008000085c0',0x52800:'518b804c090000',0x1E8A0:'535533db33c05783',0x142240:'51568bf08b466c83'}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 15,
+      "literal": "0x142240",
+      "value": 1319488,
+      "context": "SIGNATURES={0xFA10:'5153558b6c24105657',0x2CC90:'53558b6c240c5657',0x6B470:'83ec1053558b6c241c',0x52820:'64a1000000006aff',0x52640:'8b87740800005685c0',0x52C70:'8b867008000085c0',0x52800:'518b804c090000',0x1E8A0:'535533db33c05783',0x142240:'51568bf08b466c83'}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 28,
+      "literal": "0x415000",
+      "value": 4280320,
+      "context": "if not m or m.SizeOfImage!=0x415000 or hashlib.sha256(Path(m.filename).read_bytes()).hexdigest()!=HASH:raise RuntimeError('LawnLab requires the verified GOTY 1.2.0.1073 executable. Other builds are not supported.')"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 37,
+      "literal": "0x10000",
+      "value": 65536,
+      "context": "if not 0x10000<value<0x7fff0000:raise RuntimeError('Game object is not available.')"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 37,
+      "literal": "0x7fff0000",
+      "value": 2147418112,
+      "context": "if not 0x10000<value<0x7fff0000:raise RuntimeError('Game object is not available.')"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 39,
+      "literal": "0x329670",
+      "value": 3315312,
+      "context": "def app(self):self.guard();return self.pointer(self.base+0x329670)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 42,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "if playing and self.read(app+0x91C)!=3:"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 44,
+      "literal": "0x868",
+      "value": 2152,
+      "context": "b=self.pointer(app+0x868);scene=self.read(b+0x5564)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 44,
+      "literal": "0x5564",
+      "value": 21860,
+      "context": "b=self.pointer(app+0x868);scene=self.read(b+0x5564)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 46,
+      "literal": "0x5568",
+      "value": 21864,
+      "context": "current=(b,scene,self.read(b+0x5568),self.read(b+0x5580))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 46,
+      "literal": "0x5580",
+      "value": 21888,
+      "context": "current=(b,scene,self.read(b+0x5568),self.read(b+0x5580))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 54,
+      "literal": "0x5564",
+      "value": 21860,
+      "context": "def scene(self):return self.read(self.board()+0x5564)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 73,
+      "literal": "0x1C",
+      "value": 28,
+      "context": "row=get(0x1C)+1"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 77,
+      "literal": "0x142",
+      "value": 322,
+      "context": "if cell[0x142]:continue"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 78,
+      "literal": "0x24",
+      "value": 36,
+      "context": "record.update(type=get(0x24),col=get(0x28)+1,imitater=get(0x138)==48)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 78,
+      "literal": "0x28",
+      "value": 40,
+      "context": "record.update(type=get(0x24),col=get(0x28)+1,imitater=get(0x138)==48)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 78,
+      "literal": "0x138",
+      "value": 312,
+      "context": "record.update(type=get(0x24),col=get(0x28)+1,imitater=get(0x138)==48)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 81,
+      "literal": "0x24",
+      "value": 36,
+      "context": "record.update(type=get(0x24),x=get(0x2C,'float'),y=get(0x30,'float'),state=get(0x28),helm_type=get(0xC4),shield_type=get(0xD8))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 81,
+      "literal": "0x28",
+      "value": 40,
+      "context": "record.update(type=get(0x24),x=get(0x2C,'float'),y=get(0x30,'float'),state=get(0x28),helm_type=get(0xC4),shield_type=get(0xD8))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 81,
+      "literal": "0x2C",
+      "value": 44,
+      "context": "record.update(type=get(0x24),x=get(0x2C,'float'),y=get(0x30,'float'),state=get(0x28),helm_type=get(0xC4),shield_type=get(0xD8))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 81,
+      "literal": "0x30",
+      "value": 48,
+      "context": "record.update(type=get(0x24),x=get(0x2C,'float'),y=get(0x30,'float'),state=get(0x28),helm_type=get(0xC4),shield_type=get(0xD8))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 81,
+      "literal": "0xC4",
+      "value": 196,
+      "context": "record.update(type=get(0x24),x=get(0x2C,'float'),y=get(0x30,'float'),state=get(0x28),helm_type=get(0xC4),shield_type=get(0xD8))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 81,
+      "literal": "0xD8",
+      "value": 216,
+      "context": "record.update(type=get(0x24),x=get(0x2C,'float'),y=get(0x30,'float'),state=get(0x28),helm_type=get(0xC4),shield_type=get(0xD8))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 83,
+      "literal": "0x30",
+      "value": 48,
+      "context": "else:record.update(type=get(0x5C),x=get(0x30,'float'),y=get(0x34,'float'),motion=get(0x58))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 83,
+      "literal": "0x34",
+      "value": 52,
+      "context": "else:record.update(type=get(0x5C),x=get(0x30,'float'),y=get(0x34,'float'),motion=get(0x58))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 83,
+      "literal": "0x58",
+      "value": 88,
+      "context": "else:record.update(type=get(0x5C),x=get(0x30,'float'),y=get(0x34,'float'),motion=get(0x58))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 83,
+      "literal": "0x5C",
+      "value": 92,
+      "context": "else:record.update(type=get(0x5C),x=get(0x30,'float'),y=get(0x34,'float'),motion=get(0x58))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 89,
+      "literal": "0x918",
+      "value": 2328,
+      "context": "app=self.app();result={'ui':self.read(app+0x91C),'mode':self.read(app+0x918),'queued':len(self.schedule.queue)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 89,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "app=self.app();result={'ui':self.read(app+0x91C),'mode':self.read(app+0x918),'queued':len(self.schedule.queue)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 94,
+      "literal": "0x5578",
+      "value": 21880,
+      "context": "b=self.board();result.update(board=b,scene=self.scene(),rows=self.rows(),sun=self.read(b+0x5578),wave=self.read(b+0x5594),waves=self.read(b+0x557C),plants=len(self.entities('plant')),zombies=len(self.entities('zombie')),status='Live lawn')"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 94,
+      "literal": "0x557C",
+      "value": 21884,
+      "context": "b=self.board();result.update(board=b,scene=self.scene(),rows=self.rows(),sun=self.read(b+0x5578),wave=self.read(b+0x5594),waves=self.read(b+0x557C),plants=len(self.entities('plant')),zombies=len(self.entities('zombie')),status='Live lawn')"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 94,
+      "literal": "0x5594",
+      "value": 21908,
+      "context": "b=self.board();result.update(board=b,scene=self.scene(),rows=self.rows(),sun=self.read(b+0x5578),wave=self.read(b+0x5594),waves=self.read(b+0x557C),plants=len(self.entities('plant')),zombies=len(self.entities('zombie')),status='Live lawn')"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 102,
+      "literal": "0x50",
+      "value": 80,
+      "context": "if ident>>16 and not self.read(address+dead,'byte')and self.read(address+0x58)in (1,2,3)and not self.read(address+0x50,'byte'):"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 102,
+      "literal": "0x58",
+      "value": 88,
+      "context": "if ident>>16 and not self.read(address+dead,'byte')and self.read(address+0x58)in (1,2,3)and not self.read(address+0x50,'byte'):"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 132,
+      "literal": "0x142240",
+      "value": 1319488,
+      "context": "self._signature(0x142240)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 137,
+      "literal": "0x1c",
+      "value": 28,
+      "context": "code+=b'\\xc7\\x05'+u32(address+0x1c)+u32(row-1)+b'\\x81\\x05'+u32(address+0x20)+u32(delta)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 137,
+      "literal": "0x20",
+      "value": 32,
+      "context": "code+=b'\\xc7\\x05'+u32(address+0x1c)+u32(row-1)+b'\\x81\\x05'+u32(address+0x20)+u32(delta)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 138,
+      "literal": "0x142240",
+      "value": 1319488,
+      "context": "code+=mov('eax',address)+push(row-1);code+=call(origin+len(code),self.base+0x142240)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 139,
+      "literal": "0x30",
+      "value": 48,
+      "context": "code+=b'\\xd9\\x1d'+u32(result)+b'\\xa1'+u32(result)+b'\\xa3'+u32(address+0x30)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 140,
+      "literal": "0xC",
+      "value": 12,
+      "context": "code+=b'\\xf3\\x0f\\x2c\\x05'+u32(result)+b'\\xa3'+u32(address+0xC)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 165,
+      "literal": "0xFA10",
+      "value": 64016,
+      "context": "self._signature(0xFA10)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 168,
+      "literal": "0xFA10",
+      "value": 64016,
+      "context": "return payload+call(origin+len(payload),self.base+0xFA10)+b'\\xA3'+u32(result)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 181,
+      "literal": "0x178",
+      "value": 376,
+      "context": "b=self.board();challenge=self.pointer(b+0x178);self._signature(0x2CC90)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 181,
+      "literal": "0x2CC90",
+      "value": 183440,
+      "context": "b=self.board();challenge=self.pointer(b+0x178);self._signature(0x2CC90)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 184,
+      "literal": "0x2CC90",
+      "value": 183440,
+      "context": "return payload+call(origin+len(payload),self.base+0x2CC90)+b'\\xA3'+u32(result)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 264,
+      "literal": "0x1E8A0",
+      "value": 125088,
+      "context": "self._signature(0x1E8A0)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 266,
+      "literal": "0x1E8A0",
+      "value": 125088,
+      "context": "code=mov('esi',self.board());return code+call(origin+len(code),self.base+0x1E8A0)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 274,
+      "literal": "0x24",
+      "value": 36,
+      "context": "b=self.board();bank=self.pointer(b+0x15C);count=self.read(bank+0x24)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 274,
+      "literal": "0x15C",
+      "value": 348,
+      "context": "b=self.board();bank=self.pointer(b+0x15C);count=self.read(bank+0x24)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 276,
+      "literal": "0x4C",
+      "value": 76,
+      "context": "return [{'slot':i+1,'type':self.read(bank+0x5C+i*0x50),'imitater':self.read(bank+0x60+i*0x50),'elapsed':self.read(bank+0x4C+i*0x50),'total':self.read(bank+0x50+i*0x50)}for i in range(count)]"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 276,
+      "literal": "0x50",
+      "value": 80,
+      "context": "return [{'slot':i+1,'type':self.read(bank+0x5C+i*0x50),'imitater':self.read(bank+0x60+i*0x50),'elapsed':self.read(bank+0x4C+i*0x50),'total':self.read(bank+0x50+i*0x50)}for i in range(count)]"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 276,
+      "literal": "0x50",
+      "value": 80,
+      "context": "return [{'slot':i+1,'type':self.read(bank+0x5C+i*0x50),'imitater':self.read(bank+0x60+i*0x50),'elapsed':self.read(bank+0x4C+i*0x50),'total':self.read(bank+0x50+i*0x50)}for i in range(count)]"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 276,
+      "literal": "0x50",
+      "value": 80,
+      "context": "return [{'slot':i+1,'type':self.read(bank+0x5C+i*0x50),'imitater':self.read(bank+0x60+i*0x50),'elapsed':self.read(bank+0x4C+i*0x50),'total':self.read(bank+0x50+i*0x50)}for i in range(count)]"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 276,
+      "literal": "0x50",
+      "value": 80,
+      "context": "return [{'slot':i+1,'type':self.read(bank+0x5C+i*0x50),'imitater':self.read(bank+0x60+i*0x50),'elapsed':self.read(bank+0x4C+i*0x50),'total':self.read(bank+0x50+i*0x50)}for i in range(count)]"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 276,
+      "literal": "0x50",
+      "value": 80,
+      "context": "return [{'slot':i+1,'type':self.read(bank+0x5C+i*0x50),'imitater':self.read(bank+0x60+i*0x50),'elapsed':self.read(bank+0x4C+i*0x50),'total':self.read(bank+0x50+i*0x50)}for i in range(count)]"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 276,
+      "literal": "0x5C",
+      "value": 92,
+      "context": "return [{'slot':i+1,'type':self.read(bank+0x5C+i*0x50),'imitater':self.read(bank+0x60+i*0x50),'elapsed':self.read(bank+0x4C+i*0x50),'total':self.read(bank+0x50+i*0x50)}for i in range(count)]"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 276,
+      "literal": "0x60",
+      "value": 96,
+      "context": "return [{'slot':i+1,'type':self.read(bank+0x5C+i*0x50),'imitater':self.read(bank+0x60+i*0x50),'elapsed':self.read(bank+0x4C+i*0x50),'total':self.read(bank+0x50+i*0x50)}for i in range(count)]"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 284,
+      "literal": "0x15C",
+      "value": 348,
+      "context": "bank=self.pointer(self.board()+0x15C)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 285,
+      "literal": "0x50",
+      "value": 80,
+      "context": "self.write(bank+0x5C+(slot-1)*0x50,48 if imitater else kind);self.write(bank+0x60+(slot-1)*0x50,kind if imitater else-1)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 285,
+      "literal": "0x50",
+      "value": 80,
+      "context": "self.write(bank+0x5C+(slot-1)*0x50,48 if imitater else kind);self.write(bank+0x60+(slot-1)*0x50,kind if imitater else-1)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 285,
+      "literal": "0x5C",
+      "value": 92,
+      "context": "self.write(bank+0x5C+(slot-1)*0x50,48 if imitater else kind);self.write(bank+0x60+(slot-1)*0x50,kind if imitater else-1)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 285,
+      "literal": "0x60",
+      "value": 96,
+      "context": "self.write(bank+0x5C+(slot-1)*0x50,48 if imitater else kind);self.write(bank+0x60+(slot-1)*0x50,kind if imitater else-1)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 286,
+      "literal": "0x4C",
+      "value": 76,
+      "context": "self.write(bank+0x4C+(slot-1)*0x50,self.read(bank+0x50+(slot-1)*0x50))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 286,
+      "literal": "0x50",
+      "value": 80,
+      "context": "self.write(bank+0x4C+(slot-1)*0x50,self.read(bank+0x50+(slot-1)*0x50))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 286,
+      "literal": "0x50",
+      "value": 80,
+      "context": "self.write(bank+0x4C+(slot-1)*0x50,self.read(bank+0x50+(slot-1)*0x50))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 286,
+      "literal": "0x50",
+      "value": 80,
+      "context": "self.write(bank+0x4C+(slot-1)*0x50,self.read(bank+0x50+(slot-1)*0x50))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 294,
+      "literal": "0x557C",
+      "value": 21884,
+      "context": "b=self.board();current=self.read(b+0x5594);total=self.read(b+0x557C)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 294,
+      "literal": "0x5594",
+      "value": 21908,
+      "context": "b=self.board();current=self.read(b+0x5594);total=self.read(b+0x557C)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 296,
+      "literal": "0x6CC",
+      "value": 1740,
+      "context": "data=struct.pack('<50i',*(types+[-1]*(50-len(types))));self.engine.pm.write_bytes(b+0x6CC+(wave-1)*200,data,len(data))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 300,
+      "literal": "0x31E900",
+      "value": 3270912,
+      "context": "table=self.base+0x31E900"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 321,
+      "literal": "0x70E29",
+      "value": 462377,
+      "context": "address=self.base+0x70E29"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 339,
+      "literal": "0x94C",
+      "value": 2380,
+      "context": "def user(self):return self.pointer(self.app()+0x94C)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 341,
+      "literal": "0x378",
+      "value": 888,
+      "context": "u=self.user();count=self.read(u+0x378)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 345,
+      "literal": "0x24",
+      "value": 36,
+      "context": "a=u+0x380+i*0x58;p={'index':i,'type':self.read(a),'garden':self.read(a+4),'age':self.read(a+0x24),'fed':self.read(a+0x28),'feedings':self.read(a+0x2C),'need':self.read(a+0x30)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 345,
+      "literal": "0x28",
+      "value": 40,
+      "context": "a=u+0x380+i*0x58;p={'index':i,'type':self.read(a),'garden':self.read(a+4),'age':self.read(a+0x24),'fed':self.read(a+0x28),'feedings':self.read(a+0x2C),'need':self.read(a+0x30)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 345,
+      "literal": "0x2C",
+      "value": 44,
+      "context": "a=u+0x380+i*0x58;p={'index':i,'type':self.read(a),'garden':self.read(a+4),'age':self.read(a+0x24),'fed':self.read(a+0x28),'feedings':self.read(a+0x2C),'need':self.read(a+0x30)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 345,
+      "literal": "0x30",
+      "value": 48,
+      "context": "a=u+0x380+i*0x58;p={'index':i,'type':self.read(a),'garden':self.read(a+4),'age':self.read(a+0x24),'fed':self.read(a+0x28),'feedings':self.read(a+0x2C),'need':self.read(a+0x30)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 345,
+      "literal": "0x58",
+      "value": 88,
+      "context": "a=u+0x380+i*0x58;p={'index':i,'type':self.read(a),'garden':self.read(a+4),'age':self.read(a+0x24),'fed':self.read(a+0x28),'feedings':self.read(a+0x2C),'need':self.read(a+0x30)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 345,
+      "literal": "0x380",
+      "value": 896,
+      "context": "a=u+0x380+i*0x58;p={'index':i,'type':self.read(a),'garden':self.read(a+4),'age':self.read(a+0x24),'fed':self.read(a+0x28),'feedings':self.read(a+0x2C),'need':self.read(a+0x30)}"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 346,
+      "literal": "0x20",
+      "value": 32,
+      "context": "p.update(x=self.read(a+8),y=self.read(a+12));p['stamp']=(u,self.read(u+0x20,'uint'),p['type'],p['garden'],p['x'],p['y'],getattr(self.engine.pm,'process_id',0))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 358,
+      "literal": "0x58",
+      "value": 88,
+      "context": "a=self.user()+0x380+index*0x58;now=int(time.time())"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 358,
+      "literal": "0x380",
+      "value": 896,
+      "context": "a=self.user()+0x380+index*0x58;now=int(time.time())"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 360,
+      "literal": "0x18",
+      "value": 24,
+      "context": "self.write(a+0x18,now,'time');self.write(a+0x28,min(1000,plant['fed']+1))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 360,
+      "literal": "0x28",
+      "value": 40,
+      "context": "self.write(a+0x18,now,'time');self.write(a+0x28,min(1000,plant['fed']+1))"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 364,
+      "literal": "0x24",
+      "value": 36,
+      "context": "self.write(a+0x24,plant['age']+1);self.write(a+0x40,now,'time');self.write(a+0x28,0);self.write(a+0x30,0)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 364,
+      "literal": "0x28",
+      "value": 40,
+      "context": "self.write(a+0x24,plant['age']+1);self.write(a+0x40,now,'time');self.write(a+0x28,0);self.write(a+0x30,0)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 364,
+      "literal": "0x30",
+      "value": 48,
+      "context": "self.write(a+0x24,plant['age']+1);self.write(a+0x40,now,'time');self.write(a+0x28,0);self.write(a+0x30,0)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 364,
+      "literal": "0x40",
+      "value": 64,
+      "context": "self.write(a+0x24,plant['age']+1);self.write(a+0x40,now,'time');self.write(a+0x28,0);self.write(a+0x30,0)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 366,
+      "literal": "0x24",
+      "value": 36,
+      "context": "self.write(a+0x24,value);self.write(a+0x28,0);self.write(a+0x30,0)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 366,
+      "literal": "0x28",
+      "value": 40,
+      "context": "self.write(a+0x24,value);self.write(a+0x28,0);self.write(a+0x30,0)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 366,
+      "literal": "0x30",
+      "value": 48,
+      "context": "self.write(a+0x24,value);self.write(a+0x28,0);self.write(a+0x30,0)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 372,
+      "literal": "0x1E8",
+      "value": 488,
+      "context": "with self.lock,self.frozen():self.write(self.user()+0x1E8+slots[kind]*4,1000+amount);self.save_profile()"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 374,
+      "literal": "0x52800",
+      "value": 337920,
+      "context": "self._signature(0x52800)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 376,
+      "literal": "0x52800",
+      "value": 337920,
+      "context": "payload=mov('eax',self.app());return payload+call(origin+len(payload),self.base+0x52800)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 382,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "app=self.app();ui=self.read(app+0x91C)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 384,
+      "literal": "0x17C",
+      "value": 380,
+      "context": "if ui==3 and self.read(self.pointer(app+0x868)+0x17C,'byte'):raise RuntimeError('Close the PVZ menu/dialog and resume the lawn before launching a stage.')"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 384,
+      "literal": "0x868",
+      "value": 2152,
+      "context": "if ui==3 and self.read(self.pointer(app+0x868)+0x17C,'byte'):raise RuntimeError('Close the PVZ menu/dialog and resume the lawn before launching a stage.')"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 385,
+      "literal": "0x52640",
+      "value": 337472,
+      "context": "self._signature(0x52820);self._signature(0x52640);self.reset()"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 385,
+      "literal": "0x52820",
+      "value": 337952,
+      "context": "self._signature(0x52820);self._signature(0x52640);self.reset()"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 386,
+      "literal": "0x52C70",
+      "value": 339056,
+      "context": "if ui==1:self._signature(0x52C70)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 388,
+      "literal": "0x4C",
+      "value": 76,
+      "context": "if mode==0:self.write(self.user()+0x4C,level)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 395,
+      "literal": "0x52C70",
+      "value": 339056,
+      "context": "payload+=mov('esi',app);payload+=call(origin+len(payload),self.base+0x52C70)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 396,
+      "literal": "0x52640",
+      "value": 337472,
+      "context": "payload+=mov('edi',app);payload+=call(origin+len(payload),self.base+0x52640)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 397,
+      "literal": "0x52820",
+      "value": 337952,
+      "context": "payload+=push(0)+push(mode)+mov('esi',self.app());return payload+call(origin+len(payload),self.base+0x52820)"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 406,
+      "literal": "0x31E900",
+      "value": 3270912,
+      "context": "self.write(self.base+0x31E900+kind*12+8,value);del self.damage_original[kind]"
+    },
+    {
+      "source": "studio_engine.py",
+      "line": 417,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "if self.read(self.app()+0x91C)!=3:self.edits.clear()"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 7,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "def u32(n):return struct.pack('<I',n&0xffffffff)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 9,
+      "literal": "0xB8",
+      "value": 184,
+      "context": "def mov(reg,n):return bytes([{'eax':0xB8,'ecx':0xB9,'edx':0xBA,'ebx':0xBB,'ebp':0xBD,'esi':0xBE,'edi':0xBF}[reg]])+u32(n)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 9,
+      "literal": "0xB9",
+      "value": 185,
+      "context": "def mov(reg,n):return bytes([{'eax':0xB8,'ecx':0xB9,'edx':0xBA,'ebx':0xBB,'ebp':0xBD,'esi':0xBE,'edi':0xBF}[reg]])+u32(n)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 9,
+      "literal": "0xBA",
+      "value": 186,
+      "context": "def mov(reg,n):return bytes([{'eax':0xB8,'ecx':0xB9,'edx':0xBA,'ebx':0xBB,'ebp':0xBD,'esi':0xBE,'edi':0xBF}[reg]])+u32(n)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 9,
+      "literal": "0xBB",
+      "value": 187,
+      "context": "def mov(reg,n):return bytes([{'eax':0xB8,'ecx':0xB9,'edx':0xBA,'ebx':0xBB,'ebp':0xBD,'esi':0xBE,'edi':0xBF}[reg]])+u32(n)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 9,
+      "literal": "0xBD",
+      "value": 189,
+      "context": "def mov(reg,n):return bytes([{'eax':0xB8,'ecx':0xB9,'edx':0xBA,'ebx':0xBB,'ebp':0xBD,'esi':0xBE,'edi':0xBF}[reg]])+u32(n)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 9,
+      "literal": "0xBE",
+      "value": 190,
+      "context": "def mov(reg,n):return bytes([{'eax':0xB8,'ecx':0xB9,'edx':0xBA,'ebx':0xBB,'ebp':0xBD,'esi':0xBE,'edi':0xBF}[reg]])+u32(n)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 9,
+      "literal": "0xBF",
+      "value": 191,
+      "context": "def mov(reg,n):return bytes([{'eax':0xB8,'ecx':0xB9,'edx':0xBA,'ebx':0xBB,'ebp':0xBD,'esi':0xBE,'edi':0xBF}[reg]])+u32(n)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 32,
+      "literal": "0x40",
+      "value": 64,
+      "context": "if not self.k.VirtualProtectEx(self.handle,address,len(data),0x40,ctypes.byref(old)):raise ctypes.WinError(ctypes.get_last_error())"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 72,
+      "literal": "0x48",
+      "value": 72,
+      "context": "thread=k.OpenThread(0x48,False,entry.id)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 75,
+      "literal": "0x10001",
+      "value": 65537,
+      "context": "context=Wow64Context();context.flags=0x10001"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 91,
+      "literal": "0x1D6C6D",
+      "value": 1928301,
+      "context": "self.game.guard();site=self.game.base+0x1D6C6D"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 102,
+      "literal": "0x40",
+      "value": 64,
+      "context": "address=self.k.VirtualAllocEx(self.handle,None,65536,0x3000,0x40)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 102,
+      "literal": "0x3000",
+      "value": 12288,
+      "context": "address=self.k.VirtualAllocEx(self.handle,None,65536,0x3000,0x40)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 103,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "if not address or address>0xffffffff:raise RuntimeError('Could not allocate x86 call memory.')"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 106,
+      "literal": "0xF000",
+      "value": 61440,
+      "context": "body=build(address+2,address+0xF000)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 108,
+      "literal": "0xF000",
+      "value": 61440,
+      "context": "if len(code)>=0xF000:raise ValueError('Native request is too large.')"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 116,
+      "literal": "0xF000",
+      "value": 61440,
+      "context": "done=True;return self.game.read(address+0xF000,'uint')"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 119,
+      "literal": "0x8000",
+      "value": 32768,
+      "context": "if not thread or done:self.k.VirtualFreeEx(self.handle,address,0,0x8000)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 127,
+      "literal": "0x1D6C6D",
+      "value": 1928301,
+      "context": "self.game.guard();site=self.game.base+0x1D6C6D;stub=site+6"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 129,
+      "literal": "0x40",
+      "value": 64,
+      "context": "address=self.k.VirtualAllocEx(self.handle,None,65536,0x3000,0x40)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 129,
+      "literal": "0x3000",
+      "value": 12288,
+      "context": "address=self.k.VirtualAllocEx(self.handle,None,65536,0x3000,0x40)"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 130,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "if not address or address>0xffffffff:raise RuntimeError('Could not allocate a game-thread request.')"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 131,
+      "literal": "0xF000",
+      "value": 61440,
+      "context": "flag=address+0xF000;result=flag+4"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 135,
+      "literal": "0x1D6C37",
+      "value": 1928247,
+      "context": "code+=b'\\x61\\x9d\\xe9'+u32(self.game.base+0x1D6C37-(address+len(code)+7))"
+    },
+    {
+      "source": "studio_native.py",
+      "line": 136,
+      "literal": "0xE000",
+      "value": 57344,
+      "context": "if len(code)>=0xE000:raise ValueError('Stage request is too large.')"
+    },
+    {
+      "source": "trainer_backend.py",
+      "line": 31,
+      "literal": "0x415000",
+      "value": 4280320,
+      "context": "if module.SizeOfImage==0x415000 and hashlib.sha256(Path(module.filename).read_bytes()).hexdigest()==HASH:backend=GotyTrainer"
+    },
+    {
+      "source": "trainer_backend.py",
+      "line": 32,
+      "literal": "0x394000",
+      "value": 3751936,
+      "context": "elif module.SizeOfImage==0x394000:"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 34,
+      "literal": "0xFA10",
+      "value": 64016,
+      "context": "HOOKS={'collect_1000_sun':(0x1E6E0,6),'planting_adds_sun':(0x1E846,6),'plant_changer':(0xFA10,7),"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 34,
+      "literal": "0x1E6E0",
+      "value": 124640,
+      "context": "HOOKS={'collect_1000_sun':(0x1E6E0,6),'planting_adds_sun':(0x1E846,6),'plant_changer':(0xFA10,7),"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 34,
+      "literal": "0x1E846",
+      "value": 124998,
+      "context": "HOOKS={'collect_1000_sun':(0x1E6E0,6),'planting_adds_sun':(0x1E846,6),'plant_changer':(0xFA10,7),"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 35,
+      "literal": "0x6322C",
+      "value": 406060,
+      "context": "'move_zombie_row':(0x132A12,6),'bullet_changer':(0x70E29,5),'fast_shoot':(0x6322C,6)}"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 35,
+      "literal": "0x70E29",
+      "value": 462377,
+      "context": "'move_zombie_row':(0x132A12,6),'bullet_changer':(0x70E29,5),'fast_shoot':(0x6322C,6)}"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 35,
+      "literal": "0x132A12",
+      "value": 1255954,
+      "context": "'move_zombie_row':(0x132A12,6),'bullet_changer':(0x70E29,5),'fast_shoot':(0x6322C,6)}"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 36,
+      "literal": "0xF400",
+      "value": 62464,
+      "context": "HOOKS.update(shop_stock=(0x955C0,8),sunflower_drop=(0xF400,6),one_hit_kill=(0x1421BC,5),rapid_fire=(0x62868,7))"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 36,
+      "literal": "0x62868",
+      "value": 403560,
+      "context": "HOOKS.update(shop_stock=(0x955C0,8),sunflower_drop=(0xF400,6),one_hit_kill=(0x1421BC,5),rapid_fire=(0x62868,7))"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 36,
+      "literal": "0x955C0",
+      "value": 611776,
+      "context": "HOOKS.update(shop_stock=(0x955C0,8),sunflower_drop=(0xF400,6),one_hit_kill=(0x1421BC,5),rapid_fire=(0x62868,7))"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 36,
+      "literal": "0x1421BC",
+      "value": 1319356,
+      "context": "HOOKS.update(shop_stock=(0x955C0,8),sunflower_drop=(0xF400,6),one_hit_kill=(0x1421BC,5),rapid_fire=(0x62868,7))"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 86,
+      "literal": "0x40",
+      "value": 64,
+      "context": "address=self.native.k.VirtualAllocEx(self.native.handle,None,4096,0x3000,0x40)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 86,
+      "literal": "0x3000",
+      "value": 12288,
+      "context": "address=self.native.k.VirtualAllocEx(self.native.handle,None,4096,0x3000,0x40)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 87,
+      "literal": "0xffffffff",
+      "value": 4294967295,
+      "context": "if not address or address>0xffffffff:raise RuntimeError('Could not allocate x86 hook memory.')"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 89,
+      "literal": "0x100",
+      "value": 256,
+      "context": "address=self.caves[name];parameter=address+0x100;e=self.engine"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 91,
+      "literal": "0x5578",
+      "value": 21880,
+      "context": "elif name=='planting_adds_sun':body=original+b'\\x9c\\x81\\x87'+u32(0x5578)+u32(2000)+b'\\x9d'"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 107,
+      "literal": "0x200",
+      "value": 512,
+      "context": "guard_code=shooting_guard_code(address+0x200,self.base+guard_rva+len(guard_old))"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 108,
+      "literal": "0x200",
+      "value": 512,
+      "context": "extra=[(self.base+guard_rva,guard_old,b'\\xe9'+u32(address+0x200-(self.base+guard_rva+5))+b'\\x90'*(len(guard_old)-5))]"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 109,
+      "literal": "0x100",
+      "value": 256,
+      "context": "if len(code)>=0x100:raise RuntimeError('Hook code would overlap its parameter storage.')"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 115,
+      "literal": "0x200",
+      "value": 512,
+      "context": "if name=='fast_shoot':self.native.write_code(address+0x200,guard_code)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 139,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "app=g.app();ui=g.read(app+0x91C)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 140,
+      "literal": "0x50",
+      "value": 80,
+      "context": "if e.money_changer_active:g.write(g.user()+0x50,e.money_amount)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 141,
+      "literal": "0x918",
+      "value": 2328,
+      "context": "if ui not in (2,3)or g.read(app+0x918)in (43,50):self.preview_original=None;return"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 142,
+      "literal": "0x868",
+      "value": 2152,
+      "context": "candidate=g.pointer(app+0x868)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 143,
+      "literal": "0x5564",
+      "value": 21860,
+      "context": "if g.read(candidate+0x5564)>5:self.preview_original=None;return"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 146,
+      "literal": "0x5578",
+      "value": 21880,
+      "context": "if e.infinite_sun_active:g.write(board+0x5578,9999)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 147,
+      "literal": "0x5578",
+      "value": 21880,
+      "context": "elif e.sun_lock_active:g.write(board+0x5578,e.sun_lock_amount)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 149,
+      "literal": "0x54EC",
+      "value": 21740,
+      "context": "old=e.pm.read_bytes(board+0x54EC,33)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 154,
+      "literal": "0x54EC",
+      "value": 21740,
+      "context": "e.pm.write_bytes(board+0x54EC,bytes(flags),33)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 157,
+      "literal": "0x174",
+      "value": 372,
+      "context": "scene=g.pointer(board+0x174)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 160,
+      "literal": "0x108E0",
+      "value": 67808,
+      "context": "try:self.native_action([(0x108E0,'ebx',board,[]),(0x3D350,None,0,[scene])])"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 160,
+      "literal": "0x3D350",
+      "value": 250704,
+      "context": "try:self.native_action([(0x108E0,'ebx',board,[]),(0x3D350,None,0,[scene])])"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 170,
+      "literal": "0x54EC",
+      "value": 21740,
+      "context": "if (board,self.game._generation)==self.preview_original[:2]:self.engine.pm.write_bytes(board+0x54EC,self.preview_original[2],33)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 271,
+      "literal": "0x91C",
+      "value": 2332,
+      "context": "if name=='mushrooms_awake' and runtime.game.read(runtime.game.app()+0x91C)==3:"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 273,
+      "literal": "0x143",
+      "value": 323,
+      "context": "sleeping=[p for p in runtime.game.entities('plant')if runtime.game.read(p['address']+0x143,'byte')]"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 274,
+      "literal": "0x62190",
+      "value": 401808,
+      "context": "if sleeping:runtime.native_action([(0x62190,'edi',p['address'],[0])for p in sleeping])"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 348,
+      "literal": "0x5578",
+      "value": 21880,
+      "context": "with r.native.suspended():r.game.write(r.game.board()+0x5578,max(0,min(9999,int(v))))"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 362,
+      "literal": "0x28",
+      "value": 40,
+      "context": "for z in entities:r.game.write(z['address']+0x28,3)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 368,
+      "literal": "0x1E8A0",
+      "value": 125088,
+      "context": "plants=r.game.entities('plant');r.native_action([(0x6B470,None,0,[p['address']])for p in plants]+[(0x1E8A0,'esi',r.game.board(),[])])"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 368,
+      "literal": "0x6B470",
+      "value": 439408,
+      "context": "plants=r.game.entities('plant');r.native_action([(0x6B470,None,0,[p['address']])for p in plants]+[(0x1E8A0,'esi',r.game.board(),[])])"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 375,
+      "literal": "0x918",
+      "value": 2328,
+      "context": "b=r.game.board();mode=r.game.read(r.game.app()+0x918)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 377,
+      "literal": "0x557C",
+      "value": 21884,
+      "context": "if r.game.read(b+0x5594)>=r.game.read(b+0x557C):raise RuntimeError('All natural waves have already spawned.')"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 377,
+      "literal": "0x5594",
+      "value": 21908,
+      "context": "if r.game.read(b+0x5594)>=r.game.read(b+0x557C):raise RuntimeError('All natural waves have already spawned.')"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 378,
+      "literal": "0x5594",
+      "value": 21908,
+      "context": "previous=r.game.read(b+0x5594)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 386,
+      "literal": "0x5594",
+      "value": 21908,
+      "context": "if r.game.read(b+0x5594)>previous:return True"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 389,
+      "literal": "0x5594",
+      "value": 21908,
+      "context": "if r.game.board()==b and r.game.read(b+0x5594)==previous:"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 400,
+      "literal": "0xECD0",
+      "value": 60624,
+      "context": "r=self._runtime();r.native_action([(0xECD0,'ecx',r.game.board(),[])])"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 406,
+      "literal": "0x118",
+      "value": 280,
+      "context": "b=r.game.board();data=r.game.pointer(b+0x118);count=r.game.read(b+0x11C)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 406,
+      "literal": "0x11C",
+      "value": 284,
+      "context": "b=r.game.board();data=r.game.pointer(b+0x118);count=r.game.read(b+0x11C)"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 408,
+      "literal": "0x30",
+      "value": 48,
+      "context": "alive=[data+i*0x48 for i in range(count)if not r.game.read(data+i*0x48+0x30,'byte')and r.game.read(data+i*0x48+0x44,'uint')>>16]"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 408,
+      "literal": "0x44",
+      "value": 68,
+      "context": "alive=[data+i*0x48 for i in range(count)if not r.game.read(data+i*0x48+0x30,'byte')and r.game.read(data+i*0x48+0x44,'uint')>>16]"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 408,
+      "literal": "0x48",
+      "value": 72,
+      "context": "alive=[data+i*0x48 for i in range(count)if not r.game.read(data+i*0x48+0x30,'byte')and r.game.read(data+i*0x48+0x44,'uint')>>16]"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 408,
+      "literal": "0x48",
+      "value": 72,
+      "context": "alive=[data+i*0x48 for i in range(count)if not r.game.read(data+i*0x48+0x30,'byte')and r.game.read(data+i*0x48+0x44,'uint')>>16]"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 408,
+      "literal": "0x48",
+      "value": 72,
+      "context": "alive=[data+i*0x48 for i in range(count)if not r.game.read(data+i*0x48+0x30,'byte')and r.game.read(data+i*0x48+0x44,'uint')>>16]"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 409,
+      "literal": "0x14",
+      "value": 20,
+      "context": "if len(alive)>6 or any(not 0<=r.game.read(p+0x14)<6 for p in alive):raise RuntimeError('Invalid live mower records.')"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 415,
+      "literal": "0x5C5D0",
+      "value": 378320,
+      "context": "actions=[(0x5C5D0,'eax',p,[])for p in alive]"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 418,
+      "literal": "0x1E8A0",
+      "value": 125088,
+      "context": "actions.append((0x1E8A0,'esi',b,[]))"
+    },
+    {
+      "source": "verified_engine.py",
+      "line": 419,
+      "literal": "0xE510",
+      "value": 58640,
+      "context": "actions.append((0xE510,None,0,[b]));r.native_action(actions)"
+    }
+  ],
+  "arrays": {
+    "plant": [
+      196,
+      332,
+      321,
+      328
+    ],
+    "zombie": [
+      168,
+      360,
+      236,
+      356
+    ],
+    "projectile": [
+      224,
+      148,
+      80,
+      144
+    ]
+  },
+  "plant_fields": {
+    "health": [
+      64,
+      "int",
+      1,
+      1000000
+    ],
+    "max_health": [
+      68,
+      "int",
+      1,
+      1000000
+    ],
+    "attack_timer": [
+      88,
+      "int",
+      0,
+      60000
+    ],
+    "attack_interval": [
+      92,
+      "int",
+      1,
+      60000
+    ]
+  },
+  "zombie_fields": {
+    "health": [
+      200,
+      "int",
+      1,
+      1000000
+    ],
+    "max_health": [
+      204,
+      "int",
+      1,
+      1000000
+    ],
+    "armour": [
+      208,
+      "int",
+      0,
+      1000000
+    ],
+    "max_armour": [
+      212,
+      "int",
+      0,
+      1000000
+    ],
+    "shield": [
+      220,
+      "int",
+      0,
+      1000000
+    ],
+    "max_shield": [
+      224,
+      "int",
+      0,
+      1000000
+    ],
+    "speed": [
+      52,
+      "float",
+      0,
+      5
+    ],
+    "chilled": [
+      172,
+      "int",
+      0,
+      60000
+    ],
+    "buttered": [
+      176,
+      "int",
+      0,
+      60000
+    ],
+    "frozen": [
+      180,
+      "int",
+      0,
+      60000
+    ]
+  },
+  "hooks": {
+    "collect_1000_sun": {
+      "rva": 124640,
+      "length": 6,
+      "original": "018878550000"
+    },
+    "planting_adds_sun": {
+      "rva": 124998,
+      "length": 6,
+      "original": "89b778550000"
+    },
+    "plant_changer": {
+      "rva": 64016,
+      "length": 7,
+      "original": "5153558b6c2410"
+    },
+    "move_zombie_row": {
+      "rva": 1255954,
+      "length": 6,
+      "original": "8b55088b4518"
+    },
+    "bullet_changer": {
+      "rva": 462377,
+      "length": 5,
+      "original": "89455c8bc6"
+    },
+    "fast_shoot": {
+      "rva": 406060,
+      "length": 6,
+      "original": "894e5883f812"
+    },
+    "shop_stock": {
+      "rva": 611776,
+      "length": 8,
+      "original": "83ffff750332c0c3"
+    },
+    "sunflower_drop": {
+      "rva": 62464,
+      "length": 6,
+      "original": "558bec83e4f8"
+    },
+    "one_hit_kill": {
+      "rva": 1319356,
+      "length": 5,
+      "original": "8bc583f949"
+    },
+    "rapid_fire": {
+      "rva": 403560,
+      "length": 7,
+      "original": "8bc6e861550000"
+    }
+  },
+  "patches": {
+    "block_main_loop": [
+      [
+        1928302,
+        "c8",
+        "fe"
+      ]
+    ],
+    "unlock_sun_limit": [
+      [
+        124661,
+        "7e",
+        "eb"
+      ]
+    ],
+    "auto_collected": [
+      [
+        213746,
+        "75",
+        "eb"
+      ]
+    ],
+    "not_drop_loot": [
+      [
+        1313798,
+        "5b",
+        "66"
+      ]
+    ],
+    "fertilizer_unlimited": [
+      [
+        1218859,
+        "ff",
+        "39"
+      ]
+    ],
+    "bug_spray_unlimited": [
+      [
+        1219107,
+        "ff",
+        "39"
+      ]
+    ],
+    "chocolate_unlimited": [
+      [
+        1217861,
+        "ff",
+        "39"
+      ],
+      [
+        1217991,
+        "ff",
+        "39"
+      ]
+    ],
+    "tree_food_unlimited": [
+      [
+        197005,
+        "ff",
+        "39"
+      ]
+    ],
+    "placed_anywhere": [
+      [
+        75760,
+        "84",
+        "81"
+      ]
+    ],
+    "placed_anywhere_preview": [
+      [
+        245808,
+        "74",
+        "eb"
+      ]
+    ],
+    "placed_anywhere_iz": [
+      [
+        183929,
+        "84",
+        "8d"
+      ]
+    ],
+    "fast_belt": [
+      [
+        153599,
+        "8f",
+        "80"
+      ],
+      [
+        608430,
+        "85",
+        "33"
+      ]
+    ],
+    "lock_shovel": [
+      [
+        85331,
+        "89",
+        "39"
+      ]
+    ],
+    "rake_unlimited": [
+      [
+        58001,
+        "0f84",
+        "0f80"
+      ]
+    ],
+    "init_lawn_mowers": [
+      [
+        58807,
+        "00",
+        "01"
+      ]
+    ],
+    "lawn_mower_initialize": [
+      [
+        374994,
+        "c8e36f00",
+        "e4e16f00"
+      ]
+    ],
+    "plant_immune_eat": [
+      [
+        1312385,
+        "4640fc",
+        "464000"
+      ]
+    ],
+    "plant_immune_radius": [
+      [
+        129519,
+        "74",
+        "eb"
+      ]
+    ],
+    "plant_immune_jalapeno": [
+      [
+        1277306,
+        "75",
+        "eb"
+      ]
+    ],
+    "plant_immune_projectile": [
+      [
+        464539,
+        "295040",
+        "909090"
+      ]
+    ],
+    "plant_immune_lob_motion": [
+      [
+        466521,
+        "294e40",
+        "909090"
+      ]
+    ],
+    "plant_immune_square": [
+      [
+        1307323,
+        "74",
+        "eb"
+      ]
+    ],
+    "plant_immune_row_area": [
+      [
+        403258,
+        "75",
+        "70"
+      ]
+    ],
+    "plant_immune_spike_rock": [
+      [
+        402838,
+        "ce",
+        "00"
+      ]
+    ],
+    "plant_immune_squish": [
+      [
+        419200,
+        "53558b",
+        "c20400"
+      ]
+    ],
+    "_plant_immune_eat": [
+      [
+        1312385,
+        "4640fc",
+        "664000"
+      ]
+    ],
+    "_plant_immune_projectile": [
+      [
+        464539,
+        "295040",
+        "294040"
+      ]
+    ],
+    "_plant_immune_lob_motion": [
+      [
+        466521,
+        "294e40",
+        "297640"
+      ]
+    ],
+    "_plant_immune_row_area": [
+      [
+        403258,
+        "75",
+        "eb"
+      ]
+    ],
+    "zombie_immune_body_damage": [
+      [
+        1318106,
+        "2b6c2420",
+        "90909090"
+      ]
+    ],
+    "zombie_immune_helm_damage": [
+      [
+        1317364,
+        "2bc8",
+        "2bc0"
+      ]
+    ],
+    "zombie_immune_shield_damage": [
+      [
+        1316427,
+        "7c028bc2",
+        "33c033d2"
+      ]
+    ],
+    "zombie_immune_burn_crumble": [
+      [
+        1324401,
+        "8d",
+        "81"
+      ]
+    ],
+    "zombie_immune_radius": [
+      [
+        132819,
+        "7f",
+        "eb"
+      ]
+    ],
+    "zombie_immune_burn_row": [
+      [
+        434018,
+        "75",
+        "eb"
+      ]
+    ],
+    "zombie_immune_chomper": [
+      [
+        413192,
+        "74",
+        "eb"
+      ]
+    ],
+    "zombie_immune_mind_controll": [
+      [
+        1311759,
+        "01",
+        "00"
+      ]
+    ],
+    "zombie_immune_blow_away": [
+      [
+        434289,
+        "7405",
+        "9090"
+      ]
+    ],
+    "zombie_immune_splash": [
+      [
+        465667,
+        "74",
+        "eb"
+      ]
+    ],
+    "zombie_immune_lawn_mower": [
+      [
+        377077,
+        "74",
+        "eb"
+      ]
+    ],
+    "_zombie_immune_body_damage": [
+      [
+        1318106,
+        "2b6c2420",
+        "2bed9090"
+      ]
+    ],
+    "_zombie_immune_helm_damage": [
+      [
+        1317364,
+        "2bc8",
+        "2bc9"
+      ]
+    ],
+    "_zombie_immune_shield_damage": [
+      [
+        1316427,
+        "7c028bc2",
+        "8bd08bc2"
+      ]
+    ],
+    "_zombie_immune_burn_crumble": [
+      [
+        1324401,
+        "8d",
+        "80"
+      ]
+    ],
+    "reload_instantly": [
+      [
+        412171,
+        "85",
+        "80"
+      ]
+    ],
+    "grow_up_quickly": [
+      [
+        407588,
+        "85",
+        "80"
+      ],
+      [
+        406899,
+        "75",
+        "70"
+      ]
+    ],
+    "no_cooldown": [
+      [
+        413477,
+        "75",
+        "70"
+      ],
+      [
+        415767,
+        "85",
+        "80"
+      ]
+    ],
+    "mushrooms_awake": [
+      [
+        399298,
+        "74",
+        "eb"
+      ]
+    ],
+    "stop_spawning": [
+      [
+        168156,
+        "74",
+        "eb"
+      ]
+    ],
+    "stop_zombies": [
+      [
+        1291315,
+        "64",
+        "54"
+      ],
+      [
+        1291324,
+        "44",
+        "54"
+      ]
+    ],
+    "lock_butter": [
+      [
+        404290,
+        "75",
+        "70"
+      ]
+    ],
+    "no_crater": [
+      [
+        132477,
+        "75",
+        "70"
+      ]
+    ],
+    "no_ice_trail": [
+      [
+        1290416,
+        "51",
+        "c3"
+      ],
+      [
+        140010,
+        "75",
+        "eb"
+      ]
+    ],
+    "zombie_not_explode": [
+      [
+        1274252,
+        "8f",
+        "81"
+      ],
+      [
+        1277037,
+        "85",
+        "81"
+      ]
+    ],
+    "hack_street_zombies": [
+      [
+        250723,
+        "85",
+        "80"
+      ]
+    ],
+    "no_fog": [
+      [
+        119165,
+        "3bf2",
+        "31d2"
+      ]
+    ],
+    "see_vase": [
+      [
+        333994,
+        "85c07e04",
+        "66b83300"
+      ]
+    ],
+    "background_running": [
+      [
+        1909209,
+        "7440",
+        "eb00"
+      ]
+    ],
+    "disable_delete_userdata": [
+      [
+        1890707,
+        "74",
+        "70"
+      ]
+    ],
+    "disable_save_userdata": [
+      [
+        576867,
+        "89031400",
+        "b1031400"
+      ]
+    ],
+    "unlock_limbo_page": [
+      [
+        199808,
+        "885864",
+        "385864"
+      ]
+    ]
+  },
+  "seed_recharge": [
+    597589,
+    "7e14",
+    "9090"
+  ],
+  "free_planting": [
+    [
+      124994,
+      "7f0c",
+      "9090"
+    ],
+    [
+      124996,
+      "2bf3",
+      "9090"
+    ],
+    [
+      125071,
+      "0f9ec0",
+      "b00190"
+    ]
+  ],
+  "shooting_animation_guard": [
+    406027,
+    "ff4e588b4658"
+  ],
+  "frame_duration_offset": 1204,
+  "coin_array": [
+    252,
+    216,
+    56,
+    208
+  ],
+  "coin_collect_rva": 216512,
+  "rapid_interval_ticks": 5,
+  "shop_stock_extra": [
+    611966,
+    "0f94c0",
+    "30c090"
+  ],
+  "shop_purchase_hooks": {
+    "shop_seed_cap": {
+      "rva": 620252,
+      "length": 6,
+      "original": "01b03c020000"
+    },
+    "shop_mower_cap": {
+      "rva": 620582,
+      "length": 6,
+      "original": "01b00c020000"
+    },
+    "shop_tree_preserve": {
+      "rva": 620782,
+      "length": 6,
+      "original": "89b21c010000"
+    }
+  },
+  "extended_bank_patches": [
+    [
+      210791,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      210800,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      261956,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      261965,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      263084,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      263093,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      264506,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      264515,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      323397,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      323406,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      326675,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      326694,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      418173,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      418182,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      620209,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      620218,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      622114,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      1214098,
+      "9f860100",
+      "ffe0f505"
+    ],
+    [
+      1214107,
+      "9f860100",
+      "ffe0f505"
+    ]
+  ],
+  "snail_patches": [
+    [
+      1231376,
+      "6a00e8ebdc1600",
+      "b001c204009090"
+    ],
+    [
+      1231424,
+      "6a00e8bbdc1600",
+      "b001c390909090"
+    ]
+  ],
+  "profile_fields": {
+    "coins": [
+      "Coin units (one unit = $10)",
+      80,
+      0,
+      99999999,
+      1,
+      0
+    ],
+    "adventure": [
+      "Next Adventure stage (1\u201350)",
+      76,
+      1,
+      50,
+      1,
+      0
+    ],
+    "completed": [
+      "Completed Adventure runs",
+      84,
+      0,
+      9999,
+      1,
+      0
+    ],
+    "seed_slots": [
+      "Seed slots for future battles",
+      572,
+      6,
+      10,
+      1,
+      -6
+    ],
+    "tree_height": [
+      "Tree of Wisdom height (feet)",
+      284,
+      0,
+      2000000000,
+      1,
+      0
+    ],
+    "best_vasebreaker": [
+      "Longest streak \u2014 Vasebreaker Endless",
+      324,
+      0,
+      1000000,
+      1,
+      0
+    ],
+    "best_izombie": [
+      "Longest streak \u2014 I, Zombie Endless",
+      364,
+      0,
+      1000000,
+      1,
+      0
+    ],
+    "best_survival_day": [
+      "Best flags \u2014 Survival Endless Day",
+      128,
+      0,
+      1000000,
+      1,
+      0
+    ],
+    "best_survival_night": [
+      "Best flags \u2014 Survival Endless Night",
+      132,
+      0,
+      1000000,
+      1,
+      0
+    ],
+    "best_survival_pool": [
+      "Best flags \u2014 Survival Endless Pool",
+      136,
+      0,
+      1000000,
+      1,
+      0
+    ],
+    "best_survival_fog": [
+      "Best flags \u2014 Survival Endless Fog",
+      140,
+      0,
+      1000000,
+      1,
+      0
+    ],
+    "best_survival_roof": [
+      "Best flags \u2014 Survival Endless Roof",
+      144,
+      0,
+      1000000,
+      1,
+      0
+    ],
+    "minigames": [
+      "Minigames unlocked",
+      840,
+      0,
+      1,
+      1,
+      0
+    ],
+    "puzzle": [
+      "Puzzle mode unlocked",
+      844,
+      0,
+      1,
+      1,
+      0
+    ],
+    "survival": [
+      "Survival mode unlocked",
+      864,
+      0,
+      1,
+      1,
+      0
+    ],
+    "mushroom_garden": [
+      "Mushroom garden owned",
+      560,
+      0,
+      1,
+      1,
+      0
+    ],
+    "aquarium_garden": [
+      "Aquarium garden owned",
+      588,
+      0,
+      1,
+      1,
+      0
+    ],
+    "wheelbarrow": [
+      "Wheelbarrow owned",
+      564,
+      0,
+      1,
+      1,
+      0
+    ],
+    "tree_owned": [
+      "Tree of Wisdom owned",
+      596,
+      0,
+      1,
+      1,
+      0
+    ]
+  },
+  "achievement_names": [
+    "Home Lawn Security",
+    "Nobel Peas Prize",
+    "Better Off Dead",
+    "China Shop",
+    "SPUDOW!",
+    "Explodonator",
+    "Morticulturalist",
+    "Don't Pea in the Pool",
+    "Roll Some Heads",
+    "Grounded",
+    "Zombologist",
+    "Penny Pincher",
+    "Sunny Days",
+    "Popcorn Party",
+    "Good Morning",
+    "No Fungus Among Us",
+    "Beyond the Grave",
+    "Immortal",
+    "Towering Wisdom",
+    "Mustache Mode"
+  ],
+  "achievement_earned_offset": 36,
+  "achievement_shown_offset": 56,
+  "garden_cells": {
+    "0": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        6,
+        3
+      ],
+      [
+        7,
+        3
+      ]
+    ],
+    "1": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ]
+    ],
+    "2": [
+      [
+        0,
+        0
+      ]
+    ],
+    "3": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        7,
+        0
+      ]
+    ]
+  },
+  "native_signatures": {
+    "0xfa10": "5153558b6c24105657",
+    "0x2cc90": "53558b6c240c5657",
+    "0x6b470": "83ec1053558b6c241c",
+    "0x52820": "64a1000000006aff",
+    "0x52640": "8b87740800005685c0",
+    "0x52c70": "8b867008000085c0",
+    "0x52800": "518b804c090000",
+    "0x1e8a0": "535533db33c05783",
+    "0x142240": "51568bf08b466c83"
+  },
+  "extra_controls": {
+    "patches": {
+      "cattail_land": [
+        [
+          69151,
+          "7511",
+          "eb11"
+        ]
+      ],
+      "instant_mines": [
+        [
+          400486,
+          "741f",
+          "eb1f"
+        ]
+      ],
+      "no_support": [
+        [
+          68573,
+          "7527",
+          "eb27"
+        ],
+        [
+          68670,
+          "7416",
+          "eb16"
+        ]
+      ],
+      "direct_upgrades": [
+        [
+          69087,
+          "751a",
+          "eb1a"
+        ],
+        [
+          65294,
+          "7511",
+          "eb11"
+        ],
+        [
+          132512,
+          "515357",
+          "b001c3"
+        ]
+      ],
+      "almanac_reveal": [
+        [
+          13374,
+          "84c0",
+          "0c01"
+        ],
+        [
+          19394,
+          "84c0",
+          "0c01"
+        ],
+        [
+          19536,
+          "51538bd8",
+          "b001c390"
+        ],
+        [
+          19792,
+          "8b8084010000",
+          "b001c3909090"
+        ],
+        [
+          17118,
+          "8b842440010000",
+          "e9600000009090"
+        ],
+        [
+          17601,
+          "753e",
+          "eb3e"
+        ],
+        [
+          18096,
+          "754b",
+          "eb4b"
+        ]
+      ]
+    },
+    "plant_scale_hook": 424042,
+    "zombie_scale_field": 284,
+    "cob_fire": [
+      436240,
+      "51d90598db6f0053"
+    ],
+    "grid_items": [
+      308,
+      328368,
+      "8b0e8b4634c64620"
+    ]
+  },
+  "features": [
+    {
+      "title": "Infinite sunshine",
+      "method": "toggle_infinite_sun",
+      "state": "infinite_sun_active",
+      "editor": ""
+    },
+    {
+      "title": "Free planting",
+      "method": "toggle_prevent_spend",
+      "state": "prevent_spend_active",
+      "editor": ""
+    },
+    {
+      "title": "Auto collect",
+      "method": "toggle_auto_collect",
+      "state": "auto_collect_active",
+      "editor": ""
+    },
+    {
+      "title": "Auto collect coins",
+      "method": "toggle_auto_coins",
+      "state": "auto_coins_active",
+      "editor": ""
+    },
+    {
+      "title": "Bigger sun pickups",
+      "method": "toggle_collect_1000_sun",
+      "state": "collect_1000_sun_active",
+      "editor": ""
+    },
+    {
+      "title": "Planting bonus",
+      "method": "toggle_planting_adds_sun",
+      "state": "planting_adds_sun_active",
+      "editor": ""
+    },
+    {
+      "title": "Sun limit",
+      "method": "toggle_sun_lock",
+      "state": "sun_lock_active",
+      "editor": "sun"
+    },
+    {
+      "title": "Uncap sunshine",
+      "method": "toggle_unlock_sun_limit",
+      "state": "unlock_sun_limit_active",
+      "editor": ""
+    },
+    {
+      "title": "Coin units (\u00d7$10)",
+      "method": "toggle_money_changer",
+      "state": "money_changer_active",
+      "editor": "money"
+    },
+    {
+      "title": "Shop restock",
+      "method": "toggle_shop_stock",
+      "state": "shop_stock_active",
+      "editor": ""
+    },
+    {
+      "title": "Extended coin bank",
+      "method": "toggle_extended_bank",
+      "state": "extended_bank_active",
+      "editor": ""
+    },
+    {
+      "title": "Snail awake & fast",
+      "method": "toggle_snail_boost",
+      "state": "snail_boost_active",
+      "editor": ""
+    },
+    {
+      "title": "Limbo hidden page",
+      "method": "toggle_limbo_page",
+      "state": "limbo_page_active",
+      "editor": ""
+    },
+    {
+      "title": "Remove all graves",
+      "method": "remove_all_graves",
+      "state": "",
+      "editor": ""
+    },
+    {
+      "title": "Sunflower drops",
+      "method": "toggle_sunflower_drop",
+      "state": "sunflower_drop_active",
+      "editor": "drop"
+    },
+    {
+      "title": "Instant Potato Mines",
+      "method": "toggle_instant_mines",
+      "state": "instant_mines_active",
+      "editor": ""
+    },
+    {
+      "title": "No Lily Pad / Flower Pot needed",
+      "method": "toggle_no_support",
+      "state": "no_support_active",
+      "editor": ""
+    },
+    {
+      "title": "Cattail without Lily Pad",
+      "method": "toggle_cattail_land",
+      "state": "cattail_land_active",
+      "editor": ""
+    },
+    {
+      "title": "Direct upgrade planting",
+      "method": "toggle_direct_upgrades",
+      "state": "direct_upgrades_active",
+      "editor": ""
+    },
+    {
+      "title": "Plant size (%)",
+      "method": "toggle_plant_size",
+      "state": "plant_size_active",
+      "editor": "plant_size"
+    },
+    {
+      "title": "Zombie size (%)",
+      "method": "toggle_zombie_size",
+      "state": "zombie_size_active",
+      "editor": "zombie_size"
+    },
+    {
+      "title": "Reveal Almanac entries",
+      "method": "toggle_almanac_reveal",
+      "state": "almanac_reveal_active",
+      "editor": ""
+    },
+    {
+      "title": "Instant recharge",
+      "method": "toggle_no_cooldown",
+      "state": "no_cooldown_active",
+      "editor": ""
+    },
+    {
+      "title": "Plant anywhere",
+      "method": "toggle_plant_anywhere",
+      "state": "plant_anywhere_active",
+      "editor": ""
+    },
+    {
+      "title": "Invincible plants",
+      "method": "toggle_invincible_plants",
+      "state": "invincible_plants_active",
+      "editor": ""
+    },
+    {
+      "title": "Plant changer",
+      "method": "toggle_plant_changer",
+      "state": "plant_changer_active",
+      "editor": "plant"
+    },
+    {
+      "title": "Automatic Cob Cannons",
+      "method": "toggle_auto_cob",
+      "state": "auto_cob_active",
+      "editor": ""
+    },
+    {
+      "title": "Rapid fire",
+      "method": "toggle_rapid_fire",
+      "state": "rapid_fire_active",
+      "editor": ""
+    },
+    {
+      "title": "Firing delay",
+      "method": "toggle_fast_shoot",
+      "state": "fast_shoot_active",
+      "editor": "delay"
+    },
+    {
+      "title": "Projectile changer",
+      "method": "toggle_bullet_changer",
+      "state": "bullet_changer_active",
+      "editor": "bullet"
+    },
+    {
+      "title": "Zombotany protection",
+      "method": "toggle_unhittable_plants_zombotany",
+      "state": "unhittable_plants_active",
+      "editor": ""
+    },
+    {
+      "title": "One-hit knockout",
+      "method": "toggle_one_hit_kill",
+      "state": "one_hit_kill_active",
+      "editor": ""
+    },
+    {
+      "title": "Freeze the horde",
+      "method": "toggle_stop_zombies",
+      "state": "stop_zombies_active",
+      "editor": ""
+    },
+    {
+      "title": "Pause spawning",
+      "method": "toggle_stop_spawning",
+      "state": "stop_spawning_active",
+      "editor": ""
+    },
+    {
+      "title": "Invincible zombies",
+      "method": "toggle_invincible_zombies",
+      "state": "invincible_zombies_active",
+      "editor": ""
+    },
+    {
+      "title": "Choose a lane",
+      "method": "toggle_move_zombie_row",
+      "state": "move_zombie_row_active",
+      "editor": "row"
+    },
+    {
+      "title": "Move existing zombies",
+      "method": "move_existing_zombies",
+      "state": "",
+      "editor": "row"
+    },
+    {
+      "title": "Zombie preview",
+      "method": "toggle_show_all_zombies",
+      "state": "show_all_zombies_active",
+      "editor": ""
+    },
+    {
+      "title": "Play in background",
+      "method": "toggle_run_in_background",
+      "state": "run_in_background_active",
+      "editor": ""
+    },
+    {
+      "title": "Clear the fog",
+      "method": "toggle_no_fog",
+      "state": "no_fog_active",
+      "editor": ""
+    },
+    {
+      "title": "See inside vases",
+      "method": "toggle_see_vase",
+      "state": "see_vase_active",
+      "editor": ""
+    },
+    {
+      "title": "Daytime mushrooms",
+      "method": "toggle_mushrooms_awake",
+      "state": "mushrooms_awake_active",
+      "editor": ""
+    },
+    {
+      "title": "Always butter",
+      "method": "toggle_lock_butter",
+      "state": "lock_butter_active",
+      "editor": ""
+    },
+    {
+      "title": "No craters",
+      "method": "toggle_no_crater",
+      "state": "no_crater_active",
+      "editor": ""
+    },
+    {
+      "title": "No ice trails",
+      "method": "toggle_no_ice_trail",
+      "state": "no_ice_trail_active",
+      "editor": ""
+    },
+    {
+      "title": "Quiet jack-in-the-box",
+      "method": "toggle_zombie_not_explode",
+      "state": "zombie_not_explode_active",
+      "editor": ""
+    },
+    {
+      "title": "Faster conveyor",
+      "method": "toggle_fast_belt",
+      "state": "fast_belt_active",
+      "editor": ""
+    },
+    {
+      "title": "Keep the shovel",
+      "method": "toggle_lock_shovel",
+      "state": "lock_shovel_active",
+      "editor": ""
+    },
+    {
+      "title": "Game pace",
+      "method": "set_game_speed",
+      "state": "",
+      "editor": "speed"
+    },
+    {
+      "title": "Restore lawn mowers",
+      "method": "restore_lawn_mowers",
+      "state": "",
+      "editor": ""
+    },
+    {
+      "title": "Clear the horde",
+      "method": "kill_all_zombies",
+      "state": "",
+      "editor": ""
+    },
+    {
+      "title": "Spawn the wave",
+      "method": "spawn_all_zombies_now",
+      "state": "",
+      "editor": ""
+    },
+    {
+      "title": "Clear all plants",
+      "method": "clear_all_plants",
+      "state": "",
+      "editor": ""
+    },
+    {
+      "title": "Finish this level",
+      "method": "instant_win",
+      "state": "",
+      "editor": ""
+    },
+    {
+      "title": "Fragile plants",
+      "method": "toggle_instant_plant_death",
+      "state": "instant_plant_death_active",
+      "editor": ""
+    }
+  ]
+}

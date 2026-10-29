@@ -1,0 +1,42 @@
+{
+  "build": "Classic 1.0.0.1051",
+  "checks": [
+    "native no-op call",
+    "snail_boost installs and restores",
+    "limbo_page installs and restores",
+    "extended_bank installs and restores",
+    "shop_stock installs and restores",
+    "Garden to Adventure transition"
+  ],
+  "backup": "20261029-143804-50b9b99b",
+  "profile": {
+    "coins": 89755,
+    "adventure": 8,
+    "completed": 1,
+    "seed_slots": 10,
+    "tree_height": 1280543585,
+    "best_vasebreaker": 2457,
+    "best_izombie": 2457,
+    "best_survival_day": 0,
+    "best_survival_night": 0,
+    "best_survival_pool": 4,
+    "best_survival_fog": 0,
+    "best_survival_roof": 0,
+    "minigames": 1,
+    "puzzle": 1,
+    "survival": 1,
+    "mushroom_garden": 1,
+    "aquarium_garden": 1,
+    "wheelbarrow": 1,
+    "tree_owned": 1
+  },
+  "telemetry": {
+    "ui": 2,
+    "mode": 0,
+    "queued": 0,
+    "status": "Open a live lawn",
+    "sun": null,
+    "plants": 0,
+    "zombies": 0
+  }
+}

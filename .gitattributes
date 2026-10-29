@@ -7,3 +7,6 @@
 *.cmd text eol=crlf
 *.png binary
 *.ico binary
+*.CT text eol=lf
+*.lua text eol=lf
+*.json text eol=lf

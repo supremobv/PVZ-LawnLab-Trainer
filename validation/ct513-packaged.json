@@ -1,0 +1,9 @@
+{
+  "packaged_helper": true,
+  "edition": "goty",
+  "second_controller_refused": true,
+  "lua_conflict_record_synchronized": true,
+  "lua_backend_roundtrip_commands": 39,
+  "all_tested_code_restored": true,
+  "ownership_released_after_stop": true
+}

@@ -1,0 +1,109 @@
+{
+  "version": "5.7",
+  "offline_tests_passed": 155,
+  "sha256": {
+    "LawnLab.exe": "e19a540bf8eddaba24512aaa46970796e6f14efe2b51a0f99644dc30e37d07a4",
+    "LawnLab-GOTY-1.2.0.1073.CT": "8de995dbe7ad8daf8a555e316f0871da01fd430ad920bd88c97b924a5024ef20",
+    "LawnLab-Classic-1.0.0.1051.CT": "919258d32225eff2aa59d57941b3ab0cc1faeaae899228be929edc8564eaf7ff",
+    "LawnLab-addresses.json": "b79804cea9403c141188f35f5c0a0dcf995b74dbe94b9ced78f0407f2769c1ec",
+    "LawnLab-Classic-addresses.json": "2faf66be818527e43a0ec61b9977041dbaab2b921b2a72cd93384a1989da787c"
+  },
+  "checks": {
+    "ct57-packaged.json": {
+      "packaged_helper": true,
+      "second_controller_refused": true,
+      "lua_conflict_record_synchronized": true,
+      "lua_backend_roundtrip_commands": 21,
+      "all_tested_code_restored": true,
+      "ownership_released_after_stop": true
+    },
+    "achievement-isolation-5.7.json": {
+      "goty_restart_earned": 20,
+      "classic_separate_save": true,
+      "goty_after_classic_earned": 20,
+      "root": "C:\\ProgramData\\PopCap Games\\PlantsVsZomGOTY\\userdata"
+    },
+    "seed-pages-5.7.json": {
+      "initial_cards": [
+        1,
+        29,
+        36,
+        5,
+        7,
+        20,
+        32,
+        34,
+        39,
+        0
+      ],
+      "pages": 5,
+      "steps": [
+        {
+          "page": 1,
+          "cards": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        {
+          "page": 2,
+          "cards": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ]
+        },
+        {
+          "page": 1,
+          "cards": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        }
+      ],
+      "native_wheel_hook_installed": true,
+      "passed": true,
+      "restored_cards": [
+        1,
+        29,
+        36,
+        5,
+        7,
+        20,
+        32,
+        34,
+        39,
+        0
+      ],
+      "original_cards_restored": true
+    }
+  },
+  "limits": [
+    "Physical wheel gesture not manually confirmed",
+    "Custom note not visually tested inside game",
+    "PvZA11y downloaded and verified but not launched"
+  ]
+}

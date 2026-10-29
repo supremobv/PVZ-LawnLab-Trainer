@@ -1,0 +1,21 @@
+{
+  "version": "5.14",
+  "automated_tests_passed": 221,
+  "packaged_ct_commands_passed": 39,
+  "packaged_classic_launch_reached_main_menu": true,
+  "existing_game_folder_bass_loaded": true,
+  "save_root": "C:\\ProgramData\\PopCap Games\\PlantsVsZomCLSC\\",
+  "launch_helper_exited": true,
+  "dll_downloaded_or_replaced": false,
+  "reports": [
+    "launcher514-classic.json",
+    "ct514-packaged.json"
+  ],
+  "hashes": {
+    "LawnLab-Classic-addresses.json": "9A9052C5D583A53F3D9F90C25FC178830C018ABF33E58AA7D300421803144506",
+    "LawnLab-addresses.json": "8B061AE2FDBED48F6DF7F0783ACBF2E78F8E1EC611CA535508AE56A8615BE4B1",
+    "LawnLab-GOTY-1.2.0.1073.CT": "3BFFE4D6641E26779E5792CC8E13B5D1D7E439E77BB9CB18D4887C7C6CBCB113",
+    "LawnLab.exe": "579458CBE876FEB6C8F49C4B148BAD339F583911B8C8A2912CC0568CDBCFC0B7",
+    "LawnLab-Classic-1.0.0.1051.CT": "12A5C1D758811EF3A291D6F42B4CAF88727BA6B7F2519A518D8D18E57778698C"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "version": "5.12",
+  "automated_tests_passed": 214,
+  "packaged_ct_commands_passed": 37,
+  "native_invalid_seed_regression_reproduced_in_emulator": true,
+  "survival_night_hard_live_transitions_passed": 2,
+  "grave_removal_live_goty": 9,
+  "classic_grave_live_tested": false,
+  "save_guide_visually_checked": true,
+  "studio_close_hides_without_reset": true,
+  "reports": [
+    "survival512-goty.json",
+    "survival512-goty-second.json",
+    "ct512-packaged.json",
+    "survival512-backup.json"
+  ],
+  "hashes": {
+    "LawnLab-Classic-1.0.0.1051.CT": "3BD5979559434C97DC882D75D86C7A484CB1F904A62D731DE4AB753F272D9CCB",
+    "LawnLab-Classic-addresses.json": "5EB034D9BDD9B8F293A4B40EFA0AF75089676DE807F9A2C6DBFE8A5784AB05DB",
+    "LawnLab-GOTY-1.2.0.1073.CT": "CF57BA0F6B4981AD27DAB1EC3DC5C3B9F8DD8BEB81E0E99E67E74F1FCE1505A3",
+    "LawnLab.exe": "104A9A4D533628192D88D34B9A4E86CCC0E8BDD8E0E4C3E1DD376942C6F23C08",
+    "LawnLab-addresses.json": "097C44E5206CFD70AA9864B0D08F5BDA8AEC6766BD5D536EB01C8C75E9D4234F"
+  }
+}

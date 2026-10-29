@@ -1,0 +1,56 @@
+{
+  "build": "GOTY 1.2.0.1073",
+  "backup": "20261029-150633-872ff1bc",
+  "stock_before": {
+    "21": true,
+    "9": true,
+    "14": true,
+    "15": true,
+    "28": true,
+    "13": true,
+    "27": true,
+    "20": true,
+    "18": true,
+    "25": true,
+    "19": true,
+    "22": true,
+    "23": true
+  },
+  "stock_enabled": {
+    "21": false,
+    "9": false,
+    "14": false,
+    "15": false,
+    "28": false,
+    "13": false,
+    "27": false,
+    "20": false,
+    "18": false,
+    "25": false,
+    "19": false,
+    "22": false,
+    "23": false
+  },
+  "full_garden_guard": true,
+  "stock_restored": true,
+  "snail_predicates": [
+    1,
+    1
+  ],
+  "large_coin_units": 999999,
+  "large_coin_dollars": 9999990,
+  "tree_height_before": 1280543585,
+  "endless_before": {
+    "best_vasebreaker": 2457,
+    "best_izombie": 2457,
+    "best_survival_day": 0,
+    "best_survival_night": 0,
+    "best_survival_pool": 4,
+    "best_survival_fog": 0,
+    "best_survival_roof": 0
+  },
+  "named_profile_edits": true,
+  "native_achievement_edit": true,
+  "passed": true,
+  "temporary_profile_region_restored": true
+}

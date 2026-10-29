@@ -1,0 +1,260 @@
+{
+  "version": "5.2",
+  "date": "2026-10-29",
+  "game_sha256": "1ff5a2dcf009b453b8866783a68e8d04bd0d066abda3f8196d75a677366b2dff",
+  "evidence": "Game-state observations on an authorized disposable Adventure lawn; UI capture timed out.",
+  "checks": {
+    "gameplay-regressions": {
+      "initial": {
+        "ui": 3,
+        "mode": 0,
+        "queued": 0,
+        "board": 449590792,
+        "scene": 0,
+        "rows": 5,
+        "sun": 50,
+        "wave": 1,
+        "waves": 30,
+        "plants": 0,
+        "zombies": 3,
+        "status": "Live lawn"
+      },
+      "recharge_baseline": {
+        "active": 0,
+        "elapsed": 11
+      },
+      "recharge_enabled": {
+        "active": 1,
+        "refreshing": 0
+      },
+      "natural_wave_rows": [
+        {
+          "wave": 2,
+          "selected_row": 1,
+          "actual_rows": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "wave": 3,
+          "selected_row": 2,
+          "actual_rows": [
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "wave": 4,
+          "selected_row": 3,
+          "actual_rows": [
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "wave": 5,
+          "selected_row": 4,
+          "actual_rows": [
+            4,
+            4,
+            4
+          ]
+        },
+        {
+          "wave": 6,
+          "selected_row": 5,
+          "actual_rows": [
+            5,
+            5,
+            5
+          ]
+        }
+      ],
+      "baseline_projectiles_3s": 2,
+      "rapid_projectiles_3s": 9,
+      "delay_2_projectiles_3s": 8,
+      "mushroom_initial_asleep": 1,
+      "mushroom_after_enable_asleep": 0,
+      "pace": [
+        {
+          "milliseconds_per_frame": 50,
+          "ticks_per_second": 20.0
+        },
+        {
+          "milliseconds_per_frame": 20,
+          "ticks_per_second": 50.0
+        },
+        {
+          "milliseconds_per_frame": 10,
+          "ticks_per_second": 100.0
+        },
+        {
+          "milliseconds_per_frame": 5,
+          "ticks_per_second": 198.8
+        },
+        {
+          "milliseconds_per_frame": 2,
+          "ticks_per_second": 501.6
+        },
+        {
+          "milliseconds_per_frame": 1,
+          "ticks_per_second": 997.9
+        }
+      ],
+      "pace_restored": 10,
+      "protected_pointer_unchanged": true,
+      "final": {
+        "ui": 3,
+        "mode": 0,
+        "queued": 0,
+        "board": 449590792,
+        "scene": 0,
+        "rows": 5,
+        "sun": 50,
+        "wave": 6,
+        "waves": 30,
+        "plants": 2,
+        "zombies": 19,
+        "status": "Live lawn"
+      },
+      "passed": true
+    },
+    "day-lawn-effects": {
+      "backup": "20261029-021433-9bdba14d",
+      "sun_and_coin_locks": true,
+      "bigger_pickups_free_planting_zero_sun_and_planting_bonus": true,
+      "plant_changer_preserves_cell": true,
+      "projectile_chilling_and_zombie_invincibility": true,
+      "one_hit_kill": true,
+      "movement_freeze": true,
+      "restore_mowers": true,
+      "clear_horde": true,
+      "clear_plants": true,
+      "passed": true
+    },
+    "defence-and-collection": {
+      "auto_collect_produced_sun": 25,
+      "always_butter_stuns_target": true,
+      "invincible_plants_while_eaten": true,
+      "normal_bites_damage_plant": true,
+      "fragile_plants": true,
+      "zombotany_protection_blocks_real_projectiles": true,
+      "passed": true
+    },
+    "combined-gameplay-soak": {
+      "controls": [
+        "infinite_sun",
+        "prevent_spend",
+        "collect_1000_sun",
+        "planting_adds_sun",
+        "auto_collect",
+        "no_cooldown",
+        "invincible_plants",
+        "unhittable_plants",
+        "run_in_background",
+        "unlock_sun_limit",
+        "fast_belt",
+        "money_changer",
+        "stop_zombies",
+        "invincible_zombies",
+        "rapid_fire",
+        "move_zombie_row",
+        "bullet_changer",
+        "mushrooms_awake",
+        "lock_shovel",
+        "no_crater",
+        "no_ice_trail",
+        "zombie_not_explode",
+        "no_fog",
+        "see_vase"
+      ],
+      "seconds": 30,
+      "errors": [],
+      "actual_lawn_ticks": 6287,
+      "natural_wave_after": 13,
+      "telemetry": {
+        "ui": 3,
+        "mode": 0,
+        "queued": 0,
+        "board": 449590792,
+        "scene": 0,
+        "rows": 5,
+        "sun": 9999,
+        "wave": 13,
+        "waves": 30,
+        "plants": 9,
+        "zombies": 21,
+        "status": "Live lawn"
+      },
+      "passed": true,
+      "code_restored": true,
+      "frame_duration_restored": 10,
+      "protected_pointer_unchanged": true
+    },
+    "special-entity-effects": {
+      "quiet_jack_prevents_pop_until_disabled": true,
+      "no_ice_trail_suppresses_zomboni_ice_timer": true,
+      "no_crater_suppresses_actual_doomshroom_crater": true,
+      "passed": true
+    },
+    "spawn-pause-sun-cap-and-cleanup": {
+      "paused_spawning_countdown": 1000,
+      "normal_countdown": 967,
+      "normal_sun_cap": 9990,
+      "uncapped_sun": 10025,
+      "cleanup": {
+        "plants": 0,
+        "zombies": 0,
+        "live_mowers": 5
+      },
+      "passed": true
+    },
+    "ct-packaged-helper": {
+      "packaged_helper": true,
+      "second_controller_refused": true,
+      "lua_conflict_record_synchronized": true,
+      "lua_backend_roundtrip_commands": 12,
+      "all_tested_code_restored": true,
+      "ownership_released_after_stop": true
+    },
+    "repeated_mower_restore": {
+      "passed": true,
+      "restores": [
+        {
+          "iteration": 1,
+          "storage_bound": 10,
+          "live_mowers": 5
+        },
+        {
+          "iteration": 2,
+          "storage_bound": 10,
+          "live_mowers": 5
+        },
+        {
+          "iteration": 3,
+          "storage_bound": 10,
+          "live_mowers": 5
+        },
+        {
+          "iteration": 4,
+          "storage_bound": 10,
+          "live_mowers": 5
+        },
+        {
+          "iteration": 5,
+          "storage_bound": 10,
+          "live_mowers": 5
+        },
+        {
+          "iteration": 6,
+          "storage_bound": 10,
+          "live_mowers": 5
+        }
+      ]
+    }
+  }
+}

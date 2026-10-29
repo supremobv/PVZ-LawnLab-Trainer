@@ -6,7 +6,7 @@ qt = root / '.venv' / 'Lib' / 'site-packages' / 'PySide6'
 a = Analysis(
     [str(root / 'lawnlab.py')], pathex=[str(root)],
     binaries=[(str(qt / name), '.') for name in ('VCRUNTIME140.dll', 'VCRUNTIME140_1.dll')],
-    datas=[(str(root / 'assets' / 'lawnlab.svg'), 'assets')],
+    datas=[(str(path), 'assets') for path in (root / 'assets').glob('*.svg')],
     hiddenimports=[], hookspath=[], hooksconfig={}, runtime_hooks=[],
     excludes=['tkinter'], noarchive=False,
 )

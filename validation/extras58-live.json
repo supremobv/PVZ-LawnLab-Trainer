@@ -1,0 +1,42 @@
+{
+  "upgrade_cell": [
+    1,
+    2
+  ],
+  "winter_before": 8,
+  "direct_upgrade_reasons": {
+    "40": 0,
+    "41": 0,
+    "42": 0,
+    "44": 0,
+    "45": 0,
+    "46": 0,
+    "47": 0
+  },
+  "plant_scale": {
+    "native": [
+      1.0,
+      1.0
+    ],
+    "double": [
+      2.0,
+      2.0
+    ]
+  },
+  "almanac_patches_restored": true,
+  "passed": true,
+  "zombie_native_size": 1.0,
+  "zombie_size_field_doubled": 2.0,
+  "zombie_matrix": {
+    "before": [
+      1.0,
+      1.0
+    ],
+    "double": [
+      2.0,
+      2.0
+    ]
+  },
+  "clock_advanced": 9,
+  "zombie_restored": true
+}

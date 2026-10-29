@@ -1,0 +1,19 @@
+{
+  "build": "GOTY 1.2.0.1073",
+  "cell": [
+    1,
+    2
+  ],
+  "before": 8,
+  "direct_upgrade_dependency": true,
+  "enabled": 0,
+  "planted_type": 43,
+  "occupied_rejected": true,
+  "clock_advanced": 822,
+  "projectile_types": [
+    8
+  ],
+  "target_health_after": 100000,
+  "dependency_disable_stops_cattail": true,
+  "passed": true
+}

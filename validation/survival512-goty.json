@@ -1,0 +1,44 @@
+{
+  "grid_array_bound": 9,
+  "grid_item_sample": [
+    {
+      "type": 1,
+      "identity": 3530096640
+    },
+    {
+      "type": 1,
+      "identity": 3530162177
+    },
+    {
+      "type": 1,
+      "identity": 3530227714
+    }
+  ],
+  "graves_removed": 9,
+  "capacity": 10,
+  "final_page": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    0,
+    1
+  ],
+  "ui_after_stage_end": 2,
+  "deck_stopped_at_repick": true,
+  "repick_buttons": {
+    "0xa0": 380377184,
+    "0xa4": 380381448,
+    "0xa8": 380384728,
+    "0xac": 380383416,
+    "0xb0": 380386696,
+    "0xb4": 380380464,
+    "0xb8": 380377512
+  },
+  "chooser_still_alive": true,
+  "passed": true
+}

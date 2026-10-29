@@ -1,0 +1,20 @@
+{
+  "version": "5.6",
+  "utc": "2026-10-29T07:10:09.337791+00:00",
+  "offline_tests": 132,
+  "ct": {
+    "packaged_helper": true,
+    "second_controller_refused": true,
+    "lua_conflict_record_synchronized": true,
+    "lua_backend_roundtrip_commands": 21,
+    "all_tested_code_restored": true,
+    "ownership_released_after_stop": true
+  },
+  "files": {
+    "LawnLab.exe": "2f41c5c450a6c01eab00cdcae22d3dfec3b96011b7f2466307b4d3510c329415",
+    "LawnLab-GOTY-1.2.0.1073.CT": "d2343abce71331fd2b73e569ade29ff9419116d36d7e3525c062959490b10e71",
+    "LawnLab-Classic-1.0.0.1051.CT": "f2707aec3c1e69a236de0fb2a4cd732ef8f8daa12ccc3f6a613de9f63b841ef1",
+    "LawnLab-addresses.json": "53af2efc5024e9c6ec2794c7cf440741443cfe93cef803e196583110062012c2",
+    "LawnLab-Classic-addresses.json": "b447093e9c4036c3a3a9ef0336698f9748389bda9170fccda266be8ad6f93c3e"
+  }
+}

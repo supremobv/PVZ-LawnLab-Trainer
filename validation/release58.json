@@ -1,0 +1,111 @@
+{
+  "version": "5.8",
+  "offline_tests_passed": 167,
+  "sha256": {
+    "LawnLab.exe": "0342a6e6afb5ce55413ce2c7692d38806a2d85292c99fe0bf637e9f235ae0e8d",
+    "LawnLab-GOTY-1.2.0.1073.CT": "0e5d4059738f6e36865d857785abbbcf3aa16cd0e19d8a63e9f8c01d9901dc87",
+    "LawnLab-Classic-1.0.0.1051.CT": "3d12846b2234fe95ea2db648a2452e6c0c98ef92f69b1f6b7bb8beb5ae78feeb",
+    "LawnLab-addresses.json": "aeaf9e4beaf8c25dbe1f9e2dacfa42be2333447a4cc4308bc56614f1fbfd7238",
+    "LawnLab-Classic-addresses.json": "9e8a1174231777f934497841b600d770b0afce50fc5a3be4b5ba27a9dc9a58ae"
+  },
+  "checks": {
+    "extras58-live.json": {
+      "upgrade_cell": [
+        1,
+        2
+      ],
+      "winter_before": 8,
+      "direct_upgrade_reasons": {
+        "40": 0,
+        "41": 0,
+        "42": 0,
+        "44": 0,
+        "45": 0,
+        "46": 0,
+        "47": 0
+      },
+      "plant_scale": {
+        "native": [
+          1.0,
+          1.0
+        ],
+        "double": [
+          2.0,
+          2.0
+        ]
+      },
+      "almanac_patches_restored": true,
+      "passed": true,
+      "zombie_native_size": 1.0,
+      "zombie_size_field_doubled": 2.0,
+      "zombie_matrix": {
+        "before": [
+          1.0,
+          1.0
+        ],
+        "double": [
+          2.0,
+          2.0
+        ]
+      },
+      "clock_advanced": 9,
+      "zombie_restored": true
+    },
+    "extras58-classic-live.json": {
+      "upgrade_cell": [
+        1,
+        1
+      ],
+      "winter_before": 8,
+      "direct_upgrade_reasons": {
+        "40": 0,
+        "41": 0,
+        "42": 0,
+        "44": 0,
+        "45": 0,
+        "46": 0,
+        "47": 0
+      },
+      "plant_scale": {
+        "native": [
+          1.0,
+          1.0
+        ],
+        "double": [
+          2.0,
+          2.0
+        ]
+      },
+      "almanac_patches_restored": true,
+      "passed": true,
+      "zombie_native_size": 1.0,
+      "zombie_size_field_doubled": 2.0,
+      "zombie_matrix": {
+        "before": [
+          1.0,
+          1.0
+        ],
+        "double": [
+          2.0,
+          2.0
+        ]
+      },
+      "clock_advanced": 53,
+      "zombie_restored": true
+    },
+    "ct58-packaged.json": {
+      "packaged_helper": true,
+      "edition": "classic",
+      "second_controller_refused": true,
+      "lua_conflict_record_synchronized": true,
+      "lua_backend_roundtrip_commands": 31,
+      "all_tested_code_restored": true,
+      "ownership_released_after_stop": true
+    }
+  },
+  "classic_launcher": "Live launch verified using short argv[0], separate save root active",
+  "limits": [
+    "Full revealed Almanac screen not manually visually confirmed",
+    "Cattail direct planting restricted to pool; current disposable test lawns were land scenes"
+  ]
+}

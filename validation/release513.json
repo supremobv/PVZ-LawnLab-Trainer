@@ -1,0 +1,17 @@
+{
+  "version": "5.13",
+  "automated_tests_passed": 218,
+  "packaged_ct_commands_passed": 39,
+  "cattail_land_placement_live_goty": true,
+  "cattail_homing_spike_live_goty": true,
+  "classic_instruction_map_verified": true,
+  "classic_live_firing_tested": false,
+  "dependency": "Enables Direct upgrade planting. Disabling Direct upgrade planting disables Cattail without Lily Pad.",
+  "hashes": {
+    "LawnLab-Classic-addresses.json": "4F96ED1788CE44BFB934BD903C42A2F15B5B68A6B7D49EFF5F7A4BB2D2C5AEF0",
+    "LawnLab-GOTY-1.2.0.1073.CT": "FB8C027CA6F826EF4A47247F2145A1B3B2F3F8E135301104AE80709FD13329FE",
+    "LawnLab-Classic-1.0.0.1051.CT": "92BF2B8D7F2CFACADB71CF0A0F7C1E771209D24BAC5DF9FFBE82237DBF49909B",
+    "LawnLab-addresses.json": "4B6FFC824F2B72A3BFDE73EC8F4A116EB06851269FE24A282B4429095497E8B2",
+    "LawnLab.exe": "E363DAD74886437A49460FC69817A5E1824F386918A7A5E7ED900EC9C1353668"
+  }
+}

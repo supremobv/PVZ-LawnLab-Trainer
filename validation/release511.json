@@ -1,0 +1,20 @@
+{
+  "version": "5.11",
+  "automated_tests_passed": 204,
+  "packaged_ct_commands_passed": 37,
+  "live_checks": [
+    "cob511-goty.json",
+    "cob511-classic.json",
+    "mines-terrain511-goty.json",
+    "mines-terrain511-classic.json"
+  ],
+  "terrain_validation": "Native placement predicates tested with temporary fields restored before resuming update loop; actual pool/roof visual play not tested.",
+  "save_diagnosis": "Original EXEs use shared legacy stage 10; edition helper launches use isolated stage 12. Game-folder shortcuts and GOTY Start Menu route through helper. Original EXEs remain unchanged.",
+  "hashes": {
+    "LawnLab-GOTY-1.2.0.1073.CT": "805C90F1FAECB8D857E45824A4EECFC99FFBD89FE1F9FE536342950166D28685",
+    "LawnLab-addresses.json": "054710D84A0C6F3C13987C3ED157FD211CE6A1A1C4DE38D8276606EC7D22E897",
+    "LawnLab.exe": "127FA3A52A248D1E678786DBFAED2BC6C427ABCEC71D02A123E8B1672C761ABF",
+    "LawnLab-Classic-1.0.0.1051.CT": "4D3ECC69E4EFE16305B2F74DDA64F69F17010240ECCA4F90DD6FF437B51F419D",
+    "LawnLab-Classic-addresses.json": "2635D2935FEE3A7AB1AA5B7F08C6E1C219C99660EA65E41033F56CD98BC51452"
+  }
+}

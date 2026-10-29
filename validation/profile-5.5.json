@@ -1,0 +1,64 @@
+{
+  "version": "5.5",
+  "offline_tests_passed": 121,
+  "persistent_tools_live": {
+    "backup": "20261029-131759-8592a1b8",
+    "garden_count_before": 11,
+    "named_profile_edit": true,
+    "achievement_on_off": true,
+    "added_mushroom_and_aquarium_plants": true,
+    "bulk_water_and_fertilizer": true,
+    "bulk_needs_and_chocolate": true,
+    "move_to_wheelbarrow": true,
+    "sold_out_before": {
+      "21": true,
+      "9": true,
+      "14": true,
+      "15": true,
+      "28": true,
+      "13": true,
+      "27": true,
+      "20": true,
+      "10": true
+    },
+    "sold_out_with_override": {
+      "21": true,
+      "9": true,
+      "14": false,
+      "15": false,
+      "28": false,
+      "13": false,
+      "27": true,
+      "20": true,
+      "10": false
+    },
+    "full_garden_guard_preserved": true,
+    "stock_toggle_restored": true,
+    "passed": true,
+    "temporary_profile_region_restored": true
+  },
+  "garden_read_live": {
+    "garden_records": 11,
+    "dashboard": "Zen Garden \u2014 saved collection tools available",
+    "profile_read_in_garden": 11,
+    "worker_error": "",
+    "returned_to_menu": true,
+    "passed": true
+  },
+  "limits": [
+    "Live checks used native game state and the actual sold-out routine. No shop purchase was submitted through the game UI.",
+    "Mushroom/Aquarium records and coordinates were inspected in the saved collection; their rendered appearance was not captured.",
+    "The 20 local GOTY achievement flags are edited; Steam-account achievements are outside this editor.",
+    "Garden additions/moves and player-data/achievement changes require Main Menu. Identity, strings and Zombatar data are preserved.",
+    "A test-only return-to-menu helper initially used the wrong register and caused a test crash. It was corrected to the verified ECX convention and the final garden trial passed after restart. This helper is not shipped."
+  ],
+  "ct_packaged_harness": {
+    "packaged_helper": true,
+    "second_controller_refused": true,
+    "lua_conflict_record_synchronized": true,
+    "lua_backend_roundtrip_commands": 18,
+    "all_tested_code_restored": true,
+    "ownership_released_after_stop": true
+  },
+  "portable_exe_sha256": "e20dff8182c12eebb66ae11d6b085fd09850e44f45b67cbf380bed40cea390d6"
+}

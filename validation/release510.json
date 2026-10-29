@@ -1,0 +1,23 @@
+{
+  "version": "5.10",
+  "automated_tests_passed": 193,
+  "packaged_ct_commands_passed": 31,
+  "classic_notes_user_confirmed": true,
+  "classic_limbo_without_trainer_user_confirmed": true,
+  "goty_achievements_after_classic": 20,
+  "remembered_limbo_per_edition": true,
+  "original_executable_bypasses_launcher_settings": true,
+  "hashes": {
+    "LawnLab.exe": "5BAA2E589EE753BFF970F6A2ECA5370EB5FBA71B65AD292C06E0BF0915598D09",
+    "LawnLab-Classic-addresses.json": "4DE822E6FAAA64371EBFBA5EC98CF7E51E5627F81FAC15033FC63ECDE4C5FD97",
+    "LawnLab-Classic-1.0.0.1051.CT": "35407133ECC60C2CBDAE7796335E17C8362C28DB419907B01528B15B5FCE33BE",
+    "LawnLab-addresses.json": "AAA918CE938E4AA8D063FC6BB121F4B0545940CEB902BB20CD5CA4F00A5A6613",
+    "LawnLab-GOTY-1.2.0.1073.CT": "330390EA25AF874C2ED07B25DA0A3878E732569A51289F5C3C45000DCA422AC2"
+  },
+  "live_reports": [
+    "classic-notes510.json",
+    "startup510-classic.json",
+    "startup510-goty.json",
+    "ct510-packaged.json"
+  ]
+}

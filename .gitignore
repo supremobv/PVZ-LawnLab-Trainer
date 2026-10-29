@@ -6,4 +6,23 @@ release/
 build-release/
 *.spec
 *.log
+research/
+build-output*/
 !lawnlab-portable.spec
+
+build-release*/
+
+# Personal state, credentials and local caches
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+.env
+.env.*
+*.pem
+*.key
+userdata/
+backups/
+logs/
+validation/*.png
+assets/preview-note-text.png

@@ -1,0 +1,122 @@
+{
+  "backup": "20261029-035225-52ed6901",
+  "one_hit_armour": [
+    {
+      "type": 0,
+      "before": [
+        270,
+        0,
+        0
+      ],
+      "body_after": 0,
+      "phase_after": 1
+    },
+    {
+      "type": 2,
+      "before": [
+        270,
+        370,
+        0
+      ],
+      "body_after": 0,
+      "phase_after": 1
+    },
+    {
+      "type": 4,
+      "before": [
+        270,
+        1100,
+        0
+      ],
+      "body_after": 0,
+      "phase_after": 1
+    },
+    {
+      "type": 6,
+      "before": [
+        270,
+        0,
+        1100
+      ],
+      "body_after": 0,
+      "phase_after": 1
+    },
+    {
+      "type": 7,
+      "before": [
+        270,
+        1400,
+        0
+      ],
+      "body_after": 0,
+      "phase_after": 1
+    },
+    {
+      "type": 21,
+      "before": [
+        500,
+        0,
+        500
+      ],
+      "body_after": 0,
+      "phase_after": 1
+    },
+    {
+      "type": 27,
+      "before": [
+        270,
+        1100,
+        0
+      ],
+      "body_after": 0,
+      "phase_after": 1
+    },
+    {
+      "type": 31,
+      "before": [
+        270,
+        2200,
+        0
+      ],
+      "body_after": 0,
+      "phase_after": 1
+    }
+  ],
+  "armoured_normal_hit_restored": true,
+  "live_move": {
+    "result": {
+      "moved": 1,
+      "skipped": 0
+    },
+    "row": 4,
+    "x_preserved": true,
+    "y_delta": 200,
+    "render_order_delta": 20000
+  },
+  "normal_shots_3s": 2,
+  "rapid_shots_3s": 60,
+  "status": "partial: battle ended before coin and saved-layout checks",
+  "offline_tests_passed": 96,
+  "limitations": [
+    "Desktop capture timed out; memory instrumentation used.",
+    "Coin credit and bulk-plan live tests remain pending fresh battle.",
+    "Not every scene or shooter animation has been visually verified."
+  ],
+  "ct_source_harness": {
+    "packaged_helper": false,
+    "second_controller_refused": true,
+    "lua_conflict_record_synchronized": true,
+    "lua_backend_roundtrip_commands": 12,
+    "all_tested_code_restored": true,
+    "ownership_released_after_stop": true
+  },
+  "ct_packaged_harness": {
+    "packaged_helper": true,
+    "second_controller_refused": true,
+    "lua_conflict_record_synchronized": true,
+    "lua_backend_roundtrip_commands": 12,
+    "all_tested_code_restored": true,
+    "ownership_released_after_stop": true
+  },
+  "portable_exe_sha256": "2a4d9e75bd321ccd871d4ae15f9a6ca40be7acc512b7258ab53ec653031c2750"
+}

@@ -1,0 +1,207 @@
+{
+  "version": "5.4",
+  "offline_tests_passed": 104,
+  "verification": "Instrumented checks against the fingerprinted GOTY process; no screenshot-based gameplay claims.",
+  "gameplay_regressions": {
+    "backup": "20261029-112826-09ebdbae",
+    "one_hit_armour": [
+      {
+        "type": 0,
+        "before": [
+          270,
+          0,
+          0
+        ],
+        "body_after": 0,
+        "phase_after": 1
+      },
+      {
+        "type": 2,
+        "before": [
+          270,
+          370,
+          0
+        ],
+        "body_after": 0,
+        "phase_after": 1
+      },
+      {
+        "type": 4,
+        "before": [
+          270,
+          1100,
+          0
+        ],
+        "body_after": 0,
+        "phase_after": 1
+      },
+      {
+        "type": 6,
+        "before": [
+          270,
+          0,
+          1100
+        ],
+        "body_after": 0,
+        "phase_after": 1
+      },
+      {
+        "type": 7,
+        "before": [
+          270,
+          1400,
+          0
+        ],
+        "body_after": 0,
+        "phase_after": 1
+      },
+      {
+        "type": 21,
+        "before": [
+          500,
+          0,
+          500
+        ],
+        "body_after": 0,
+        "phase_after": 1
+      },
+      {
+        "type": 27,
+        "before": [
+          270,
+          1100,
+          0
+        ],
+        "body_after": 0,
+        "phase_after": 1
+      },
+      {
+        "type": 31,
+        "before": [
+          270,
+          2200,
+          0
+        ],
+        "body_after": 0,
+        "phase_after": 1
+      }
+    ],
+    "armoured_normal_hit_restored": true,
+    "live_move": {
+      "result": {
+        "moved": 1,
+        "skipped": 0
+      },
+      "row": 4,
+      "x_preserved": true,
+      "y_delta": 200,
+      "render_order_delta": 20000
+    },
+    "normal_shots_3s": 3,
+    "rapid_shots_3s": 61,
+    "auto_coin_earned_save_units": 1,
+    "rectangle_plant_count": 6,
+    "same_cell_stack_count": 2,
+    "saved_plan_rebuild_count": 10,
+    "passed": true
+  },
+  "sunflower_and_placement": {
+    "drops": [
+      {
+        "plant_type": 1,
+        "mode": 0,
+        "coin_types": [
+          4
+        ]
+      },
+      {
+        "plant_type": 1,
+        "mode": 1,
+        "coin_types": [
+          1
+        ]
+      },
+      {
+        "plant_type": 1,
+        "mode": 2,
+        "coin_types": [
+          2
+        ]
+      },
+      {
+        "plant_type": 1,
+        "mode": 3,
+        "coin_types": [
+          3
+        ]
+      },
+      {
+        "plant_type": 41,
+        "mode": 0,
+        "coin_types": [
+          4,
+          4
+        ]
+      },
+      {
+        "plant_type": 41,
+        "mode": 1,
+        "coin_types": [
+          1,
+          1
+        ]
+      },
+      {
+        "plant_type": 41,
+        "mode": 2,
+        "coin_types": [
+          2,
+          2
+        ]
+      },
+      {
+        "plant_type": 41,
+        "mode": 3,
+        "coin_types": [
+          3,
+          3
+        ]
+      }
+    ],
+    "other_sun_unchanged": true,
+    "drop_hook_restored": true,
+    "exact_quantity_created": 7,
+    "fill_remaining_created": 38,
+    "full_lawn_quantity_rejected_without_changes": true,
+    "backup": "20261029-112923-6e6ddf46"
+  },
+  "stage_transition": {
+    "backup": "20261029-114139-36ba0f51",
+    "initial_ui": 2,
+    "adventure_board": "0x1ac211c8",
+    "garden_ui": 3,
+    "garden_mode": 43,
+    "garden_board": "0x1b5228a8",
+    "garden_dashboard": "Zen Garden \u2014 saved collection tools available",
+    "loop_restored": true,
+    "return_adventure_ui": 2,
+    "return_adventure_mode": 0,
+    "passed": true
+  },
+  "limitations": [
+    "Desktop game capture timed out. Custom planner/UI previews were rendered and inspected separately.",
+    "Sunflower/Twin Sunflower drop types and coin motion were read from actual created objects; all four choices passed.",
+    "Garden entry and return passed after fixing old-board disposal order; persistent garden edits were not repeated in this run.",
+    "Day-lawn bulk/exact placement, stacks and saved-plan rebuild passed. Other scenes have validation tests, not exhaustive live species/layout trials.",
+    "Main-menu launcher cleanup order is covered by automated tests; the final live transition started from an Adventure board."
+  ],
+  "ct_packaged_harness": {
+    "packaged_helper": true,
+    "second_controller_refused": true,
+    "lua_conflict_record_synchronized": true,
+    "lua_backend_roundtrip_commands": 16,
+    "all_tested_code_restored": true,
+    "ownership_released_after_stop": true
+  },
+  "portable_exe_sha256": "a31f4ca05dc3d590479466f852851282f10a6858bf47b32298859f38d34b7745"
+}

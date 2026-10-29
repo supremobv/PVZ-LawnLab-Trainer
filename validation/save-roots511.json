@@ -1,0 +1,49 @@
+{
+  "live_root": "C:\\ProgramData\\PopCap Games\\PlantsVsZomGOTY\\",
+  "live_adventure_stage": 12,
+  "ui": 3,
+  "folders": {
+    "goty": {
+      "size": 3262,
+      "modified": 1793282969.9829085,
+      "header": [
+        12,
+        12,
+        99999,
+        1,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    "classic": {
+      "size": 3196,
+      "modified": 1793283613.6518023,
+      "header": [
+        12,
+        12,
+        99999,
+        1,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    "legacy": {
+      "size": 3196,
+      "modified": 1793283007.7198386,
+      "header": [
+        12,
+        10,
+        99999,
+        1,
+        5,
+        5,
+        5,
+        5
+      ]
+    }
+  }
+}

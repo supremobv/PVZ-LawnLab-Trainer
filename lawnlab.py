@@ -1,4 +1,4 @@
-"""LawnLab: Qt desktop interface for the original PVZ Trainer memory engine."""
+"""LawnLab: Qt desktop interface for the verified GOTY control runtime."""
 from __future__ import annotations
 
 import ctypes
@@ -14,9 +14,10 @@ from PySide6.QtGui import QColor, QFont, QFontDatabase, QIcon, QPainter, QPen, Q
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QFrame, QLabel, QPushButton, QLineEdit,
     QVBoxLayout, QHBoxLayout, QGridLayout, QScrollArea, QComboBox, QSpinBox,
-    QMessageBox, QCheckBox, QSizePolicy,
+    QMessageBox, QCheckBox, QSizePolicy, QLayout,
 )
-from trainer_engine import PvZTrainer, PLANT_NAMES, ROW_NAMES
+from trainer_engine import PLANT_NAMES, ROW_NAMES
+from trainer_backend import PvZTrainer
 
 ROOT = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
 LOGO = ROOT / 'assets' / 'lawnlab.svg'
@@ -37,25 +38,41 @@ FEATURES = [
     Feature('Sun & economy', 'Infinite sunshine', 'Keep your sun reserves at 9,999.', 'toggle_infinite_sun', 'infinite_sun_active'),
     Feature('Sun & economy', 'Free planting', 'Plant seeds without spending sun.', 'toggle_prevent_spend', 'prevent_spend_active'),
     Feature('Sun & economy', 'Auto collect', 'Pick up falling sunshine automatically.', 'toggle_auto_collect', 'auto_collect_active'),
+    Feature('Sun & economy', 'Auto collect coins', 'Collect silver, gold and diamonds during battle. Earns their normal value; coin balance lock overrides earnings while enabled.', 'toggle_auto_coins', 'auto_coins_active'),
     Feature('Sun & economy', 'Bigger sun pickups', 'Add 1,000 sun with every pickup.', 'toggle_collect_1000_sun', 'collect_1000_sun_active'),
     Feature('Sun & economy', 'Planting bonus', 'Earn 2,000 sun when you plant.', 'toggle_planting_adds_sun', 'planting_adds_sun_active'),
     Feature('Sun & economy', 'Sun limit', 'Choose an amount and keep it locked.', 'toggle_sun_lock', 'sun_lock_active', 'sun'),
     Feature('Sun & economy', 'Uncap sunshine', 'Remove the original sun ceiling.', 'toggle_unlock_sun_limit', 'unlock_sun_limit_active'),
-    Feature('Sun & economy', 'Coin balance', 'Choose the balance used by the money patch.', 'toggle_money_changer', 'money_changer_active', 'money'),
+    Feature('Sun & economy', 'Coin units (×$10)', 'Set stored coin units: 999,999 units = $9,999,990. Large balances enable Extended coin bank.', 'toggle_money_changer', 'money_changer_active', 'money'),
+    Feature('Sun & economy', 'Shop restock', 'Buy sold-out items again at normal prices, including owned tools, gardens and the Snail. Seed/mower counts stay capped; buying the Tree preserves its height. Full gardens still cannot take another plant.', 'toggle_shop_stock', 'shop_stock_active'),
+    Feature('Sun & economy', 'Extended coin bank', 'Allow up to 99,999,999 stored coin units (each unit = $10). Keep enabled above the original cap.', 'toggle_extended_bank', 'extended_bank_active'),
+    Feature('Lawn & world', 'Snail awake & fast', 'Keep an owned Stinky awake and at the game’s chocolate-boosted collection speed. Does not consume chocolate.', 'toggle_snail_boost', 'snail_boost_active'),
+    Feature('Lawn & world', 'Limbo hidden page', 'Reveal Limbo for this session. Use Mods, notes & launch to remember it for future launches without the trainer window. Reopen Minigames after enabling.', 'toggle_limbo_page', 'limbo_page_active'),
+    Feature('Level actions', 'Remove all graves', 'Remove current gravestones from this battle using native cleanup. Leaves plants, vases, craters and ladders intact. This is a one-time action; future graves can appear.', 'remove_all_graves'),
+    Feature('Plants', 'Sunflower drops', 'Choose normal sun, silver coins, gold coins or diamonds. Affects future Sunflower and Twin Sunflower drops only.', 'toggle_sunflower_drop', 'sunflower_drop_active', 'drop'),
+    Feature('Plants', 'Instant Potato Mines', 'New Potato Mines start armed immediately, with their native armed animation. Mines already planted keep their current arming progress. Each mine still explodes once.', 'toggle_instant_mines', 'instant_mines_active'),
+    Feature('Plants', 'No Lily Pad / Flower Pot needed', 'Plant ordinary plants directly on pool water or roof tiles. Sun cost, empty-cell checks and special aquatic/ground-only plant restrictions still apply. Also works with Lawn Studio placement.', 'toggle_no_support', 'no_support_active'),
+    Feature('Plants', 'Cattail without Lily Pad', 'Place Cattail on clear land or pool cells without a Lily Pad. Also enables Direct upgrade planting; disabling that control disables this one. Roof still needs a Flower Pot or No Lily Pad / Flower Pot needed. Sun cost and occupied-cell checks remain.', 'toggle_cattail_land', 'cattail_land_active'),
+    Feature('Plants', 'Direct upgrade planting', 'Plant Winter Melon and other purple upgrades without a base plant. Normal sun cost, terrain, occupied cells and Cob Cannon width still apply.', 'toggle_direct_upgrades', 'direct_upgrades_active'),
+    Feature('Plants', 'Plant size (%)', 'Scale live lawn plant animations: 25% small, 100% normal, 300% giant. Visual size only; planting cells and damage stay the same.', 'toggle_plant_size', 'plant_size_active', 'plant_size'),
+    Feature('Zombies', 'Zombie size (%)', 'Scale current and new battle zombies relative to their native size. 25–300%; 100% normal. Reset restores each surviving zombie’s original size.', 'toggle_zombie_size', 'zombie_size_active', 'zombie_size'),
+    Feature('Lawn & world', 'Reveal Almanac entries', 'View locked plants and zombies, including Yeti artwork and descriptions. Reopen the Almanac after toggling. Does not change saved progress.', 'toggle_almanac_reveal', 'almanac_reveal_active'),
     Feature('Plants', 'Instant recharge', 'Seed packets are ready without the wait.', 'toggle_no_cooldown', 'no_cooldown_active'),
     Feature('Plants', 'Plant anywhere', 'Relax the usual placement restrictions.', 'toggle_plant_anywhere', 'plant_anywhere_active'),
     Feature('Plants', 'Invincible plants', 'Give your lawn a little extra staying power.', 'toggle_invincible_plants', 'invincible_plants_active'),
     Feature('Plants', 'Plant changer', 'Replace the selected seed with another plant.', 'toggle_plant_changer', 'plant_changer_active', 'plant'),
-    Feature('Plants', 'Rapid fire', 'Remove the firing delay between attacks.', 'toggle_rapid_fire', 'rapid_fire_active'),
-    Feature('Plants', 'Firing delay', 'Fine-tune the delay between shots.', 'toggle_fast_shoot', 'fast_shoot_active', 'delay'),
+    Feature('Plants', 'Automatic Cob Cannons', 'Automatically aim at the nearest hostile zombie and fire ready Cob Cannons. Skips the long reload wait; charging and launch animations still finish. No clicking needed. Pauses with the game; disable to return to manual firing.', 'toggle_auto_cob', 'auto_cob_active'),
+    Feature('Plants', 'Rapid fire', 'Standard shooters fire directly every 5 ticks: up to 20 shots/second at normal pace. Pauses acceleration if the projectile pool is busy.', 'toggle_rapid_fire', 'rapid_fire_active'),
+    Feature('Plants', 'Firing delay', 'Fine-tune animated attacks: 1–255 ticks. Lower is faster; 100 ticks = 1 second at normal pace. Animation time is the minimum. Use Rapid fire for direct shooting.', 'toggle_fast_shoot', 'fast_shoot_active', 'delay'),
     Feature('Plants', 'Projectile changer', 'Choose the projectile fired by your plants.', 'toggle_bullet_changer', 'bullet_changer_active', 'bullet'),
     Feature('Plants', 'Zombotany protection', 'Protect plants from Zombotany projectiles.', 'toggle_unhittable_plants_zombotany', 'unhittable_plants_active'),
     Feature('Zombies', 'One-hit knockout', 'Defeat zombies with a single hit.', 'toggle_one_hit_kill', 'one_hit_kill_active'),
     Feature('Zombies', 'Freeze the horde', 'Pause zombie movement on the lawn.', 'toggle_stop_zombies', 'stop_zombies_active'),
     Feature('Zombies', 'Pause spawning', 'Stop new zombies from joining the wave.', 'toggle_stop_spawning', 'stop_spawning_active'),
     Feature('Zombies', 'Invincible zombies', 'Make the opposition impossible to defeat.', 'toggle_invincible_zombies', 'invincible_zombies_active'),
-    Feature('Zombies', 'Choose a lane', 'Send new zombies into a selected row.', 'toggle_move_zombie_row', 'move_zombie_row_active', 'row'),
-    Feature('Zombies', 'Zombie preview', 'Show all zombie types in the level preview.', 'toggle_show_all_zombies', 'show_all_zombies_active'),
+    Feature('Zombies', 'Choose a lane', 'Move compatible current zombies when enabled, then send new zombies to this row. Use Move existing zombies to change lanes during play.', 'toggle_move_zombie_row', 'move_zombie_row_active', 'row'),
+    Feature('Zombies', 'Move existing zombies', 'Move compatible live zombies immediately. Keeps their X position. Special animations and land/water crossings are skipped.', 'move_existing_zombies', editor='row'),
+    Feature('Zombies', 'Zombie preview', 'Show supported types during seed selection; boss-only types are excluded.', 'toggle_show_all_zombies', 'show_all_zombies_active'),
     Feature('Lawn & world', 'Play in background', 'Keep the game running when you switch windows.', 'toggle_run_in_background', 'run_in_background_active'),
     Feature('Lawn & world', 'Clear the fog', 'See the whole lawn on foggy nights.', 'toggle_no_fog', 'no_fog_active'),
     Feature('Lawn & world', 'See inside vases', 'Reveal the contents in Vasebreaker.', 'toggle_see_vase', 'see_vase_active'),
@@ -69,7 +86,7 @@ FEATURES = [
     Feature('Lawn & world', 'Game pace', 'Choose how quickly your game runs.', 'set_game_speed', editor='speed'),
     Feature('Level actions', 'Restore lawn mowers', 'Bring back your last line of defense.', 'restore_lawn_mowers'),
     Feature('Level actions', 'Clear the horde', 'Remove all zombies from the current lawn.', 'kill_all_zombies', destructive=True),
-    Feature('Level actions', 'Spawn the wave', 'Bring the zombie wave onto the lawn now.', 'spawn_all_zombies_now', destructive=True),
+    Feature('Level actions', 'Spawn the wave', 'Advance the next Adventure/Survival wave. Resume the game first.', 'spawn_all_zombies_now', destructive=True),
     Feature('Level actions', 'Clear all plants', 'Start fresh with an empty lawn.', 'clear_all_plants', destructive=True),
     Feature('Level actions', 'Finish this level', 'Complete the current level immediately.', 'instant_win', destructive=True),
     Feature('Level actions', 'Fragile plants', 'Make plants die instantly when damaged.', 'toggle_instant_plant_death', 'instant_plant_death_active'),
@@ -211,21 +228,24 @@ class ControlCard(QFrame):
             self.editor.setAccessibleName(feature.title + ' value')
             box.addWidget(self.editor)
         if not feature.state:
-            self.action = QPushButton('Apply pace' if feature.editor else 'Run action  ↗')
+            self.action = QPushButton('Apply pace' if feature.editor=='speed' else 'Move zombies now' if feature.method=='move_existing_zombies' else 'Run action  ↗')
             self.action.setObjectName('danger' if feature.destructive else '')
             self.action.clicked.connect(lambda: window.action(self))
             box.addWidget(self.action, alignment=Qt.AlignmentFlag.AlignLeft)
 
     def make_editor(self, kind):
-        if kind in ('sun', 'money', 'delay'):
+        if kind in ('plant_size','zombie_size'):
+            w=QSpinBox();w.setRange(25,300);w.setValue(100);w.setSuffix(' %')
+        elif kind in ('sun', 'money', 'delay'):
             w = QSpinBox()
-            w.setRange(0, {'sun': 9999, 'money': 9999999, 'delay': 255}[kind])
+            w.setRange(1 if kind == 'delay' else 0, {'sun': 9999, 'money': 99999999, 'delay': 255}[kind])
             w.setValue({'sun': 9999, 'money': 99999, 'delay': 2}[kind])
             w.setGroupSeparatorShown(True)
         else:
             w = QComboBox()
             values = {
-                'plant': PLANT_NAMES, 'row': ROW_NAMES,
+                'drop': ['Sun (normal)', 'Silver coin', 'Gold coin', 'Diamond'],
+                'plant': PLANT_NAMES[:48], 'row': ROW_NAMES+['Row 6 (pool/fog only)'],
                 'bullet': ['Pea', 'Snow pea', 'Cabbage', 'Melon', 'Puff', 'Winter melon', 'Fire pea', 'Star', 'Spike', 'Basketball', 'Kernel', 'Cob cannon', 'Butter'],
                 'speed': ['0.2×  ·  Slow motion', '0.5×  ·  Take it easy', '1×  ·  Original pace', '2×  ·  Fast forward', '5×  ·  Extra fast', '10×  ·  Maximum'],
             }
@@ -257,6 +277,7 @@ class LawnLab(QMainWindow):
         self.current_category = 'All controls'
         self.close_after_reset = False
         self.speed_changed = False
+        self.studio = None
         self.setWindowTitle('LawnLab — PVZ Trainer')
         self.setWindowIcon(QIcon(str(LOGO)))
         self.resize(1160, 850)
@@ -305,6 +326,13 @@ class LawnLab(QMainWindow):
             side.addWidget(b)
             self.nav[name] = b
         side.addStretch()
+        studio_button = QPushButton('Open Lawn Studio  ↗')
+        studio_button.setObjectName('primary')
+        studio_button.clicked.connect(self.open_studio)
+        side.addWidget(studio_button)
+        save_guide = QPushButton('Save progress guide')
+        save_guide.clicked.connect(self.open_save_guide)
+        side.addWidget(save_guide)
         side.addWidget(label('BUILT FOR YOUR LAWN', 'eyebrow'))
         note = label('Developed by Primo\nsupremobv · supremopkv', 'muted')
         note.setStyleSheet('line-height: 1.5; padding-top: 8px;')
@@ -313,7 +341,7 @@ class LawnLab(QMainWindow):
         about.clicked.connect(self.about)
         side.addSpacing(12)
         side.addWidget(about)
-        side.addWidget(label('LAWNLab  /  4.0', 'muted'))
+        side.addWidget(label('LAWNLab  /  5.14', 'muted'))
         outer.addWidget(sidebar)
 
         panel = QWidget()
@@ -321,7 +349,7 @@ class LawnLab(QMainWindow):
         main.setContentsMargins(30, 22, 30, 16)
         main.setSpacing(17)
         top = QHBoxLayout()
-        top.addWidget(label('PLANTS vs. ZOMBIES  /  GOTY EDITION', 'eyebrow'), 1)
+        top.addWidget(label('PLANTS vs. ZOMBIES  /  GOTY + CLASSIC', 'eyebrow'), 1)
         self.badge = label('●  Not connected')
         self.badge.setStyleSheet('color: #ddb67a; background: #302b20; border-radius: 12px; padding: 6px 12px;')
         top.addWidget(self.badge)
@@ -361,6 +389,7 @@ class LawnLab(QMainWindow):
         self.scroll.setWidgetResizable(True)
         self.content = QWidget()
         self.grid = QGridLayout(self.content)
+        self.grid.setSizeConstraint(QLayout.SizeConstraint.SetMinAndMaxSize)
         self.grid.setContentsMargins(0, 0, 8, 0)
         self.grid.setSpacing(12)
         self.grid.setColumnStretch(0, 1)
@@ -393,6 +422,19 @@ class LawnLab(QMainWindow):
         self.filter_cards()
         self.scroll.verticalScrollBar().setValue(0)
 
+    def open_studio(self):
+        if self.studio is None:
+            from studio_ui import LawnStudio
+            self.studio = LawnStudio(self)
+        self.studio.show()
+        self.studio.raise_()
+
+    def open_save_guide(self):
+        self.open_studio()
+        self.studio.tabs.setCurrentIndex(self.studio.tabs.count()-1)
+        self.studio.tabs.currentWidget().verticalScrollBar().setValue(0)
+        if not self.busy:self.studio.extensions.read_progress()
+
     def filter_cards(self):
         while self.grid.count():
             self.grid.takeAt(0)
@@ -423,7 +465,7 @@ class LawnLab(QMainWindow):
     def finished(self, result, error, callback):
         self.busy = False
         if error:
-            self.status.setText('The operation could not finish. Check the game and try again.')
+            self.status.setText(error.strip().splitlines()[-1])
             print(error, file=sys.stderr)
         callback(result, error)
         self.update_enabled()
@@ -450,9 +492,12 @@ class LawnLab(QMainWindow):
         self.status.setText('Connecting to your game…')
         def done(result, error):
             if result:
-                self.status.setText(f'Connected to {self.engine.attached_process_name}. Open a level to begin.')
+                from extension_ui import remember_connected_edition
+                remember_connected_edition(self.engine)
+                if self.studio:self.studio.extensions.follow_connected_game()
+                self.status.setText(f'Connected to {self.engine.attached_process_name} ({getattr(self.engine,"build_label","verified build")}). Open a level to begin.')
             else:
-                self.status.setText('Game not found or access denied. Open the selected game process and retry.')
+                self.status.setText(getattr(self.engine,'last_error','') or 'Game not found or access denied. Open the selected game process and retry.')
         self.run(self.engine.attach_process, done)
 
     def prepare(self, card):
@@ -460,7 +505,7 @@ class LawnLab(QMainWindow):
         if not kind or kind == 'speed':
             return
         value = card.editor.value() if isinstance(card.editor, QSpinBox) else card.editor.currentIndex()
-        method = {'sun': 'set_sun_lock_amount', 'money': 'set_money_amount', 'plant': 'set_plant_changer_value', 'row': 'set_move_zombie_row_value', 'bullet': 'set_bullet_changer_value', 'delay': 'set_fast_shoot_delay'}[kind]
+        method = {'plant_size':'set_plant_size_percent','zombie_size':'set_zombie_size_percent','drop':'set_sunflower_drop_value','sun': 'set_sun_lock_amount', 'money': 'set_money_amount', 'plant': 'set_plant_changer_value', 'row': 'set_move_zombie_row_value', 'bullet': 'set_bullet_changer_value', 'delay': 'set_fast_shoot_delay'}[kind]
         if getattr(self.engine, method)(value) is False:
             raise RuntimeError('The game rejected the selected value.')
 
@@ -472,7 +517,9 @@ class LawnLab(QMainWindow):
             if checked:
                 groups = [('infinite_sun_active', 'sun_lock_active'),
                           ('invincible_plants_active', 'instant_plant_death_active'),
-                          ('one_hit_kill_active', 'invincible_zombies_active')]
+                          ('unhittable_plants_active', 'instant_plant_death_active'),
+                          ('one_hit_kill_active', 'invincible_zombies_active'),
+                          ('rapid_fire_active', 'fast_shoot_active')]
                 for group in groups:
                     if card.feature.state in group:
                         for other in FEATURES:
@@ -486,7 +533,9 @@ class LawnLab(QMainWindow):
             for other in self.cards:
                 if other.feature.state:
                     other.set_checked(bool(getattr(self.engine, other.feature.state, False)))
+            if error:self.status.setText(error.strip().splitlines()[-1]);return
             self.status.setText(f'{card.feature.title} {"enabled" if actual else "disabled"}.' if result and not error else f'Could not change {card.feature.title.lower()}. Check that a compatible level is open.')
+            if card.feature.method=='toggle_move_zombie_row'and actual and getattr(self.engine,'last_move_result',None):self.status.setText(self.status.text()+f" Moved {self.engine.last_move_result['moved']}; skipped {self.engine.last_move_result['skipped']} incompatible/special-state zombies.")
         self.run(operation, done)
 
     def action(self, card):
@@ -497,25 +546,27 @@ class LawnLab(QMainWindow):
             return
         def operation():
             method = getattr(self.engine, f.method)
-            return method([50, 20, 10, 5, 2, 1][card.editor.currentIndex()]) if f.editor == 'speed' else method()
+            return method([50, 20, 10, 5, 2, 1][card.editor.currentIndex()]) if f.editor == 'speed' else method(card.editor.currentIndex()) if f.method=='move_existing_zombies' else method()
         def done(result, error):
+            if error:self.status.setText(error.strip().splitlines()[-1]);return
             success = not error and result is not None and result is not False and (not isinstance(result, int) or result >= 0)
             if success and f.editor == 'speed':
                 self.speed_changed = card.editor.currentIndex() != 2
-            self.status.setText(f'{f.title}: done.' if success else 'Action unavailable. Check that a compatible level is open.')
+            self.status.setText(result if isinstance(result,str) else f'{f.title}: done.' if success else 'Action unavailable. Check that a compatible level is open.')
         self.run(operation, done)
 
     def reset_all(self, checked=False, disconnect=False):
         if self.busy or not self.engine.is_connected:
             return
         def operation():
+            if self.studio and self.studio.session:self.studio.session.reset()
             result = self.engine.reset_all()
             # The legacy reset omits some features, including zombie preview.
             for feature in FEATURES:
-                if feature.state and getattr(self.engine, feature.state, False):
+                if feature.state and getattr(self.engine, feature.state, False) and not (feature.state=='limbo_page_active'and getattr(self.engine,'_remembered_limbo',False)is True):
                     getattr(self.engine, feature.method)(False)
-            speed_ok = self.engine.set_game_speed(10) if self.speed_changed else True
-            remaining = [f.title for f in FEATURES if f.state and getattr(self.engine, f.state, False)]
+            speed_ok = self.engine.set_game_speed(10) if self.speed_changed and not getattr(type(self.engine),'safe_runtime_enabled',False) else True
+            remaining = [f.title for f in FEATURES if f.state and getattr(self.engine, f.state, False)and not(f.state=='limbo_page_active'and getattr(self.engine,'_remembered_limbo',False)is True)]
             return bool(result and speed_ok and not remaining)
         def done(result, error):
             for card in self.cards:
@@ -525,7 +576,7 @@ class LawnLab(QMainWindow):
                 for card in self.cards:
                     if card.feature.editor == 'speed':
                         card.editor.setCurrentIndex(2)
-                self.status.setText('Controls reset. Your lawn is back to its original settings.')
+                self.status.setText('Session controls reset. Remembered Limbo remains enabled.'if getattr(self.engine,'_remembered_limbo',False)is True else'Controls reset. Your lawn is back to its original settings.')
                 if disconnect or self.close_after_reset:
                     self.release_engine()
                 if self.close_after_reset:
@@ -537,7 +588,13 @@ class LawnLab(QMainWindow):
         self.run(operation, done)
 
     def release_engine(self):
+        if self.studio and self.studio.seed_pages.overlay:self.studio.seed_pages.overlay.stop()
+        if self.studio and self.studio.session:
+            self.studio.session.schedule.cancel()
+            self.studio.session = None
+            self.studio.hotkeys_enabled.setChecked(False)
         old = self.engine
+        if hasattr(type(old),'shutdown'):old.shutdown()
         old.is_connected = False
         for name in vars(old):
             if name.endswith('_active'):
@@ -568,16 +625,18 @@ class LawnLab(QMainWindow):
             self.release_engine()
             self.status.setText('The game closed. Connect again when you are ready.')
             self.update_enabled()
+        elif getattr(type(self.engine),'safe_runtime_enabled',False)and self.engine.last_error:
+            self.status.setText(self.engine.last_error)
 
     def about(self):
         QMessageBox.information(self, 'About LawnLab',
-            'LawnLab 4.0\nPVZ Trainer developed by Primo.\n'
+            'LawnLab 5.14 — Lawn builder and gameplay tools\nPVZ Trainer developed by Primo.\n'
             'GitHub: supremobv (current) / supremopkv (earlier account).\n\n'
-            'Python + Qt (PySide6), with the original pymem engine.\n'
+            'Python + Qt (PySide6), with a verified transactional memory engine.\n'
             'The original pvz_trainer.py is preserved.\n\n'
-            'Compatibility depends on your exact game executable and build. '
-            'The original engine contains a mixture of fixed offsets and pattern-based patches; '
-            'the redesigned interface does not certify additional game versions.\n\n'
+            'Controls support verified GOTY 1.2.0.1073 and Classic 1.0.0.1051 executables. Classic has no native GOTY achievements. '
+            'Legacy pattern scans and heuristic writes are not used by this interface. '
+            'Conflicting patches are rejected and active hook memory is retained until game exit.\n\n'
             'Connect manually, open a level, then enable controls. '
             'Reset all restores enabled patches and normal game speed. '
             'Closing this window while connected also attempts a reset. '
@@ -592,6 +651,7 @@ class LawnLab(QMainWindow):
             self.close_after_reset = True
             self.reset_all()
         else:
+            if self.studio:self.studio.close()
             event.accept()
 
 
@@ -608,6 +668,14 @@ def configure_app(app):
 
 
 def main():
+    if len(sys.argv)>2 and sys.argv[1]=='--launch-edition':
+        from edition_saves import launch
+        try:return launch(sys.argv[2])
+        except Exception as error:
+            app=QApplication(sys.argv);QMessageBox.critical(None,'LawnLab game launcher',str(error));return
+    if len(sys.argv)>1 and sys.argv[1]=='--ct-bridge':
+        from ct_bridge import main as bridge_main
+        return bridge_main(sys.argv[2:])
     app = QApplication(sys.argv)
     configure_app(app)
     window = LawnLab()
@@ -617,3 +685,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

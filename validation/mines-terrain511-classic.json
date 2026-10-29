@@ -1,0 +1,17 @@
+{
+  "build": "Classic 1.0.0.1051",
+  "new_mine_state": 16,
+  "new_mine_timer": 0,
+  "normal_mine_state": 0,
+  "native_terrain_queries": {
+    "pool": {
+      "before": 11,
+      "enabled": 0
+    },
+    "roof": {
+      "before": 5,
+      "enabled": 0
+    }
+  },
+  "passed": true
+}

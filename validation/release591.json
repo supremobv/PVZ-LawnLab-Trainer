@@ -1,0 +1,17 @@
+{
+  "version": "5.9.1",
+  "automated_tests_passed": 185,
+  "note_restore_tests": [
+    "Independent Help/credits restoration",
+    "Exact original Classic archive restoration",
+    "No known backup preserves resources",
+    "Corrupt backup refuses before either note restored",
+    "External edits preserved"
+  ],
+  "sha256": {
+    "LawnLab.exe": "3ba332e46b5994a121939f116610a0ebf30cb0b76e648ae07424a42b25878dfb",
+    "LawnLab-GOTY-1.2.0.1073.CT": "dc20f8c7311534365487c9df54fcea66294c5a2d801637601b7557903bda69c0",
+    "LawnLab-Classic-1.0.0.1051.CT": "9722b3d36616ca122357dc09408e00a4a0517e247bd8ce9f880a0b549c5cafb0"
+  },
+  "active_game_resources_changed": false
+}

@@ -1,0 +1,28 @@
+{
+  "version": "5.9",
+  "automated_tests_passed": 180,
+  "sha256": {
+    "LawnLab.exe": "356163d9d01a2bb274e3530e698a6fa603cbd04b739726a7464e83541ba6542c",
+    "LawnLab-GOTY-1.2.0.1073.CT": "ea5ec0ef476c820f533374dad4dc6c092e6cf7316358e494045ddb36690091ec",
+    "LawnLab-Classic-1.0.0.1051.CT": "be31abea48aa243578775c0b1867162a21a0ba345f701be38bedc7d7b80e6770",
+    "LawnLab-addresses.json": "4bd48cff330174a081f1b57946e60694167d411f9ba9fedddc5ecbf97194527c",
+    "LawnLab-Classic-addresses.json": "b7be2a5ea86bcc661d2e3cbeb329332091f980dff3a19fe18717cf503da78c7f"
+  },
+  "note_resource_check": {
+    "font_pt": 22,
+    "render_seconds": 0.020755399993504398,
+    "access_denied_seconds": 0.041114700012258254,
+    "clear_error": "Windows denied writing C:\\Program Files (x86)\\Plants vs. Zombies GOTY Edition\\images. For protected game folders, disconnect the trainer and restart LawnLab as administrator.",
+    "no_stale_installing_record": true,
+    "original_resources_restored": true
+  },
+  "overlay_checks": [
+    "Saved drag position",
+    "Hide preserves native wheel routing",
+    "Wheel restricted to focused game and seed cards"
+  ],
+  "limits": [
+    "Physical in-game drag/wheel gesture not manually reconfirmed",
+    "Elevated Program Files apply requires user Windows approval and was not performed in validation"
+  ]
+}
